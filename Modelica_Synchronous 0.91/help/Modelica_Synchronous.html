@@ -1,0 +1,127 @@
+<HTML>
+<HEAD>
+<TITLE>Modelica_Synchronous</TITLE>
+<META name="HTML-Generator" content="Dymola">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<META name="description" content="&quot;Modelica_Synchronous (version 0.91) - Basic synchronous input/output control blocks
+that are triggered by clocks&quot;">
+<style type="text/css">
+*       { font-size: 10pt; font-family: Arial,sans-serif; }
+pre     { font-size:  9pt; font-family: Courier,monospace;}
+h4      { font-size: 10pt; font-weight: bold; color: green; }
+h3      { font-size: 11pt; font-weight: bold; color: green; }
+h2      { font-size: 13pt; font-weight: bold; color: green; }
+address {                  font-weight: normal}
+td      { solid #000; vertical-align:top; }
+th      { solid #000; vertical-align:top; font-weight: bold; }
+table   { solid #000; border-collapse: collapse;}
+</style>
+</HEAD>
+<BODY><P>
+<!--[if supportFields]><span style='mso-element:field-begin'></span>
+<span style='mso-spacerun:yes'></span>XE Modelica_Synchronous<![endif]-->
+<!--[if supportFields]><span style='mso-element:field-end'></span><![endif]-->
+<H2><A NAME="Modelica_Synchronous"></A>Modelica_Synchronous</H2>
+<B>Modelica_Synchronous (version 0.91) - Basic synchronous input/output control blocks
+that are triggered by clocks</B>
+<P>
+<P><H3>Information</H3></P>
+<PRE></pre>
+<p>
+Library <b>Modelica_Synchronous</b> is a Modelica package
+to precisely define and synchronize sampled data systems with different sampling rates.
+The library has elements to define periodic clocks and event clocks that trigger elements to sample, sub-sample, super-sample, or shift-sample partitions synchronously. Optionally, quantization effects, computational delay or noise can be simulated. Continuous-time equations can be automatically discretized and utilized in a sampled data system. The sample rate of
+a partition need to be defined only at one location. All Modelica libraries designed so far for sampled systems, such as Modelica.Blocks.Discrete or Modelica_LinearSystems2.Controller
+are becoming obsolete and instead Modelica_Synchronous should be utilized.
+</p>
+
+<p>
+In the following
+<A HREF="Modelica_Synchronous_Examples_SimpleControlledDrive.html#Modelica_Synchronous.Examples.SimpleControlledDrive.ClockedWithDiscreteController"
+>example</a>
+a simple sampled data system is shown, where the borders of the
+discrete-time partition are marked by the sample and hold operators, a clocked PI
+controller is used in the partition and the sample
+rate is defined at one location with a clock:
+</p>
+
+<p>
+<img src="../Resources/Images/SimpleSampledSystem.png">
+</p>
+
+<p>
+For an introduction, have especially a look at:
+</p>
+<ul>
+<li> <a  >Modelica_Synchronous.pdf</a>
+     is a slide set that provides an overview of the Library
+     (the pdf file was generated from the
+      <a  >PowerPoint presentation</a>).
+      </li>
+<li> <A HREF="Modelica_Synchronous_UsersGuide_GettingStarted.html#Modelica_Synchronous.UsersGuide.GettingStarted"
+>Getting started</a>
+     provides an overview of the Library
+     inside the <A HREF="Modelica_Synchronous_UsersGuide.html#Modelica_Synchronous.UsersGuide"
+>User's Guide</a>.</li>
+<li><A HREF="Modelica_Synchronous_UsersGuide_ReleaseNotes.html#Modelica_Synchronous.UsersGuide.ReleaseNotes"
+>Release Notes</a>
+    summarizes the changes of new versions of this package.</li>
+<li> <A HREF="Modelica_Synchronous_UsersGuide.html#Modelica_Synchronous.UsersGuide.Contact"
+>Contact</a>
+     gives author and acknowledgement information for this library.</li>
+</ul>
+
+<p>
+<table border="0" cellpadding="2" cellspacing="2">
+<tr><td colspan="1" rowspan="2" style="vertical-align: middle;">
+    <img src="../Resources/Images/dlr_logo.png">
+    </td>
+    <td style="vertical-align: top;"><br><b>Licensed by DLR under the Modelica License 2</b></td>
+</tr>
+<tr><td style="vertical-align: top;"><b>Copyright &copy; 2012, DLR Institute of System Dynamics and Control</b></td>
+</tr>
+</table>
+</p>
+
+<p>
+<i>This Modelica package is <u>free</u> software and
+the use is completely at <u>your own risk</u>;
+it can be redistributed and/or modified under the terms of the
+Modelica license 2, see the license conditions (including the
+disclaimer of warranty)
+<A HREF="Modelica_Synchronous_UsersGuide.html#Modelica_Synchronous.UsersGuide.ModelicaLicense2"
+>here</a></u>
+or at
+<a href="http://www.Modelica.org/licenses/ModelicaLicense2">
+http://www.Modelica.org/licenses/ModelicaLicense2</a>.</i>
+</p>
+<pre></PRE><P>
+Extends from Modelica.Icons.Package (Icon for standard packages).
+<P><H3>Package Content</H3><p>
+<TABLE BORDER=1 CELLSPACING=0 CELLPADDING=2 >
+<TR><TH >Name</TH><TH>Description</TH></TR>
+<TR><TD><IMG SRC="Modelica_Synchronous.UsersGuideS.png" ALT="Modelica_Synchronous.UsersGuide" WIDTH=20  HEIGHT=20 ALIGN = TOP >&nbsp;<A HREF="Modelica_Synchronous_UsersGuide.html#Modelica_Synchronous.UsersGuide"
+>UsersGuide</A>
+</TD><TD>User&#39;s Guide</TD></TR>
+<TR><TD><IMG SRC="Modelica_Synchronous.ExamplesS.png" ALT="Modelica_Synchronous.Examples" WIDTH=20  HEIGHT=20 ALIGN = TOP >&nbsp;<A HREF="Modelica_Synchronous_Examples.html#Modelica_Synchronous.Examples"
+>Examples</A>
+</TD><TD>Library of examples to demonstrate the usage of package Modelica_Synchronous</TD></TR>
+<TR><TD><IMG SRC="Modelica_Synchronous.ClockSignalsS.png" ALT="Modelica_Synchronous.ClockSignals" WIDTH=20  HEIGHT=20 ALIGN = TOP >&nbsp;<A HREF="Modelica_Synchronous_ClockSignals.html#Modelica_Synchronous.ClockSignals"
+>ClockSignals</A>
+</TD><TD>Library of blocks for clocked signals</TD></TR>
+<TR><TD><IMG SRC="Modelica_Synchronous.ClockSignalsS.png" ALT="Modelica_Synchronous.RealSignals" WIDTH=20  HEIGHT=20 ALIGN = TOP >&nbsp;<A HREF="Modelica_Synchronous_RealSignals.html#Modelica_Synchronous.RealSignals"
+>RealSignals</A>
+</TD><TD>Library of clocked blocks for Real signals</TD></TR>
+<TR><TD><IMG SRC="Modelica_Synchronous.ClockSignalsS.png" ALT="Modelica_Synchronous.IntegerSignals" WIDTH=20  HEIGHT=20 ALIGN = TOP >&nbsp;<A HREF="Modelica_Synchronous_IntegerSignals.html#Modelica_Synchronous.IntegerSignals"
+>IntegerSignals</A>
+</TD><TD>Library of clocked blocks for Integer signals</TD></TR>
+<TR><TD><IMG SRC="Modelica_Synchronous.ClockSignalsS.png" ALT="Modelica_Synchronous.BooleanSignals" WIDTH=20  HEIGHT=20 ALIGN = TOP >&nbsp;<A HREF="Modelica_Synchronous_BooleanSignals.html#Modelica_Synchronous.BooleanSignals"
+>BooleanSignals</A>
+</TD><TD>Library of clocked blocks for Boolean signals</TD></TR>
+<TR><TD><IMG SRC="Modelica_Synchronous.ClockSignalsS.png" ALT="Modelica_Synchronous.Types" WIDTH=20  HEIGHT=20 ALIGN = TOP >&nbsp;<A HREF="Modelica_Synchronous_Types.html#Modelica_Synchronous.Types"
+>Types</A>
+</TD><TD>Library of types with choices, especially to build menus</TD></TR>
+</TABLE>
+<address><a href="http://www.3ds.com/">Automatically generated</a> Thu Oct 11 00:28:22 2012.
+</address></BODY>
+</HTML>

@@ -1,0 +1,258 @@
+<HTML>
+<HEAD>
+<TITLE>Modelica_Synchronous.RealSignals.Sampler.Utilities</TITLE>
+<META name="HTML-Generator" content="Dymola">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<META name="description" content="&quot;Utility components that are usually not directly used&quot;">
+<style type="text/css">
+*       { font-size: 10pt; font-family: Arial,sans-serif; }
+pre     { font-size:  9pt; font-family: Courier,monospace;}
+h4      { font-size: 10pt; font-weight: bold; color: green; }
+h3      { font-size: 11pt; font-weight: bold; color: green; }
+h2      { font-size: 13pt; font-weight: bold; color: green; }
+address {                  font-weight: normal}
+td      { solid #000; vertical-align:top; }
+th      { solid #000; vertical-align:top; font-weight: bold; }
+table   { solid #000; border-collapse: collapse;}
+</style>
+</HEAD>
+<BODY><P>
+<!--[if supportFields]><span style='mso-element:field-begin'></span>
+<span style='mso-spacerun:yes'></span>XE Utilities<![endif]-->
+<!--[if supportFields]><span style='mso-element:field-end'></span><![endif]-->
+<H2><A NAME="Modelica_Synchronous.RealSignals.Sampler.Utilities"></A><A HREF="Modelica_Synchronous_RealSignals_Sampler.html#Modelica_Synchronous.RealSignals.Sampler"
+>Modelica_Synchronous.RealSignals.Sampler</A>.Utilities</H2>
+<B>Utility components that are usually not directly used</B>
+<P>
+<P><H3>Information</H3></P>
+<PRE></pre>
+<p>
+This package contains utility blocks that are usually not directly utilized
+but are used as building blocks for "higher level" blocks.
+</p>
+<pre></PRE><P>
+Extends from Modelica.Icons.Package (Icon for standard packages).
+<P><H3>Package Content</H3><p>
+<TABLE BORDER=1 CELLSPACING=0 CELLPADDING=2 >
+<TR><TH >Name</TH><TH>Description</TH></TR>
+<TR><TD><IMG SRC="Modelica_Synchronous.Real56e54c2203a779e9ampleS.png" ALT="Modelica_Synchronous.RealSignals.Sampler.Utilities.UpSample" WIDTH=20  HEIGHT=20 ALIGN = TOP >&nbsp;<A HREF="Modelica_Synchronous_RealSignals_Sampler_Utilities.html#Modelica_Synchronous.RealSignals.Sampler.Utilities.UpSample"
+>UpSample</A>
+</TD><TD>Upsample the clocked Real input signal and provide it as clocked output signal</TD></TR>
+<TR><TD><IMG SRC="Modelica_Synchronous.Realf93a3c02477878f4rHoldS.png" ALT="Modelica_Synchronous.RealSignals.Sampler.Utilities.AssignClockToTriggerHold" WIDTH=20  HEIGHT=20 ALIGN = TOP >&nbsp;<A HREF="Modelica_Synchronous_RealSignals_Sampler_Utilities.html#Modelica_Synchronous.RealSignals.Sampler.Utilities.AssignClockToTriggerHold"
+>AssignClockToTriggerHold</A>
+</TD><TD>Generate a Boolean continuous-time trigger signal from a clocked Real input</TD></TR>
+<TR><TD><IMG SRC="Modelica_Synchronous.Reala037449270e73234eHoldS.png" ALT="Modelica_Synchronous.RealSignals.Sampler.Utilities.AssignClockToSquareWaveHold" WIDTH=20  HEIGHT=20 ALIGN = TOP >&nbsp;<A HREF="Modelica_Synchronous_RealSignals_Sampler_Utilities.html#Modelica_Synchronous.RealSignals.Sampler.Utilities.AssignClockToSquareWaveHold"
+>AssignClockToSquareWaveHold</A>
+</TD><TD>Generate a Boolean continuous-time square-wave output from a clocked Real input</TD></TR>
+</TABLE>
+<!--[if supportFields]><span style='mso-element:field-begin'></span>
+<span style='mso-spacerun:yes'></span>XE UpSample<![endif]-->
+<!--[if supportFields]><span style='mso-element:field-end'></span><![endif]-->
+<H2><IMG SRC="Modelica_Synchronous.Real56e54c2203a779e9ampleI.png" ALT="Modelica_Synchronous.RealSignals.Sampler.Utilities.UpSample" ALIGN=RIGHT BORDER=1 WIDTH=80  HEIGHT=80 >
+<A NAME="Modelica_Synchronous.RealSignals.Sampler.Utilities.UpSample"></A><A HREF="Modelica_Synchronous_RealSignals_Sampler_Utilities.html#Modelica_Synchronous.RealSignals.Sampler.Utilities"
+>Modelica_Synchronous.RealSignals.Sampler.Utilities</A>.UpSample</H2>
+<B>Upsample the clocked Real input signal and provide it as clocked output signal</B><p>
+<P><H3>Information</H3></P>
+<PRE></pre>
+<p>
+This block upsamples the clocked Real input signal u and provides it as clocked output signal y.
+</p>
+
+<p>
+To be more precise:
+The clock of y is factor-times faster than the clock of u. At every tick of the clock of u, the value of y is set to
+the value of u, at intermediate ticks of clock y, the value of y is set to zero. The first activation of the clock of y coincides with the first activation of the clock of u. By default, the upsampling factor is inferred,that is, it must be defined somewhere else. If parameter <b>inferFactor</b> = false, then the upsampling factor is defined by the Integer parameter <b>factor</b>.
+</p>
+
+<p>
+For signal interpolation an <i>upsample</i> should be followed by an appropriate filter (antiimaging).
+</p>
+
+<h4>Examples</h4>
+
+<p>
+The following
+<a href="Modelica_Synchronous.Examples.ForDocumentation.RealSignals.UpSample1">example</a>
+samples a sine signal with a periodic clock of 20 ms period, and
+then upsamples the resulting clocked signal with a factor of 3:<br>
+</p>
+
+<table border=0 cellspacing=0 cellpadding=2>
+<tr><td width="50"></td>
+    <td valign="bottom"><img src="../Resources/Images/RealSignals/UpSample1_Model.png"></td>
+    <td valign="bottom">&nbsp;&nbsp;&nbsp;
+                        <img src="../Resources/Images/RealSignals/UpSample1_Result.png"></td>
+    </tr>
+<tr><td></td>
+    <td align="center">model</td>
+    <td align="center">simulation result</td>
+   </tr>
+</table>
+<p>
+The upsampling factor is explicitly given at the upSample2 block, which also makes the factor visible in the icon. For the upSample1 block the factor is infered.
+As can be seen, upsample1 introduces 3 additional clock ticks for the
+output y. Note, the up-arrow in the icon of the upSample blocks indicates that the
+clocks of their outputs is faster than the clocks of their inputs.
+</p>
+
+<p>
+The following
+<a href="Modelica_Synchronous.Examples.ForDocumentation.RealSignals.UpSample2">example</a>
+samples a sine signal with a periodic clock of 20 ms period,
+upsamples the resulting clocked signal with a factor of 3
+and applies varies filters on this signal:<br>
+</p>
+
+<table border=0 cellspacing=0 cellpadding=2>
+<tr><td width="50"></td>
+    <td valign="bottom"><img src="../Resources/Images/RealSignals/UpSample2_Model.png"></td>
+    </tr>
+<tr><td></td>
+    <td align="center">model<br></td>
+   </tr>
+<tr><td></td>
+    <td valign="bottom"><img src="../Resources/Images/RealSignals/UpSample2_Result1.png"></td>
+    </tr>
+<tr><td></td>
+    <td align="center">simulation result 1<br></td>
+   </tr>
+<tr><td></td>
+    <td valign="bottom"><img src="../Resources/Images/RealSignals/UpSample2_Result2.png"></td>
+    </tr>
+<tr><td></td>
+    <td align="center">simulation result 2</td>
+   </tr>
+</table>
+
+<p>
+This model shows various possibilities to operate on an up-sampled signal:
+When filtering the upsampled signal with filter block FIR1
+using FIR coefficients {1,1,1}, then the result is identical to a super-sampled
+signal (see signal FIR1.y in figure "simulation result 1").
+On the other hand, when filtering the upsampled signal with filter
+block FIR2 using FIR coefficients {1/3, 2/3, 1, 2/3, 1/3}, then
+the result is a linearly interpolated super-sampled signal
+(see signal FIR2.y in figure "simulation result 2").
+The same result can be achieved with block
+<A HREF="Modelica_Synchronous_RealSignals_Sampler.html#Modelica_Synchronous.RealSignals.Sampler.SuperSampleInterpolated"
+>SuperSampleInterpolated</a>
+(see signal superSampleIpo1.y in figure "simulation result 2").
+The only difference are the first clock ticks, since the FIR2 signal is
+initialized a bit differently.
+</p>
+<pre></PRE><P>
+
+<P><H3>Parameters</H3><P>
+<TABLE BORDER=1 CELLSPACING=0 CELLPADDING=2>
+<TR><TH>Name</TH><TH>Description</TH></TR>
+<TR><TD>inferFactor</TD><TD>= true, if upsampling factor is inferred</TD></TR>
+<TR><TD>factor</TD><TD>Upsampling factor &gt;= 1 (if inferFactor=false)</TD></TR>
+</TABLE>
+<P><H3>Connectors</H3><P>
+<TABLE BORDER=1 CELLSPACING=0 CELLPADDING=2>
+<TR><TH>Name</TH><TH>Description</TH></TR>
+<TR><TD>u</TD><TD>Connector of clocked, Real input signal</TD></TR>
+<TR><TD>y</TD><TD>Connector of clocked, Real output signal (clock of y is faster as clock of u)</TD></TR>
+</TABLE>
+<!--[if supportFields]><span style='mso-element:field-begin'></span>
+<span style='mso-spacerun:yes'></span>XE AssignClockToTriggerHold<![endif]-->
+<!--[if supportFields]><span style='mso-element:field-end'></span><![endif]-->
+<H2><IMG SRC="Modelica_Synchronous.Realf93a3c02477878f4rHoldI.png" ALT="Modelica_Synchronous.RealSignals.Sampler.Utilities.AssignClockToTriggerHold" ALIGN=RIGHT BORDER=1 WIDTH=80  HEIGHT=80 >
+<A NAME="Modelica_Synchronous.RealSignals.Sampler.Utilities.AssignClockToTriggerHold"></A><A HREF="Modelica_Synchronous_RealSignals_Sampler_Utilities.html#Modelica_Synchronous.RealSignals.Sampler.Utilities"
+>Modelica_Synchronous.RealSignals.Sampler.Utilities</A>.AssignClockToTriggerHold</H2>
+<B>Generate a Boolean continuous-time trigger signal from a clocked Real input</B><p>
+<P><H3>Information</H3></P>
+<PRE></pre>
+<p>
+This block creates a Boolean, continuous time, trigger signal whenever the clock of the input signal is active.
+</p>
+
+<p>
+A particular use-case in which that block might be useful is the combination of "old-style" sampled blocks (i.e., "unclocked" discrete control functions implemented using equations between "when trigger then" clauses) with clocked blocks.
+</p>
+
+<h4>Example</h4>
+
+<p>
+The following
+<a href="Modelica_Synchronous.Examples.ForDocumentation.RealSignals.AssignClockToTriggerHold">example</a>
+samples a sine signal with a periodic clock of 20 ms period. After that a continuous time Boolean trigger signal is generated at every clock tick of that sampled signal. The generated signal is used as trigger signal for an "old-style" TriggeredSampler</a>  block from the Modelica.Blocks.Discrete package:<br>
+</p>
+
+<table border=0 cellspacing=0 cellpadding=2>
+<tr><td width="50"></td>
+    <td valign="bottom"><img src="../Resources/Images/RealSignals/AssignClockToTriggerHold_Model.png"></td>
+    <td valign="bottom">&nbsp;&nbsp;&nbsp;
+                        <img src="../Resources/Images/RealSignals/AssignClockToTriggerHold_Result.png"></td>
+    </tr>
+<tr><td></td>
+    <td align="center">model</td>
+    <td align="center">simulation result</td>
+   </tr>
+</table>
+<p>
+Note, that it is clearly visible in the plot that the "old-style" discrete variables have an implicit zero-order hold semantics, while the new clocked variables are only active whenever their associated clock ticks. Just compare variable sample.y (clocked) with triggeredSampler.y (unclocked) to observe the difference.
+</p>
+<pre></PRE><P>
+Extends from <A HREF="Modelica_Synchronous_ClockSignals_Interfaces.html#Modelica_Synchronous.ClockSignals.Interfaces.ClockedBlockIcon"
+>Modelica_Synchronous.ClockSignals.Interfaces.ClockedBlockIcon</A> (Basic graphical layout of block where at least one input or output is a clocked variable).
+<P><H3>Parameters</H3><P>
+<TABLE BORDER=1 CELLSPACING=0 CELLPADDING=2>
+<TR><TH>Name</TH><TH>Description</TH></TR>
+<TR><TD>y_start</TD><TD>Initial value of output signal</TD></TR>
+</TABLE>
+<P><H3>Connectors</H3><P>
+<TABLE BORDER=1 CELLSPACING=0 CELLPADDING=2>
+<TR><TH>Name</TH><TH>Description</TH></TR>
+<TR><TD>u</TD><TD>&nbsp;</TD></TR>
+<TR><TD>y</TD><TD>Connector of Boolean output signal</TD></TR>
+</TABLE>
+<!--[if supportFields]><span style='mso-element:field-begin'></span>
+<span style='mso-spacerun:yes'></span>XE AssignClockToSquareWaveHold<![endif]-->
+<!--[if supportFields]><span style='mso-element:field-end'></span><![endif]-->
+<H2><IMG SRC="Modelica_Synchronous.Reala037449270e73234eHoldI.png" ALT="Modelica_Synchronous.RealSignals.Sampler.Utilities.AssignClockToSquareWaveHold" ALIGN=RIGHT BORDER=1 WIDTH=80  HEIGHT=80 >
+<A NAME="Modelica_Synchronous.RealSignals.Sampler.Utilities.AssignClockToSquareWaveHold"></A><A HREF="Modelica_Synchronous_RealSignals_Sampler_Utilities.html#Modelica_Synchronous.RealSignals.Sampler.Utilities"
+>Modelica_Synchronous.RealSignals.Sampler.Utilities</A>.AssignClockToSquareWaveHold</H2>
+<B>Generate a Boolean continuous-time square-wave output from a clocked Real input</B><p>
+<P><H3>Information</H3></P>
+<PRE></pre>
+<p>
+This block creates a Boolean, continuous time, square-wave output. Whenever the clock of the input signal is active the Boolean output value changes.
+</p>
+
+<h4>Example</h4>
+
+<p>
+The following
+<a href="Modelica_Synchronous.Examples.ForDocumentation.RealSignals.AssignClockToSquareWaveHold">example</a>
+samples a sine signal with a periodic clock of 20 ms period. After that a Boolean, continuous time, square-wave signal is generated that changes its value at every clock tick of the sampled signal:<br>
+</p>
+
+<table border=0 cellspacing=0 cellpadding=2>
+<tr><td width="50"></td>
+    <td valign="bottom"><img src="../Resources/Images/RealSignals/AssignClockToSquareWaveHold_Model.png"></td>
+    <td valign="bottom">&nbsp;&nbsp;&nbsp;
+                        <img src="../Resources/Images/RealSignals/AssignClockToSquareWaveHold_Result.png"></td>
+    </tr>
+<tr><td></td>
+    <td align="center">model</td>
+    <td align="center">simulation result</td>
+   </tr>
+</table>
+<pre></PRE><P>
+Extends from <A HREF="Modelica_Synchronous_ClockSignals_Interfaces.html#Modelica_Synchronous.ClockSignals.Interfaces.ClockedBlockIcon"
+>Modelica_Synchronous.ClockSignals.Interfaces.ClockedBlockIcon</A> (Basic graphical layout of block where at least one input or output is a clocked variable).
+<P><H3>Parameters</H3><P>
+<TABLE BORDER=1 CELLSPACING=0 CELLPADDING=2>
+<TR><TH>Name</TH><TH>Description</TH></TR>
+<TR><TD>y_start</TD><TD>Initial value of output signal</TD></TR>
+</TABLE>
+<P><H3>Connectors</H3><P>
+<TABLE BORDER=1 CELLSPACING=0 CELLPADDING=2>
+<TR><TH>Name</TH><TH>Description</TH></TR>
+<TR><TD>u</TD><TD>&nbsp;</TD></TR>
+<TR><TD>y</TD><TD>Connector of Boolean output signal</TD></TR>
+</TABLE>
+<address><a href="http://www.3ds.com/">Automatically generated</a> Thu Oct 11 00:28:23 2012.
+</address></BODY>
+</HTML>

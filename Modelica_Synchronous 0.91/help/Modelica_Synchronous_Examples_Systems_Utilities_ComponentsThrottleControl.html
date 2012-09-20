@@ -1,0 +1,202 @@
+<HTML>
+<HEAD>
+<TITLE>Modelica_Synchronous.Examples.Systems.Utilities.ComponentsThrottleControl</TITLE>
+<META name="HTML-Generator" content="Dymola">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+*       { font-size: 10pt; font-family: Arial,sans-serif; }
+pre     { font-size:  9pt; font-family: Courier,monospace;}
+h4      { font-size: 10pt; font-weight: bold; color: green; }
+h3      { font-size: 11pt; font-weight: bold; color: green; }
+h2      { font-size: 13pt; font-weight: bold; color: green; }
+address {                  font-weight: normal}
+td      { solid #000; vertical-align:top; }
+th      { solid #000; vertical-align:top; font-weight: bold; }
+table   { solid #000; border-collapse: collapse;}
+</style>
+</HEAD>
+<BODY><P>
+<!--[if supportFields]><span style='mso-element:field-begin'></span>
+<span style='mso-spacerun:yes'></span>XE ComponentsThrottleControl<![endif]-->
+<!--[if supportFields]><span style='mso-element:field-end'></span><![endif]-->
+<H2><A NAME="Modelica_Synchronous.Examples.Systems.Utilities.ComponentsThrottleControl"></A><A HREF="Modelica_Synchronous_Examples_Systems_Utilities.html#Modelica_Synchronous.Examples.Systems.Utilities"
+>Modelica_Synchronous.Examples.Systems.Utilities</A>.ComponentsThrottleControl</H2>
+<P><H3>Information</H3></P>
+Extends from Modelica.Icons.Package (Icon for standard packages).
+<P><H3>Package Content</H3><p>
+<TABLE BORDER=1 CELLSPACING=0 CELLPADDING=2 >
+<TR><TH >Name</TH><TH>Description</TH></TR>
+<TR><TD><IMG SRC="Modelica_Synchronous.Examc80f82baee76a496eBodyS.png" ALT="Modelica_Synchronous.Examples.Systems.Utilities.ComponentsThrottleControl.ThrottleBody" WIDTH=20  HEIGHT=20 ALIGN = TOP >&nbsp;<A HREF="Modelica_Synchronous_Examples_Systems_Utilities_ComponentsThrottleControl.html#Modelica_Synchronous.Examples.Systems.Utilities.ComponentsThrottleControl.ThrottleBody"
+>ThrottleBody</A>
+</TD><TD>Basic throttle body equations</TD></TR>
+<TR><TD><IMG SRC="Modelica_Synchronous.Examfaa6c116efc8fe6eifoldS.png" ALT="Modelica_Synchronous.Examples.Systems.Utilities.ComponentsThrottleControl.IntakeManifold" WIDTH=20  HEIGHT=20 ALIGN = TOP >&nbsp;<A HREF="Modelica_Synchronous_Examples_Systems_Utilities_ComponentsThrottleControl.html#Modelica_Synchronous.Examples.Systems.Utilities.ComponentsThrottleControl.IntakeManifold"
+>IntakeManifold</A>
+</TD><TD>Dynamics of the intake manifold</TD></TR>
+<TR><TD><IMG SRC="Modelica_Synchronous.Exam0f346b9404142e77ationS.png" ALT="Modelica_Synchronous.Examples.Systems.Utilities.ComponentsThrottleControl.TorqueGeneration" WIDTH=20  HEIGHT=20 ALIGN = TOP >&nbsp;<A HREF="Modelica_Synchronous_Examples_Systems_Utilities_ComponentsThrottleControl.html#Modelica_Synchronous.Examples.Systems.Utilities.ComponentsThrottleControl.TorqueGeneration"
+>TorqueGeneration</A>
+</TD><TD>&nbsp;</TD></TR>
+<TR><TD><IMG SRC="Modelica_Synchronous.Exam2e091d242b3f3b6entrolS.png" ALT="Modelica_Synchronous.Examples.Systems.Utilities.ComponentsThrottleControl.SpeedControl" WIDTH=20  HEIGHT=20 ALIGN = TOP >&nbsp;<A HREF="Modelica_Synchronous_Examples_Systems_Utilities_ComponentsThrottleControl.html#Modelica_Synchronous.Examples.Systems.Utilities.ComponentsThrottleControl.SpeedControl"
+>SpeedControl</A>
+</TD><TD>Discrete control of crankshaft speed by throttle actuation</TD></TR>
+<TR><TD><IMG SRC="Modelica_Synchronous.Exam1e20dd44e53d2f50EventS.png" ALT="Modelica_Synchronous.Examples.Systems.Utilities.ComponentsThrottleControl.CrankshaftPositionEvent" WIDTH=20  HEIGHT=20 ALIGN = TOP >&nbsp;<A HREF="Modelica_Synchronous_Examples_Systems_Utilities_ComponentsThrottleControl.html#Modelica_Synchronous.Examples.Systems.Utilities.ComponentsThrottleControl.CrankshaftPositionEvent"
+>CrankshaftPositionEvent</A>
+</TD><TD>Every 180deg crankshaft rotation an event is generated</TD></TR>
+<TR><TD><IMG SRC="Modelica_Synchronous.Exam2b372c9a775cc3f4hargeS.png" ALT="Modelica_Synchronous.Examples.Systems.Utilities.ComponentsThrottleControl.CylinderAirCharge" WIDTH=20  HEIGHT=20 ALIGN = TOP >&nbsp;<A HREF="Modelica_Synchronous_Examples_Systems_Utilities_ComponentsThrottleControl.html#Modelica_Synchronous.Examples.Systems.Utilities.ComponentsThrottleControl.CylinderAirCharge"
+>CylinderAirCharge</A>
+</TD><TD>Integrates the air mass flow into a cylinder. After the charge for one cylinder is complete, resets the mass to 0</TD></TR>
+<TR><TD><IMG SRC="Modelica_Synchronous.Exam2b372c9a775cc3f4hargeS.png" ALT="Modelica_Synchronous.Examples.Systems.Utilities.ComponentsThrottleControl.InductionToPowerDelay" WIDTH=20  HEIGHT=20 ALIGN = TOP >&nbsp;<A HREF="Modelica_Synchronous_Examples_Systems_Utilities_ComponentsThrottleControl.html#Modelica_Synchronous.Examples.Systems.Utilities.ComponentsThrottleControl.InductionToPowerDelay"
+>InductionToPowerDelay</A>
+</TD><TD>Accounts for the induction-to-power stroke lag</TD></TR>
+<TR><TD><IMG SRC="Modelica_Synchronous.Exam48293fb24eb95d8egine2S.png" ALT="Modelica_Synchronous.Examples.Systems.Utilities.ComponentsThrottleControl.Engine2" WIDTH=20  HEIGHT=20 ALIGN = TOP >&nbsp;<A HREF="Modelica_Synchronous_Examples_Systems_Utilities_ComponentsThrottleControl.html#Modelica_Synchronous.Examples.Systems.Utilities.ComponentsThrottleControl.Engine2"
+>Engine2</A>
+</TD><TD>Internal combustion engine</TD></TR>
+</TABLE>
+<!--[if supportFields]><span style='mso-element:field-begin'></span>
+<span style='mso-spacerun:yes'></span>XE ThrottleBody<![endif]-->
+<!--[if supportFields]><span style='mso-element:field-end'></span><![endif]-->
+<H2><IMG SRC="Modelica_Synchronous.Examc80f82baee76a496eBodyI.png" ALT="Modelica_Synchronous.Examples.Systems.Utilities.ComponentsThrottleControl.ThrottleBody" ALIGN=RIGHT BORDER=1 WIDTH=80  HEIGHT=80 >
+<A NAME="Modelica_Synchronous.Examples.Systems.Utilities.ComponentsThrottleControl.ThrottleBody"></A><A HREF="Modelica_Synchronous_Examples_Systems_Utilities_ComponentsThrottleControl.html#Modelica_Synchronous.Examples.Systems.Utilities.ComponentsThrottleControl"
+>Modelica_Synchronous.Examples.Systems.Utilities.ComponentsThrottleControl</A>.ThrottleBody</H2>
+<B>Basic throttle body equations</B><p>
+<P><H3>Information</H3></P>
+Extends from Modelica.Blocks.Interfaces.BlockIcon (Basic graphical layout of input/output block).
+<P><H3>Parameters</H3><P>
+<TABLE BORDER=1 CELLSPACING=0 CELLPADDING=2>
+<TR><TH>Name</TH><TH>Description</TH></TR>
+<TR><TD>P_0</TD><TD>Atmospheric pressure, bar</TD></TR>
+</TABLE>
+<P><H3>Connectors</H3><P>
+<TABLE BORDER=1 CELLSPACING=0 CELLPADDING=2>
+<TR><TH>Name</TH><TH>Description</TH></TR>
+<TR><TD>Theta</TD><TD>throttle angle, degrees</TD></TR>
+<TR><TD>Pm</TD><TD>Intake manifold presure, bar</TD></TR>
+<TR><TD>m_ai_dot</TD><TD>Mass flow rate of air into manifold (g/s)</TD></TR>
+</TABLE>
+<!--[if supportFields]><span style='mso-element:field-begin'></span>
+<span style='mso-spacerun:yes'></span>XE IntakeManifold<![endif]-->
+<!--[if supportFields]><span style='mso-element:field-end'></span><![endif]-->
+<H2><IMG SRC="Modelica_Synchronous.Examfaa6c116efc8fe6eifoldI.png" ALT="Modelica_Synchronous.Examples.Systems.Utilities.ComponentsThrottleControl.IntakeManifold" ALIGN=RIGHT BORDER=1 WIDTH=80  HEIGHT=80 >
+<A NAME="Modelica_Synchronous.Examples.Systems.Utilities.ComponentsThrottleControl.IntakeManifold"></A><A HREF="Modelica_Synchronous_Examples_Systems_Utilities_ComponentsThrottleControl.html#Modelica_Synchronous.Examples.Systems.Utilities.ComponentsThrottleControl"
+>Modelica_Synchronous.Examples.Systems.Utilities.ComponentsThrottleControl</A>.IntakeManifold</H2>
+<B>Dynamics of the intake manifold</B><p>
+<P><H3>Information</H3></P>
+Extends from Modelica.Blocks.Interfaces.BlockIcon (Basic graphical layout of input/output block).
+<P><H3>Parameters</H3><P>
+<TABLE BORDER=1 CELLSPACING=0 CELLPADDING=2>
+<TR><TH>Name</TH><TH>Description</TH></TR>
+<TR><TD>RTVmRatio</TD><TD>RT/V_m TODO: What are sensible individual values of R,T, and V_m! (took same value like SIMULINK example for comparison reasons)</TD></TR>
+<TR><TD>P_0</TD><TD>Initial value for P_m, (bar) (took same value like SIMULINK example for comparison reasons)</TD></TR>
+</TABLE>
+<P><H3>Connectors</H3><P>
+<TABLE BORDER=1 CELLSPACING=0 CELLPADDING=2>
+<TR><TH>Name</TH><TH>Description</TH></TR>
+<TR><TD>m_ai_dot</TD><TD>Mass flow rate of air into manifold (g/s) </TD></TR>
+<TR><TD>N</TD><TD>Engine speed (rad/sec)</TD></TR>
+<TR><TD>m_ao_dot</TD><TD>Mass flow rate of air out of manifold (g/s)</TD></TR>
+<TR><TD>P_m</TD><TD>Intake manifold presure, (bar)</TD></TR>
+</TABLE>
+<!--[if supportFields]><span style='mso-element:field-begin'></span>
+<span style='mso-spacerun:yes'></span>XE TorqueGeneration<![endif]-->
+<!--[if supportFields]><span style='mso-element:field-end'></span><![endif]-->
+<H2><IMG SRC="Modelica_Synchronous.Exam0f346b9404142e77ationI.png" ALT="Modelica_Synchronous.Examples.Systems.Utilities.ComponentsThrottleControl.TorqueGeneration" ALIGN=RIGHT BORDER=1 WIDTH=80  HEIGHT=80 >
+<A NAME="Modelica_Synchronous.Examples.Systems.Utilities.ComponentsThrottleControl.TorqueGeneration"></A><A HREF="Modelica_Synchronous_Examples_Systems_Utilities_ComponentsThrottleControl.html#Modelica_Synchronous.Examples.Systems.Utilities.ComponentsThrottleControl"
+>Modelica_Synchronous.Examples.Systems.Utilities.ComponentsThrottleControl</A>.TorqueGeneration</H2>
+<P><H3>Information</H3></P>
+Extends from Modelica.Blocks.Interfaces.BlockIcon (Basic graphical layout of input/output block).
+<P><H3>Parameters</H3><P>
+<TABLE BORDER=1 CELLSPACING=0 CELLPADDING=2>
+<TR><TH>Name</TH><TH>Description</TH></TR>
+<TR><TD>AFR</TD><TD>air-fuel ratio (took same value like SIMULINK example for comparison reasons)</TD></TR>
+<TR><TD>sigma</TD><TD>spark advance, BTDC (took same value like SIMULINK example for comparison reasons)</TD></TR>
+</TABLE>
+<P><H3>Connectors</H3><P>
+<TABLE BORDER=1 CELLSPACING=0 CELLPADDING=2>
+<TR><TH>Name</TH><TH>Description</TH></TR>
+<TR><TD>m_a</TD><TD>Mass of air charge in cylinder (delayed of 180deg crankshaft rotation) (g) </TD></TR>
+<TR><TD>N</TD><TD>Engine speed (rad/sec)</TD></TR>
+<TR><TD>T_torque_e</TD><TD>Torque generated by engine</TD></TR>
+</TABLE>
+<!--[if supportFields]><span style='mso-element:field-begin'></span>
+<span style='mso-spacerun:yes'></span>XE SpeedControl<![endif]-->
+<!--[if supportFields]><span style='mso-element:field-end'></span><![endif]-->
+<H2><IMG SRC="Modelica_Synchronous.Exam2e091d242b3f3b6entrolI.png" ALT="Modelica_Synchronous.Examples.Systems.Utilities.ComponentsThrottleControl.SpeedControl" ALIGN=RIGHT BORDER=1 WIDTH=80  HEIGHT=80 >
+<A NAME="Modelica_Synchronous.Examples.Systems.Utilities.ComponentsThrottleControl.SpeedControl"></A><A HREF="Modelica_Synchronous_Examples_Systems_Utilities_ComponentsThrottleControl.html#Modelica_Synchronous.Examples.Systems.Utilities.ComponentsThrottleControl"
+>Modelica_Synchronous.Examples.Systems.Utilities.ComponentsThrottleControl</A>.SpeedControl</H2>
+<B>Discrete control of crankshaft speed by throttle actuation</B><p>
+<P><H3>Parameters</H3><P>
+<TABLE BORDER=1 CELLSPACING=0 CELLPADDING=2>
+<TR><TH>Name</TH><TH>Description</TH></TR>
+<TR><TD>k_p</TD><TD>Proportional gain</TD></TR>
+<TR><TD>k_I</TD><TD>Integral gain</TD></TR>
+</TABLE>
+<P><H3>Connectors</H3><P>
+<TABLE BORDER=1 CELLSPACING=0 CELLPADDING=2>
+<TR><TH>Name</TH><TH>Description</TH></TR>
+<TR><TD>N_des</TD><TD>Desired speed, (rad/s)</TD></TR>
+<TR><TD>N</TD><TD>Measured speed, (rad/s)</TD></TR>
+<TR><TD>Theta</TD><TD>throttle angle, degrees</TD></TR>
+</TABLE>
+<!--[if supportFields]><span style='mso-element:field-begin'></span>
+<span style='mso-spacerun:yes'></span>XE CrankshaftPositionEvent<![endif]-->
+<!--[if supportFields]><span style='mso-element:field-end'></span><![endif]-->
+<H2><IMG SRC="Modelica_Synchronous.Exam1e20dd44e53d2f50EventI.png" ALT="Modelica_Synchronous.Examples.Systems.Utilities.ComponentsThrottleControl.CrankshaftPositionEvent" ALIGN=RIGHT BORDER=1 WIDTH=80  HEIGHT=80 >
+<A NAME="Modelica_Synchronous.Examples.Systems.Utilities.ComponentsThrottleControl.CrankshaftPositionEvent"></A><A HREF="Modelica_Synchronous_Examples_Systems_Utilities_ComponentsThrottleControl.html#Modelica_Synchronous.Examples.Systems.Utilities.ComponentsThrottleControl"
+>Modelica_Synchronous.Examples.Systems.Utilities.ComponentsThrottleControl</A>.CrankshaftPositionEvent</H2>
+<B>Every 180deg crankshaft rotation an event is generated</B><p>
+<P><H3>Information</H3></P>
+Extends from Modelica.Blocks.Interfaces.BlockIcon (Basic graphical layout of input/output block).
+<P><H3>Connectors</H3><P>
+<TABLE BORDER=1 CELLSPACING=0 CELLPADDING=2>
+<TR><TH>Name</TH><TH>Description</TH></TR>
+<TR><TD>angle</TD><TD>Engine angle [rad]</TD></TR>
+<TR><TD>edge180Clock</TD><TD>&nbsp;</TD></TR>
+<TR><TD>N_clocked</TD><TD>&nbsp;</TD></TR>
+</TABLE>
+<!--[if supportFields]><span style='mso-element:field-begin'></span>
+<span style='mso-spacerun:yes'></span>XE CylinderAirCharge<![endif]-->
+<!--[if supportFields]><span style='mso-element:field-end'></span><![endif]-->
+<H2><IMG SRC="Modelica_Synchronous.Exam2b372c9a775cc3f4hargeI.png" ALT="Modelica_Synchronous.Examples.Systems.Utilities.ComponentsThrottleControl.CylinderAirCharge" ALIGN=RIGHT BORDER=1 WIDTH=80  HEIGHT=80 >
+<A NAME="Modelica_Synchronous.Examples.Systems.Utilities.ComponentsThrottleControl.CylinderAirCharge"></A><A HREF="Modelica_Synchronous_Examples_Systems_Utilities_ComponentsThrottleControl.html#Modelica_Synchronous.Examples.Systems.Utilities.ComponentsThrottleControl"
+>Modelica_Synchronous.Examples.Systems.Utilities.ComponentsThrottleControl</A>.CylinderAirCharge</H2>
+<B>Integrates the air mass flow into a cylinder. After the charge for one cylinder is complete, resets the mass to 0</B><p>
+<P><H3>Information</H3></P>
+Extends from Modelica.Blocks.Interfaces.BlockIcon (Basic graphical layout of input/output block).
+<P><H3>Connectors</H3><P>
+<TABLE BORDER=1 CELLSPACING=0 CELLPADDING=2>
+<TR><TH>Name</TH><TH>Description</TH></TR>
+<TR><TD>m_a</TD><TD>Mass of an cylinder air charge (g)</TD></TR>
+<TR><TD>m_ao_dot</TD><TD>Mass flow rate of air out of manifold (g/s)</TD></TR>
+<TR><TD>clock</TD><TD>&nbsp;</TD></TR>
+</TABLE>
+<!--[if supportFields]><span style='mso-element:field-begin'></span>
+<span style='mso-spacerun:yes'></span>XE InductionToPowerDelay<![endif]-->
+<!--[if supportFields]><span style='mso-element:field-end'></span><![endif]-->
+<H2><IMG SRC="Modelica_Synchronous.Exam2b372c9a775cc3f4hargeI.png" ALT="Modelica_Synchronous.Examples.Systems.Utilities.ComponentsThrottleControl.InductionToPowerDelay" ALIGN=RIGHT BORDER=1 WIDTH=80  HEIGHT=80 >
+<A NAME="Modelica_Synchronous.Examples.Systems.Utilities.ComponentsThrottleControl.InductionToPowerDelay"></A><A HREF="Modelica_Synchronous_Examples_Systems_Utilities_ComponentsThrottleControl.html#Modelica_Synchronous.Examples.Systems.Utilities.ComponentsThrottleControl"
+>Modelica_Synchronous.Examples.Systems.Utilities.ComponentsThrottleControl</A>.InductionToPowerDelay</H2>
+<B>Accounts for the induction-to-power stroke lag</B><p>
+<P><H3>Information</H3></P>
+Extends from Modelica.Blocks.Interfaces.BlockIcon (Basic graphical layout of input/output block).
+<P><H3>Connectors</H3><P>
+<TABLE BORDER=1 CELLSPACING=0 CELLPADDING=2>
+<TR><TH>Name</TH><TH>Description</TH></TR>
+<TR><TD>m_a</TD><TD>Mass of cylinder air charge (g)</TD></TR>
+<TR><TD>m_a_delayed</TD><TD>180deg delayed mass of cylinder air charge (g)</TD></TR>
+<TR><TD>clock</TD><TD>&nbsp;</TD></TR>
+</TABLE>
+<!--[if supportFields]><span style='mso-element:field-begin'></span>
+<span style='mso-spacerun:yes'></span>XE Engine2<![endif]-->
+<!--[if supportFields]><span style='mso-element:field-end'></span><![endif]-->
+<H2><IMG SRC="Modelica_Synchronous.Exam48293fb24eb95d8egine2I.png" ALT="Modelica_Synchronous.Examples.Systems.Utilities.ComponentsThrottleControl.Engine2" ALIGN=RIGHT BORDER=1 WIDTH=80  HEIGHT=80 >
+<A NAME="Modelica_Synchronous.Examples.Systems.Utilities.ComponentsThrottleControl.Engine2"></A><A HREF="Modelica_Synchronous_Examples_Systems_Utilities_ComponentsThrottleControl.html#Modelica_Synchronous.Examples.Systems.Utilities.ComponentsThrottleControl"
+>Modelica_Synchronous.Examples.Systems.Utilities.ComponentsThrottleControl</A>.Engine2</H2>
+<B>Internal combustion engine</B><p>
+<P><H3>Connectors</H3><P>
+<TABLE BORDER=1 CELLSPACING=0 CELLPADDING=2>
+<TR><TH>Name</TH><TH>Description</TH></TR>
+<TR><TD>Theta</TD><TD>throttle angle, degrees</TD></TR>
+<TR><TD>flange_b</TD><TD>&nbsp;</TD></TR>
+</TABLE>
+<address><a href="http://www.3ds.com/">Automatically generated</a> Thu Oct 11 00:28:22 2012.
+</address></BODY>
+</HTML>
