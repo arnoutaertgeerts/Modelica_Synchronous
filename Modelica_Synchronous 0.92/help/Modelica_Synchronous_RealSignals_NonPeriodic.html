@@ -1,0 +1,191 @@
+<HTML>
+<HEAD>
+<TITLE>Modelica_Synchronous.RealSignals.NonPeriodic</TITLE>
+<META name="HTML-Generator" content="Dymola">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<META name="description" content="&quot;Library of blocks that operate on periodically and non-periodically clocked signals&quot;">
+<style type="text/css">
+*       { font-size: 10pt; font-family: Arial,sans-serif; }
+pre     { font-size:  9pt; font-family: Courier,monospace;}
+h4      { font-size: 10pt; font-weight: bold; color: green; }
+h3      { font-size: 11pt; font-weight: bold; color: green; }
+h2      { font-size: 13pt; font-weight: bold; color: green; }
+address {                  font-weight: normal} 
+td      { solid #000; vertical-align:top; }
+th      { solid #000; vertical-align:top; font-weight: bold; }
+table   { solid #000; border-collapse: collapse;}
+</style>
+</HEAD>
+<BODY><P></P>
+<!--[if supportFields]><span style='mso-element:field-begin'></span>
+<span style='mso-spacerun:yes'></span>XE NonPeriodic<![endif]-->
+<!--[if supportFields]><span style='mso-element:field-end'></span><![endif]-->
+<H2><A NAME="Modelica_Synchronous.RealSignals.NonPeriodic"></A><A HREF="Modelica_Synchronous_RealSignals.html#Modelica_Synchronous.RealSignals"
+>Modelica_Synchronous.RealSignals</A>.NonPeriodic</H2>
+<B>Library of blocks that operate on periodically and non-periodically clocked signals</B>
+<P></P>
+<P></P><H3>Information</H3>
+<PRE></pre>
+<p>
+This package contains blocks that can be utilized for periodic and non-periodic
+clocks. These blocks usually utilize the duration of the last interval for the computation of the
+output signal. For example, the coefficients of the
+<A HREF="Modelica_Synchronous_RealSignals_NonPeriodic.html#Modelica_Synchronous.RealSignals.NonPeriodic.PI"
+>PI</a>
+block are computed from the coefficients of a continuous-time PI block
+and from the duration of the last interval.
+</p>
+<pre></PRE><P></P>
+Extends from Modelica.Icons.Package (Icon for standard packages).
+<P></P><H3>Package Content</H3>
+<TABLE BORDER=1 CELLSPACING=0 CELLPADDING=2 >
+<TR><TH >Name</TH><TH>Description</TH></TR>
+<TR><TD><IMG SRC="Modelica_Synchronous.Reald7df6c26ab721366ic.PIS.png" ALT="Modelica_Synchronous.RealSignals.NonPeriodic.PI" WIDTH=20  HEIGHT=20 ALIGN = TOP >&nbsp;<A HREF="Modelica_Synchronous_RealSignals_NonPeriodic.html#Modelica_Synchronous.RealSignals.NonPeriodic.PI"
+>PI</A>
+</TD><TD>Discrete-time PI controller with clocked input and output signals (for periodic and aperiodic systems using the parameterization of the continuous PI controller)</TD></TR>
+<TR><TD><IMG SRC="Modelica_Synchronous.Realb83ce50ef7e5e34eDelayS.png" ALT="Modelica_Synchronous.RealSignals.NonPeriodic.UnitDelay" WIDTH=20  HEIGHT=20 ALIGN = TOP >&nbsp;<A HREF="Modelica_Synchronous_RealSignals_NonPeriodic.html#Modelica_Synchronous.RealSignals.NonPeriodic.UnitDelay"
+>UnitDelay</A>
+</TD><TD>Delays the clocked input signal for one sample period</TD></TR>
+<TR><TD><IMG SRC="Modelica_Synchronous.Reale20beccdeacb630cDelayS.png" ALT="Modelica_Synchronous.RealSignals.NonPeriodic.FractionalDelay" WIDTH=20  HEIGHT=20 ALIGN = TOP >&nbsp;<A HREF="Modelica_Synchronous_RealSignals_NonPeriodic.html#Modelica_Synchronous.RealSignals.NonPeriodic.FractionalDelay"
+>FractionalDelay</A>
+</TD><TD>Delays the clocked input signal for a fractional multiple of the sample period</TD></TR>
+</TABLE>
+<!--[if supportFields]><span style='mso-element:field-begin'></span>
+<span style='mso-spacerun:yes'></span>XE PI<![endif]-->
+<!--[if supportFields]><span style='mso-element:field-end'></span><![endif]-->
+<H2><IMG SRC="Modelica_Synchronous.Reald7df6c26ab721366ic.PII.png" ALT="Modelica_Synchronous.RealSignals.NonPeriodic.PI" ALIGN=RIGHT BORDER=1 WIDTH=80  HEIGHT=80 >
+<A NAME="Modelica_Synchronous.RealSignals.NonPeriodic.PI"></A><A HREF="Modelica_Synchronous_RealSignals_NonPeriodic.html#Modelica_Synchronous.RealSignals.NonPeriodic"
+>Modelica_Synchronous.RealSignals.NonPeriodic</A>.PI</H2>
+<B>Discrete-time PI controller with clocked input and output signals (for periodic and aperiodic systems using the parameterization of the continuous PI controller)</B><p></P>
+<P></P><H3>Information</H3>
+<PRE></pre>
+<p>
+Discrete-time PI controller that has been derived from the continuous-time
+PI controller
+</p>
+<pre>
+                 1
+   y = k * (1 + ---) * u
+                T*s
+           T*s + 1
+     = k * ------- * u
+             T*s
+</pre>
+<p>
+by using the implicit Euler discretization formula. The block is
+parametrized with the gain k and the time constant T of the continuous
+PI block. As a result, the discrete-time form of the PI controller depends
+explicitly on the sample time of the controller and changing this sample time,
+will give still a similar performance.
+</p>
+<pre></PRE><P></P>
+Extends from <A HREF="Modelica_Synchronous_RealSignals_Interfaces.html#Modelica_Synchronous.RealSignals.Interfaces.PartialClockedSISO"
+>Modelica_Synchronous.RealSignals.Interfaces.PartialClockedSISO</A> (Block with clocked single input and clocked single output Real signals).
+<P><H3>Parameters</H3><P>
+<TABLE BORDER=1 CELLSPACING=0 CELLPADDING=2>
+<TR><TH>Name</TH><TH>Description</TH></TR>
+<TR><TD>k</TD><TD>Gain of continuous PI controller</TD></TR>
+<TR><TD>T</TD><TD>Time constant of continuous PI controller</TD></TR>
+</TABLE>
+<P><H3>Connectors</H3><P>
+<TABLE BORDER=1 CELLSPACING=0 CELLPADDING=2>
+<TR><TH>Name</TH><TH>Description</TH></TR>
+<TR><TD>u</TD><TD>Connector of clocked, Real input signal</TD></TR>
+<TR><TD>y</TD><TD>Connector of clocked, Real output signal</TD></TR>
+</TABLE>
+<!--[if supportFields]><span style='mso-element:field-begin'></span>
+<span style='mso-spacerun:yes'></span>XE UnitDelay<![endif]-->
+<!--[if supportFields]><span style='mso-element:field-end'></span><![endif]-->
+<H2><IMG SRC="Modelica_Synchronous.Realb83ce50ef7e5e34eDelayI.png" ALT="Modelica_Synchronous.RealSignals.NonPeriodic.UnitDelay" ALIGN=RIGHT BORDER=1 WIDTH=80  HEIGHT=80 >
+<A NAME="Modelica_Synchronous.RealSignals.NonPeriodic.UnitDelay"></A><A HREF="Modelica_Synchronous_RealSignals_NonPeriodic.html#Modelica_Synchronous.RealSignals.NonPeriodic"
+>Modelica_Synchronous.RealSignals.NonPeriodic</A>.UnitDelay</H2>
+<B>Delays the clocked input signal for one sample period</B><p></P>
+<P></P><H3>Information</H3>
+<PRE></pre>
+<p>
+This block describes a unit delay:
+</p>
+<pre>
+  // Time domain description
+     y(ti) = previous(u(ti))
+
+  // Discrete transfer function
+             1
+     y(z) = --- * u(z)
+             z
+</pre>
+
+<p>
+that is, the output signal y is the input signal u at the
+previous clock tick. At the first clock tick, the output
+y is set to parameter y_start.
+</p>
+<pre></PRE><P></P>
+Extends from <A HREF="Modelica_Synchronous_RealSignals_Interfaces.html#Modelica_Synchronous.RealSignals.Interfaces.PartialClockedSISO"
+>Modelica_Synchronous.RealSignals.Interfaces.PartialClockedSISO</A> (Block with clocked single input and clocked single output Real signals).
+<P><H3>Parameters</H3><P>
+<TABLE BORDER=1 CELLSPACING=0 CELLPADDING=2>
+<TR><TH>Name</TH><TH>Description</TH></TR>
+<TR><TD>y_start</TD><TD>Value of output signal at first clock tick</TD></TR>
+</TABLE>
+<P><H3>Connectors</H3><P>
+<TABLE BORDER=1 CELLSPACING=0 CELLPADDING=2>
+<TR><TH>Name</TH><TH>Description</TH></TR>
+<TR><TD>y</TD><TD>Connector of clocked, Real output signal</TD></TR>
+</TABLE>
+<!--[if supportFields]><span style='mso-element:field-begin'></span>
+<span style='mso-spacerun:yes'></span>XE FractionalDelay<![endif]-->
+<!--[if supportFields]><span style='mso-element:field-end'></span><![endif]-->
+<H2><IMG SRC="Modelica_Synchronous.Reale20beccdeacb630cDelayI.png" ALT="Modelica_Synchronous.RealSignals.NonPeriodic.FractionalDelay" ALIGN=RIGHT BORDER=1 WIDTH=80  HEIGHT=80 >
+<A NAME="Modelica_Synchronous.RealSignals.NonPeriodic.FractionalDelay"></A><A HREF="Modelica_Synchronous_RealSignals_NonPeriodic.html#Modelica_Synchronous.RealSignals.NonPeriodic"
+>Modelica_Synchronous.RealSignals.NonPeriodic</A>.FractionalDelay</H2>
+<B>Delays the clocked input signal for a fractional multiple of the sample period</B><p></P>
+<P></P><H3>Information</H3>
+<PRE></pre>
+<p>
+This block delays a signal. Similar to the <A HREF="Modelica_Synchronous_RealSignals_Sampler.html#Modelica_Synchronous.RealSignals.Sampler.ShiftSample"
+>ShiftSample</a> block the first activation of the clock of the output y is delayed by <b>shiftCounter</b>/<b>resolution</b>*interval(u) relative to the input u (interval(u) is the sample period of the clock associated to input u). However, in contrast to ShiftSample, the block provides a buffer for the input values and truly delays the input signal.
+</p>
+
+<h4>Example</h4>
+
+<p>
+The following
+<A HREF="Modelica_Synchronous_Examples_Elementary_RealSignals.html#Modelica_Synchronous.Examples.Elementary.RealSignals.FractionalDelay"
+>example</a>
+shows how a sample sine signal is delayed.
+<br>
+</p>
+
+<table border=0 cellspacing=0 cellpadding=2>
+<tr><td width="50"></td>
+    <td valign="bottom"><img src="../Resources/Images/RealSignals/FractionalDelay_Model.png"></td>
+    <td valign="bottom">&nbsp;&nbsp;&nbsp;
+                        <img src="../Resources/Images/RealSignals/FractionalDelay_Result.png"></td>
+    </tr>
+<tr><td></td>
+    <td align="center">model</td>
+    <td align="center">simulation result</td>
+   </tr>
+</table>
+<p>
+The parameter values <b>shiftCounter</b>=3 and <b>resolution</b>=2 are visible at the bottom of the fractionalDelay block.
+</p>
+<pre></PRE><P></P>
+Extends from <A HREF="Modelica_Synchronous_RealSignals_Interfaces.html#Modelica_Synchronous.RealSignals.Interfaces.PartialClockedSISO"
+>Modelica_Synchronous.RealSignals.Interfaces.PartialClockedSISO</A> (Block with clocked single input and clocked single output Real signals).
+<P><H3>Parameters</H3><P>
+<TABLE BORDER=1 CELLSPACING=0 CELLPADDING=2>
+<TR><TH>Name</TH><TH>Description</TH></TR>
+<TR><TD>shift</TD><TD>Delay = interval() * shift/resolution</TD></TR>
+<TR><TD>resolution</TD><TD>Time quantization resolution of sample interval</TD></TR>
+</TABLE>
+<P><H3>Connectors</H3><P>
+<TABLE BORDER=1 CELLSPACING=0 CELLPADDING=2>
+<TR><TH>Name</TH><TH>Description</TH></TR>
+<TR><TD>u</TD><TD>Connector of clocked, Real input signal</TD></TR>
+<TR><TD>y</TD><TD>Connector of clocked, Real output signal</TD></TR>
+</TABLE>
+<address><a href="http://www.3ds.com/">Automatically generated</a> Mon Oct 28 10:26:06 2013.
+</address></BODY>
+</HTML>

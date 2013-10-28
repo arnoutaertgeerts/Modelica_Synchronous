@@ -1,0 +1,103 @@
+<HTML>
+<HEAD>
+<TITLE>Modelica_Synchronous.BooleanSignals.NonPeriodic</TITLE>
+<META name="HTML-Generator" content="Dymola">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<META name="description" content="&quot;Library of blocks that operate on periodically and non-periodically clocked signals&quot;">
+<style type="text/css">
+*       { font-size: 10pt; font-family: Arial,sans-serif; }
+pre     { font-size:  9pt; font-family: Courier,monospace;}
+h4      { font-size: 10pt; font-weight: bold; color: green; }
+h3      { font-size: 11pt; font-weight: bold; color: green; }
+h2      { font-size: 13pt; font-weight: bold; color: green; }
+address {                  font-weight: normal} 
+td      { solid #000; vertical-align:top; }
+th      { solid #000; vertical-align:top; font-weight: bold; }
+table   { solid #000; border-collapse: collapse;}
+</style>
+</HEAD>
+<BODY><P></P>
+<!--[if supportFields]><span style='mso-element:field-begin'></span>
+<span style='mso-spacerun:yes'></span>XE NonPeriodic<![endif]-->
+<!--[if supportFields]><span style='mso-element:field-end'></span><![endif]-->
+<H2><A NAME="Modelica_Synchronous.BooleanSignals.NonPeriodic"></A><A HREF="Modelica_Synchronous_BooleanSignals.html#Modelica_Synchronous.BooleanSignals"
+>Modelica_Synchronous.BooleanSignals</A>.NonPeriodic</H2>
+<B>Library of blocks that operate on periodically and non-periodically clocked signals</B>
+<P></P>
+<P></P><H3>Information</H3>
+Extends from Modelica.Icons.Package (Icon for standard packages).
+<P></P><H3>Package Content</H3>
+<TABLE BORDER=1 CELLSPACING=0 CELLPADDING=2 >
+<TR><TH >Name</TH><TH>Description</TH></TR>
+<TR><TD><IMG SRC="Modelica_Synchronous.Boolf6b3effcb6e0cbeeDelayS.png" ALT="Modelica_Synchronous.BooleanSignals.NonPeriodic.UnitDelay" WIDTH=20  HEIGHT=20 ALIGN = TOP >&nbsp;<A HREF="Modelica_Synchronous_BooleanSignals_NonPeriodic.html#Modelica_Synchronous.BooleanSignals.NonPeriodic.UnitDelay"
+>UnitDelay</A>
+</TD><TD>Delays the clocked input signal for one sample period</TD></TR>
+<TR><TD><IMG SRC="Modelica_Synchronous.Boolda0e4a8bca8a8924DelayS.png" ALT="Modelica_Synchronous.BooleanSignals.NonPeriodic.FractionalDelay" WIDTH=20  HEIGHT=20 ALIGN = TOP >&nbsp;<A HREF="Modelica_Synchronous_BooleanSignals_NonPeriodic.html#Modelica_Synchronous.BooleanSignals.NonPeriodic.FractionalDelay"
+>FractionalDelay</A>
+</TD><TD>Delays the clocked input signal for a fractional multiple of the sample period</TD></TR>
+</TABLE>
+<!--[if supportFields]><span style='mso-element:field-begin'></span>
+<span style='mso-spacerun:yes'></span>XE UnitDelay<![endif]-->
+<!--[if supportFields]><span style='mso-element:field-end'></span><![endif]-->
+<H2><IMG SRC="Modelica_Synchronous.Boolf6b3effcb6e0cbeeDelayI.png" ALT="Modelica_Synchronous.BooleanSignals.NonPeriodic.UnitDelay" ALIGN=RIGHT BORDER=1 WIDTH=80  HEIGHT=80 >
+<A NAME="Modelica_Synchronous.BooleanSignals.NonPeriodic.UnitDelay"></A><A HREF="Modelica_Synchronous_BooleanSignals_NonPeriodic.html#Modelica_Synchronous.BooleanSignals.NonPeriodic"
+>Modelica_Synchronous.BooleanSignals.NonPeriodic</A>.UnitDelay</H2>
+<B>Delays the clocked input signal for one sample period</B><p></P>
+<P></P><H3>Information</H3>
+<PRE></pre>
+<p>
+This block describes a unit delay:
+</p>
+<pre>
+  // Time domain description
+     y(ti) = previous(u(ti))
+
+  // Discrete transfer function
+             1
+     y(z) = --- * u(z)
+             z
+</pre>
+
+<p>
+that is, the output signal y is the input signal u at the
+previous clock tick. At the first clock tick, the output
+y is set to parameter y_start.
+</p>
+<pre></PRE><P></P>
+Extends from <A HREF="Modelica_Synchronous_BooleanSignals_Interfaces.html#Modelica_Synchronous.BooleanSignals.Interfaces.PartialClockedSISO"
+>Modelica_Synchronous.BooleanSignals.Interfaces.PartialClockedSISO</A> (Block with clocked single input and clocked single output Boolean signals).
+<P><H3>Parameters</H3><P>
+<TABLE BORDER=1 CELLSPACING=0 CELLPADDING=2>
+<TR><TH>Name</TH><TH>Description</TH></TR>
+<TR><TD>y_start</TD><TD>Value of output signal at first clock tick</TD></TR>
+</TABLE>
+<P><H3>Connectors</H3><P>
+<TABLE BORDER=1 CELLSPACING=0 CELLPADDING=2>
+<TR><TH>Name</TH><TH>Description</TH></TR>
+<TR><TD>y</TD><TD>Connector of clocked, Real output signal</TD></TR>
+</TABLE>
+<!--[if supportFields]><span style='mso-element:field-begin'></span>
+<span style='mso-spacerun:yes'></span>XE FractionalDelay<![endif]-->
+<!--[if supportFields]><span style='mso-element:field-end'></span><![endif]-->
+<H2><IMG SRC="Modelica_Synchronous.Boolda0e4a8bca8a8924DelayI.png" ALT="Modelica_Synchronous.BooleanSignals.NonPeriodic.FractionalDelay" ALIGN=RIGHT BORDER=1 WIDTH=80  HEIGHT=80 >
+<A NAME="Modelica_Synchronous.BooleanSignals.NonPeriodic.FractionalDelay"></A><A HREF="Modelica_Synchronous_BooleanSignals_NonPeriodic.html#Modelica_Synchronous.BooleanSignals.NonPeriodic"
+>Modelica_Synchronous.BooleanSignals.NonPeriodic</A>.FractionalDelay</H2>
+<B>Delays the clocked input signal for a fractional multiple of the sample period</B><p></P>
+<P></P><H3>Information</H3>
+Extends from <A HREF="Modelica_Synchronous_BooleanSignals_Interfaces.html#Modelica_Synchronous.BooleanSignals.Interfaces.PartialClockedSISO"
+>Modelica_Synchronous.BooleanSignals.Interfaces.PartialClockedSISO</A> (Block with clocked single input and clocked single output Boolean signals).
+<P><H3>Parameters</H3><P>
+<TABLE BORDER=1 CELLSPACING=0 CELLPADDING=2>
+<TR><TH>Name</TH><TH>Description</TH></TR>
+<TR><TD>shift</TD><TD>Delay = interval() * shift/resolution</TD></TR>
+<TR><TD>resolution</TD><TD>Time quantization resolution of sample interval</TD></TR>
+</TABLE>
+<P><H3>Connectors</H3><P>
+<TABLE BORDER=1 CELLSPACING=0 CELLPADDING=2>
+<TR><TH>Name</TH><TH>Description</TH></TR>
+<TR><TD>u</TD><TD>Connector of clocked, Real input signal</TD></TR>
+<TR><TD>y</TD><TD>Connector of clocked, Real output signal</TD></TR>
+</TABLE>
+<address><a href="http://www.3ds.com/">Automatically generated</a> Mon Oct 28 10:26:06 2013.
+</address></BODY>
+</HTML>

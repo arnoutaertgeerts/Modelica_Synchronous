@@ -1,0 +1,452 @@
+<HTML>
+<HEAD>
+<TITLE>Modelica_Synchronous.IntegerSignals.Sampler</TITLE>
+<META name="HTML-Generator" content="Dymola">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<META name="description" content="&quot;Library of sampler and hold blocks for Integer signals&quot;">
+<style type="text/css">
+*       { font-size: 10pt; font-family: Arial,sans-serif; }
+pre     { font-size:  9pt; font-family: Courier,monospace;}
+h4      { font-size: 10pt; font-weight: bold; color: green; }
+h3      { font-size: 11pt; font-weight: bold; color: green; }
+h2      { font-size: 13pt; font-weight: bold; color: green; }
+address {                  font-weight: normal} 
+td      { solid #000; vertical-align:top; }
+th      { solid #000; vertical-align:top; font-weight: bold; }
+table   { solid #000; border-collapse: collapse;}
+</style>
+</HEAD>
+<BODY><P></P>
+<!--[if supportFields]><span style='mso-element:field-begin'></span>
+<span style='mso-spacerun:yes'></span>XE Sampler<![endif]-->
+<!--[if supportFields]><span style='mso-element:field-end'></span><![endif]-->
+<H2><A NAME="Modelica_Synchronous.IntegerSignals.Sampler"></A><A HREF="Modelica_Synchronous_IntegerSignals.html#Modelica_Synchronous.IntegerSignals"
+>Modelica_Synchronous.IntegerSignals</A>.Sampler</H2>
+<B>Library of sampler and hold blocks for Integer signals</B>
+<P></P>
+<P></P><H3>Information</H3>
+<PRE></pre>
+<p>
+This package contains blocks that mark boundaries of a clocked partition
+and transform an <b>Integer</b> signal from one partition to the next. Especially,
+the following blocks are provided:<br>&nbsp;
+</p>
+
+<table border="1" cellspacing="0" cellpadding="3">
+<tr><th align="left"><b>Boundary Type</b></th>
+    <th align="left"><b>Block Name</b></th>
+    <th align="left"><b>Description</b></th></tr>
+
+<tr><td valign="top" rowspan="3">continuous-time &rarr; clocked</td>
+      <td><A HREF="Modelica_Synchronous_IntegerSignals_Sampler.html#Modelica_Synchronous.IntegerSignals.Sampler.Sample"
+>Sample</a></td>
+      <td>Sample a continuous-time signal.</td>
+    </tr>
+    <tr>
+      <td><A HREF="Modelica_Synchronous_IntegerSignals_Sampler.html#Modelica_Synchronous.IntegerSignals.Sampler.SampleClocked"
+>SampleClocked</a></td>
+      <td>Sample and associate a clock to the sampled <b>scalar</b> signal.</td>
+    </tr>
+    <tr>
+      <td><A HREF="Modelica_Synchronous_IntegerSignals_Sampler.html#Modelica_Synchronous.IntegerSignals.Sampler.SampleVectorizedAndClocked"
+>SampleVectorizedAndClocked</a></td>
+      <td>Sample an input vector and associate a clock to the sampled <b>vector</b> signal.</td>
+    </tr>
+
+<tr><td valign="top">clocked &rarr; continuous-time</td>
+      <td><A HREF="Modelica_Synchronous_IntegerSignals_Sampler.html#Modelica_Synchronous.IntegerSignals.Sampler.Hold"
+>Hold</a></td>
+      <td>Hold a clocked signal with zero-order hold.</td>
+    </tr>
+
+<tr><td valign="top" rowspan="4">clocked &rarr; clocked</td>
+      <td><A HREF="Modelica_Synchronous_IntegerSignals_Sampler.html#Modelica_Synchronous.IntegerSignals.Sampler.SubSample"
+>SubSample</a></td>
+      <td>Sub-sample a signal (output clock is slower as input clock). </td>
+    </tr>
+
+    <tr>
+      <td><A HREF="Modelica_Synchronous_IntegerSignals_Sampler.html#Modelica_Synchronous.IntegerSignals.Sampler.SuperSample"
+>SuperSample</a></td>
+      <td>Super-sample a signal (output clock is faster as input clock). </td>
+    </tr>
+
+    <tr>
+      <td><A HREF="Modelica_Synchronous_IntegerSignals_Sampler.html#Modelica_Synchronous.IntegerSignals.Sampler.ShiftSample"
+>ShiftSample</a></td>
+      <td>Shift a signal (output clock is delayed with respect to input clock).  </td>
+    </tr>
+
+    <tr>
+      <td><A HREF="Modelica_Synchronous_IntegerSignals_Sampler.html#Modelica_Synchronous.IntegerSignals.Sampler.BackSample"
+>BackSample</a></td>
+      <td>Shift a signal and start the output clock before the input clock with a start value.  </td>
+    </tr>
+
+
+<tr><td valign="top" rowspan="2">within clocked partition</td>
+      <td><A HREF="Modelica_Synchronous_IntegerSignals_Sampler.html#Modelica_Synchronous.IntegerSignals.Sampler.AssignClock"
+>AssignClock</a></td>
+      <td>Assign a clock to a clocked <b>scalar</b> signal.</td>
+    </tr>
+    <tr>
+      <td><A HREF="Modelica_Synchronous_IntegerSignals_Sampler.html#Modelica_Synchronous.IntegerSignals.Sampler.AssignClockVectorized"
+>AssignClockVectorized</a></td>
+      <td>Assign a clock to a clocked <b>vector</b> signal.</td>
+    </tr>
+</table>
+
+<p>
+Additionally, package
+<A HREF="Modelica_Synchronous_IntegerSignals_Sampler_Utilities.html#Modelica_Synchronous.IntegerSignals.Sampler.Utilities"
+>Utilities</a></td>
+contains utility blocks that are used as building blocks for user-relevant blocks.
+</p>
+<pre></PRE><P></P>
+Extends from Modelica.Icons.Package (Icon for standard packages).
+<P></P><H3>Package Content</H3>
+<TABLE BORDER=1 CELLSPACING=0 CELLPADDING=2 >
+<TR><TH >Name</TH><TH>Description</TH></TR>
+<TR><TD><IMG SRC="Modelica_Synchronous.Inte4b6aa14362f286c1ampleS.png" ALT="Modelica_Synchronous.IntegerSignals.Sampler.Sample" WIDTH=20  HEIGHT=20 ALIGN = TOP >&nbsp;<A HREF="Modelica_Synchronous_IntegerSignals_Sampler.html#Modelica_Synchronous.IntegerSignals.Sampler.Sample"
+>Sample</A>
+</TD><TD>Sample the continuous-time, Integer input signal and provide it as clocked output signal (clock is infered)</TD></TR>
+<TR><TD><IMG SRC="Modelica_Synchronous.Inte0b571516695416deockedS.png" ALT="Modelica_Synchronous.IntegerSignals.Sampler.SampleClocked" WIDTH=20  HEIGHT=20 ALIGN = TOP >&nbsp;<A HREF="Modelica_Synchronous_IntegerSignals_Sampler.html#Modelica_Synchronous.IntegerSignals.Sampler.SampleClocked"
+>SampleClocked</A>
+</TD><TD>Sample the continuous-time, Integer input signal and provide it as clocked output signal. The clock is provided as input signal</TD></TR>
+<TR><TD><IMG SRC="Modelica_Synchronous.Inte0b571516695416deockedS.png" ALT="Modelica_Synchronous.IntegerSignals.Sampler.SampleVectorizedAndClocked" WIDTH=20  HEIGHT=20 ALIGN = TOP >&nbsp;<A HREF="Modelica_Synchronous_IntegerSignals_Sampler.html#Modelica_Synchronous.IntegerSignals.Sampler.SampleVectorizedAndClocked"
+>SampleVectorizedAndClocked</A>
+</TD><TD>Sample the continuous-time, Integer input signal vector and provide it as clocked output signal vector. The clock is provided as input signal</TD></TR>
+<TR><TD><IMG SRC="Modelica_Synchronous.Inte51fe5590c9170496.HoldS.png" ALT="Modelica_Synchronous.IntegerSignals.Sampler.Hold" WIDTH=20  HEIGHT=20 ALIGN = TOP >&nbsp;<A HREF="Modelica_Synchronous_IntegerSignals_Sampler.html#Modelica_Synchronous.IntegerSignals.Sampler.Hold"
+>Hold</A>
+</TD><TD>Hold the clocked, Integer input signal and provide it as continuous-time output signal (zero order hold)</TD></TR>
+<TR><TD><IMG SRC="Modelica_Synchronous.Inte7959b009c5b5723fampleS.png" ALT="Modelica_Synchronous.IntegerSignals.Sampler.SubSample" WIDTH=20  HEIGHT=20 ALIGN = TOP >&nbsp;<A HREF="Modelica_Synchronous_IntegerSignals_Sampler.html#Modelica_Synchronous.IntegerSignals.Sampler.SubSample"
+>SubSample</A>
+</TD><TD>Sub-sample the clocked Integer input signal and provide it as clocked output signal</TD></TR>
+<TR><TD><IMG SRC="Modelica_Synchronous.Inteee97428868c83547ampleS.png" ALT="Modelica_Synchronous.IntegerSignals.Sampler.SuperSample" WIDTH=20  HEIGHT=20 ALIGN = TOP >&nbsp;<A HREF="Modelica_Synchronous_IntegerSignals_Sampler.html#Modelica_Synchronous.IntegerSignals.Sampler.SuperSample"
+>SuperSample</A>
+</TD><TD>Super-sample the clocked Integer input signal and provide it as clocked output signal</TD></TR>
+<TR><TD><IMG SRC="Modelica_Synchronous.Inte5e0320d7e8cb8c5eampleS.png" ALT="Modelica_Synchronous.IntegerSignals.Sampler.ShiftSample" WIDTH=20  HEIGHT=20 ALIGN = TOP >&nbsp;<A HREF="Modelica_Synchronous_IntegerSignals_Sampler.html#Modelica_Synchronous.IntegerSignals.Sampler.ShiftSample"
+>ShiftSample</A>
+</TD><TD>Shift the clocked Integer input signal by a fraction of the last interval and and provide it as clocked output signal</TD></TR>
+<TR><TD><IMG SRC="Modelica_Synchronous.Intee628c40ed26242bbampleS.png" ALT="Modelica_Synchronous.IntegerSignals.Sampler.BackSample" WIDTH=20  HEIGHT=20 ALIGN = TOP >&nbsp;<A HREF="Modelica_Synchronous_IntegerSignals_Sampler.html#Modelica_Synchronous.IntegerSignals.Sampler.BackSample"
+>BackSample</A>
+</TD><TD>Shift clock of Integer input signal backwards in time (and access the most recent value of the input at this new clock)</TD></TR>
+<TR><TD><IMG SRC="Modelica_Synchronous.Intee94b9b0650a00bccClockS.png" ALT="Modelica_Synchronous.IntegerSignals.Sampler.AssignClock" WIDTH=20  HEIGHT=20 ALIGN = TOP >&nbsp;<A HREF="Modelica_Synchronous_IntegerSignals_Sampler.html#Modelica_Synchronous.IntegerSignals.Sampler.AssignClock"
+>AssignClock</A>
+</TD><TD>Assigns a clock to a clocked Integer signal</TD></TR>
+<TR><TD><IMG SRC="Modelica_Synchronous.Intee94b9b0650a00bccClockS.png" ALT="Modelica_Synchronous.IntegerSignals.Sampler.AssignClockVectorized" WIDTH=20  HEIGHT=20 ALIGN = TOP >&nbsp;<A HREF="Modelica_Synchronous_IntegerSignals_Sampler.html#Modelica_Synchronous.IntegerSignals.Sampler.AssignClockVectorized"
+>AssignClockVectorized</A>
+</TD><TD>Assigns a clock to a clocked Integer signal vector</TD></TR>
+<TR><TD><IMG SRC="Modelica_Synchronous.Inte424015697b399103itiesS.png" ALT="Modelica_Synchronous.IntegerSignals.Sampler.Utilities" WIDTH=20  HEIGHT=20 ALIGN = TOP >&nbsp;<A HREF="Modelica_Synchronous_IntegerSignals_Sampler_Utilities.html#Modelica_Synchronous.IntegerSignals.Sampler.Utilities"
+>Utilities</A>
+</TD><TD>Utility components that are usually not directly used</TD></TR>
+</TABLE>
+<!--[if supportFields]><span style='mso-element:field-begin'></span>
+<span style='mso-spacerun:yes'></span>XE Sample<![endif]-->
+<!--[if supportFields]><span style='mso-element:field-end'></span><![endif]-->
+<H2><IMG SRC="Modelica_Synchronous.Inte4b6aa14362f286c1ampleI.png" ALT="Modelica_Synchronous.IntegerSignals.Sampler.Sample" ALIGN=RIGHT BORDER=1 WIDTH=80  HEIGHT=80 >
+<A NAME="Modelica_Synchronous.IntegerSignals.Sampler.Sample"></A><A HREF="Modelica_Synchronous_IntegerSignals_Sampler.html#Modelica_Synchronous.IntegerSignals.Sampler"
+>Modelica_Synchronous.IntegerSignals.Sampler</A>.Sample</H2>
+<B>Sample the continuous-time, Integer input signal and provide it as clocked output signal (clock is infered)</B><p></P>
+<P></P><H3>Information</H3>
+<PRE></pre>
+<p>
+This block for Integer signals works similarly as the corresponding block for Real signals
+(see <A HREF="Modelica_Synchronous_RealSignals_Sampler.html#Modelica_Synchronous.RealSignals.Sampler.Sample"
+>RealSignals.Sampler.Sample</a>).
+</p>
+<p>
+Analog to the corresponding Real signal block examples there exist two elementary examples,
+<A HREF="Modelica_Synchronous_Examples_Elementary_IntegerSignals.html#Modelica_Synchronous.Examples.Elementary.IntegerSignals.Sample1"
+>Sample1</a> and
+<A HREF="Modelica_Synchronous_Examples_Elementary_IntegerSignals.html#Modelica_Synchronous.Examples.Elementary.IntegerSignals.Sample2"
+>Sample2</a>, for this Integer block.
+</p>
+<pre></PRE><P></P>
+Extends from <A HREF="Modelica_Synchronous_IntegerSignals_Interfaces.html#Modelica_Synchronous.IntegerSignals.Interfaces.PartialSISOSampler"
+>Modelica_Synchronous.IntegerSignals.Interfaces.PartialSISOSampler</A> (Basic block used for sampling of Integer signals).
+<P><H3>Connectors</H3><P>
+<TABLE BORDER=1 CELLSPACING=0 CELLPADDING=2>
+<TR><TH>Name</TH><TH>Description</TH></TR>
+<TR><TD>u</TD><TD>Connector of continuous-time, Real input signal</TD></TR>
+<TR><TD>y</TD><TD>Connector of clocked, Real output signal</TD></TR>
+</TABLE>
+<!--[if supportFields]><span style='mso-element:field-begin'></span>
+<span style='mso-spacerun:yes'></span>XE SampleClocked<![endif]-->
+<!--[if supportFields]><span style='mso-element:field-end'></span><![endif]-->
+<H2><IMG SRC="Modelica_Synchronous.Inte0b571516695416deockedI.png" ALT="Modelica_Synchronous.IntegerSignals.Sampler.SampleClocked" ALIGN=RIGHT BORDER=1 WIDTH=80  HEIGHT=80 >
+<A NAME="Modelica_Synchronous.IntegerSignals.Sampler.SampleClocked"></A><A HREF="Modelica_Synchronous_IntegerSignals_Sampler.html#Modelica_Synchronous.IntegerSignals.Sampler"
+>Modelica_Synchronous.IntegerSignals.Sampler</A>.SampleClocked</H2>
+<B>Sample the continuous-time, Integer input signal and provide it as clocked output signal. The clock is provided as input signal</B><p></P>
+<P></P><H3>Information</H3>
+<PRE></pre>
+<p>
+This block for Integer signals works similarly as the corresponding block for Real signals (see <A HREF="Modelica_Synchronous_RealSignals_Sampler.html#Modelica_Synchronous.RealSignals.Sampler.SampleClocked"
+>RealSignals.Sampler.SampleClocked</a>).
+</p>
+<p>
+Analog to the corresponding Real signal block example there exists an elementary <A HREF="Modelica_Synchronous_Examples_Elementary_IntegerSignals.html#Modelica_Synchronous.Examples.Elementary.IntegerSignals.SampleClocked"
+>example</a> for this Integer block.
+</p>
+<pre></PRE><P></P>
+Extends from <A HREF="Modelica_Synchronous_IntegerSignals_Interfaces.html#Modelica_Synchronous.IntegerSignals.Interfaces.SamplerIcon"
+>Modelica_Synchronous.IntegerSignals.Interfaces.SamplerIcon</A> (Basic graphical layout of block used for of Integer signals).
+<P><H3>Connectors</H3><P>
+<TABLE BORDER=1 CELLSPACING=0 CELLPADDING=2>
+<TR><TH>Name</TH><TH>Description</TH></TR>
+<TR><TD>clock</TD><TD>Output signal y is associated with this clock input</TD></TR>
+<TR><TD>u</TD><TD>Connector of continuous-time, Integer input signal</TD></TR>
+<TR><TD>y</TD><TD>Connector of clocked, Integer output signal</TD></TR>
+</TABLE>
+<!--[if supportFields]><span style='mso-element:field-begin'></span>
+<span style='mso-spacerun:yes'></span>XE SampleVectorizedAndClocked<![endif]-->
+<!--[if supportFields]><span style='mso-element:field-end'></span><![endif]-->
+<H2><IMG SRC="Modelica_Synchronous.Inte0b571516695416deockedI.png" ALT="Modelica_Synchronous.IntegerSignals.Sampler.SampleVectorizedAndClocked" ALIGN=RIGHT BORDER=1 WIDTH=80  HEIGHT=80 >
+<A NAME="Modelica_Synchronous.IntegerSignals.Sampler.SampleVectorizedAndClocked"></A><A HREF="Modelica_Synchronous_IntegerSignals_Sampler.html#Modelica_Synchronous.IntegerSignals.Sampler"
+>Modelica_Synchronous.IntegerSignals.Sampler</A>.SampleVectorizedAndClocked</H2>
+<B>Sample the continuous-time, Integer input signal vector and provide it as clocked output signal vector. The clock is provided as input signal</B><p></P>
+<P></P><H3>Information</H3>
+<PRE></pre>
+<p>
+This block for Integer signals works similarly as the corresponding block for Real signals (see <A HREF="Modelica_Synchronous_RealSignals_Sampler.html#Modelica_Synchronous.RealSignals.Sampler.SampleVectorizedAndClocked"
+>RealSignals.Sampler.SampleVectorizedAndClocked</a>).
+</p>
+<p>
+Analog to the corresponding Real signal block example there exists an elementary <A HREF="Modelica_Synchronous_Examples_Elementary_IntegerSignals.html#Modelica_Synchronous.Examples.Elementary.IntegerSignals.SampleVectorizedAndClocked"
+>example</a> for this Integer block.
+</p>
+<pre></PRE><P></P>
+Extends from <A HREF="Modelica_Synchronous_IntegerSignals_Interfaces.html#Modelica_Synchronous.IntegerSignals.Interfaces.SamplerIcon"
+>Modelica_Synchronous.IntegerSignals.Interfaces.SamplerIcon</A> (Basic graphical layout of block used for of Integer signals).
+<P><H3>Parameters</H3><P>
+<TABLE BORDER=1 CELLSPACING=0 CELLPADDING=2>
+<TR><TH>Name</TH><TH>Description</TH></TR>
+<TR><TD>n</TD><TD>Size of input signal vector u (= size of output signal vector y)</TD></TR>
+</TABLE>
+<P><H3>Connectors</H3><P>
+<TABLE BORDER=1 CELLSPACING=0 CELLPADDING=2>
+<TR><TH>Name</TH><TH>Description</TH></TR>
+<TR><TD>u[n]</TD><TD>Connector of continuous-time, Integer input signal vector</TD></TR>
+<TR><TD>y[n]</TD><TD>Connector of clocked, Integer output signal vector</TD></TR>
+<TR><TD>clock</TD><TD>Output signal vector y is associated with this clock input</TD></TR>
+</TABLE>
+<!--[if supportFields]><span style='mso-element:field-begin'></span>
+<span style='mso-spacerun:yes'></span>XE Hold<![endif]-->
+<!--[if supportFields]><span style='mso-element:field-end'></span><![endif]-->
+<H2><IMG SRC="Modelica_Synchronous.Inte51fe5590c9170496.HoldI.png" ALT="Modelica_Synchronous.IntegerSignals.Sampler.Hold" ALIGN=RIGHT BORDER=1 WIDTH=80  HEIGHT=80 >
+<A NAME="Modelica_Synchronous.IntegerSignals.Sampler.Hold"></A><A HREF="Modelica_Synchronous_IntegerSignals_Sampler.html#Modelica_Synchronous.IntegerSignals.Sampler"
+>Modelica_Synchronous.IntegerSignals.Sampler</A>.Hold</H2>
+<B>Hold the clocked, Integer input signal and provide it as continuous-time output signal (zero order hold)</B><p></P>
+<P></P><H3>Information</H3>
+<PRE></pre>
+<p>
+This block for Integer signals works similarly as the corresponding block for Real signals (see <A HREF="Modelica_Synchronous_RealSignals_Sampler.html#Modelica_Synchronous.RealSignals.Sampler.Hold"
+>RealSignals.Sampler.Hold</a>).
+</p>
+
+<p>
+Analog to the corresponding Real signal block example there exists an elementary
+<A HREF="Modelica_Synchronous_Examples_Elementary_IntegerSignals.html#Modelica_Synchronous.Examples.Elementary.IntegerSignals.Hold"
+>example</a> for this Integer block.
+</p>
+<pre></PRE><P></P>
+Extends from <A HREF="Modelica_Synchronous_IntegerSignals_Interfaces.html#Modelica_Synchronous.IntegerSignals.Interfaces.PartialSISOHold"
+>Modelica_Synchronous.IntegerSignals.Interfaces.PartialSISOHold</A> (Basic block used for zero order hold of Integer signals).
+<P><H3>Parameters</H3><P>
+<TABLE BORDER=1 CELLSPACING=0 CELLPADDING=2>
+<TR><TH>Name</TH><TH>Description</TH></TR>
+<TR><TD>y_start</TD><TD>Value of output y before the first tick of the clock associated to input u</TD></TR>
+</TABLE>
+<P><H3>Connectors</H3><P>
+<TABLE BORDER=1 CELLSPACING=0 CELLPADDING=2>
+<TR><TH>Name</TH><TH>Description</TH></TR>
+<TR><TD>u</TD><TD>Connector of clocked, Integer input signal</TD></TR>
+<TR><TD>y</TD><TD>Connector of continuous-time, Integer output signal</TD></TR>
+</TABLE>
+<!--[if supportFields]><span style='mso-element:field-begin'></span>
+<span style='mso-spacerun:yes'></span>XE SubSample<![endif]-->
+<!--[if supportFields]><span style='mso-element:field-end'></span><![endif]-->
+<H2><IMG SRC="Modelica_Synchronous.Inte7959b009c5b5723fampleI.png" ALT="Modelica_Synchronous.IntegerSignals.Sampler.SubSample" ALIGN=RIGHT BORDER=1 WIDTH=80  HEIGHT=80 >
+<A NAME="Modelica_Synchronous.IntegerSignals.Sampler.SubSample"></A><A HREF="Modelica_Synchronous_IntegerSignals_Sampler.html#Modelica_Synchronous.IntegerSignals.Sampler"
+>Modelica_Synchronous.IntegerSignals.Sampler</A>.SubSample</H2>
+<B>Sub-sample the clocked Integer input signal and provide it as clocked output signal</B><p></P>
+<P></P><H3>Information</H3>
+<PRE></pre>
+<p>
+This block for Integer signals works similarly as the corresponding block for Real signals (see <A HREF="Modelica_Synchronous_RealSignals_Sampler.html#Modelica_Synchronous.RealSignals.Sampler.SubSample"
+>RealSignals.Sampler.SubSample</a>).
+</p>
+<p>
+Analog to the corresponding Real signal block example there exists an elementary <A HREF="Modelica_Synchronous_Examples_Elementary_IntegerSignals.html#Modelica_Synchronous.Examples.Elementary.IntegerSignals.SubSample"
+>example</a> for this Integer block.
+</p>
+<pre></PRE><P></P>
+
+<P><H3>Parameters</H3><P>
+<TABLE BORDER=1 CELLSPACING=0 CELLPADDING=2>
+<TR><TH>Name</TH><TH>Description</TH></TR>
+<TR><TD>inferFactor</TD><TD>= true, if sub-sampling factor is inferred</TD></TR>
+<TR><TD>factor</TD><TD>Sub-sampling factor &gt;= 1 (ignored if inferFactor=true)</TD></TR>
+</TABLE>
+<P><H3>Connectors</H3><P>
+<TABLE BORDER=1 CELLSPACING=0 CELLPADDING=2>
+<TR><TH>Name</TH><TH>Description</TH></TR>
+<TR><TD>u</TD><TD>Connector of clocked, Integer input signal</TD></TR>
+<TR><TD>y</TD><TD>Connector of clocked, Integer output signal (clock of y is slower as clock of u)</TD></TR>
+</TABLE>
+<!--[if supportFields]><span style='mso-element:field-begin'></span>
+<span style='mso-spacerun:yes'></span>XE SuperSample<![endif]-->
+<!--[if supportFields]><span style='mso-element:field-end'></span><![endif]-->
+<H2><IMG SRC="Modelica_Synchronous.Inteee97428868c83547ampleI.png" ALT="Modelica_Synchronous.IntegerSignals.Sampler.SuperSample" ALIGN=RIGHT BORDER=1 WIDTH=80  HEIGHT=80 >
+<A NAME="Modelica_Synchronous.IntegerSignals.Sampler.SuperSample"></A><A HREF="Modelica_Synchronous_IntegerSignals_Sampler.html#Modelica_Synchronous.IntegerSignals.Sampler"
+>Modelica_Synchronous.IntegerSignals.Sampler</A>.SuperSample</H2>
+<B>Super-sample the clocked Integer input signal and provide it as clocked output signal</B><p></P>
+<P></P><H3>Information</H3>
+<PRE></pre>
+<p>
+This block for Integer signals works similarly as the corresponding block for Real signals (see <A HREF="Modelica_Synchronous_RealSignals_Sampler.html#Modelica_Synchronous.RealSignals.Sampler.SuperSample"
+>RealSignals.Sampler.SuperSample</a>).
+</p>
+<p>
+Analog to the corresponding Real signal block example there exists an elementary <A HREF="Modelica_Synchronous_Examples_Elementary_IntegerSignals.html#Modelica_Synchronous.Examples.Elementary.IntegerSignals.SuperSample"
+>example</a> for this Integer block.
+</p>
+<pre></PRE><P></P>
+
+<P><H3>Parameters</H3><P>
+<TABLE BORDER=1 CELLSPACING=0 CELLPADDING=2>
+<TR><TH>Name</TH><TH>Description</TH></TR>
+<TR><TD>inferFactor</TD><TD>= true, if super-sampling factor is inferred</TD></TR>
+<TR><TD>factor</TD><TD>Super-sampling factor &gt;= 1 (ignored if inferFactor=true)</TD></TR>
+</TABLE>
+<P><H3>Connectors</H3><P>
+<TABLE BORDER=1 CELLSPACING=0 CELLPADDING=2>
+<TR><TH>Name</TH><TH>Description</TH></TR>
+<TR><TD>u</TD><TD>Connector of clocked, Integer input signal</TD></TR>
+<TR><TD>y</TD><TD>Connector of clocked, Integer output signal (clock of y is faster as clock of u)</TD></TR>
+</TABLE>
+<!--[if supportFields]><span style='mso-element:field-begin'></span>
+<span style='mso-spacerun:yes'></span>XE ShiftSample<![endif]-->
+<!--[if supportFields]><span style='mso-element:field-end'></span><![endif]-->
+<H2><IMG SRC="Modelica_Synchronous.Inte5e0320d7e8cb8c5eampleI.png" ALT="Modelica_Synchronous.IntegerSignals.Sampler.ShiftSample" ALIGN=RIGHT BORDER=1 WIDTH=80  HEIGHT=80 >
+<A NAME="Modelica_Synchronous.IntegerSignals.Sampler.ShiftSample"></A><A HREF="Modelica_Synchronous_IntegerSignals_Sampler.html#Modelica_Synchronous.IntegerSignals.Sampler"
+>Modelica_Synchronous.IntegerSignals.Sampler</A>.ShiftSample</H2>
+<B>Shift the clocked Integer input signal by a fraction of the last interval and and provide it as clocked output signal</B><p></P>
+<P></P><H3>Information</H3>
+<PRE></pre>
+<p>
+This block for Integer signals works similarly as the corresponding block for Real signals (see <A HREF="Modelica_Synchronous_RealSignals_Sampler.html#Modelica_Synchronous.RealSignals.Sampler.ShiftSample"
+>RealSignals.Sampler.ShiftSample</a>).
+</p>
+<p>
+Analog to the corresponding Real signal block example there exists an elementary <A HREF="Modelica_Synchronous_Examples_Elementary_IntegerSignals.html#Modelica_Synchronous.Examples.Elementary.IntegerSignals.ShiftSample"
+>example</a> for this Integer block.
+</p>
+<pre></PRE><P></P>
+
+<P><H3>Parameters</H3><P>
+<TABLE BORDER=1 CELLSPACING=0 CELLPADDING=2>
+<TR><TH>Name</TH><TH>Description</TH></TR>
+<TR bgcolor="#e0e0e0"><TD colspan=2>Shift first clock activation for &#39;shiftCounter/resolution*interval(u)&#39; seconds</TD></TR>
+<TR><TD>shiftCounter</TD><TD>Numerator of shifting formula</TD></TR>
+<TR><TD>resolution</TD><TD>Denominator of shifting formula</TD></TR>
+</TABLE>
+<P><H3>Connectors</H3><P>
+<TABLE BORDER=1 CELLSPACING=0 CELLPADDING=2>
+<TR><TH>Name</TH><TH>Description</TH></TR>
+<TR><TD>u</TD><TD>Connector of clocked, Integer input signal</TD></TR>
+<TR><TD>y</TD><TD>Connector of clocked, Integer output signal</TD></TR>
+</TABLE>
+<!--[if supportFields]><span style='mso-element:field-begin'></span>
+<span style='mso-spacerun:yes'></span>XE BackSample<![endif]-->
+<!--[if supportFields]><span style='mso-element:field-end'></span><![endif]-->
+<H2><IMG SRC="Modelica_Synchronous.Intee628c40ed26242bbampleI.png" ALT="Modelica_Synchronous.IntegerSignals.Sampler.BackSample" ALIGN=RIGHT BORDER=1 WIDTH=80  HEIGHT=80 >
+<A NAME="Modelica_Synchronous.IntegerSignals.Sampler.BackSample"></A><A HREF="Modelica_Synchronous_IntegerSignals_Sampler.html#Modelica_Synchronous.IntegerSignals.Sampler"
+>Modelica_Synchronous.IntegerSignals.Sampler</A>.BackSample</H2>
+<B>Shift clock of Integer input signal backwards in time (and access the most recent value of the input at this new clock)</B><p></P>
+<P></P><H3>Information</H3>
+<PRE></pre>
+<p>
+This block for Integer signals works similarly as the corresponding block for Real signals (see <A HREF="Modelica_Synchronous_RealSignals_Sampler.html#Modelica_Synchronous.RealSignals.Sampler.BackSample"
+>RealSignals.Sampler.BackSample</a>).
+</p>
+<p>
+Analog to the corresponding Real signal block example there exists an elementary <A HREF="Modelica_Synchronous_Examples_Elementary_IntegerSignals.html#Modelica_Synchronous.Examples.Elementary.IntegerSignals.BackSample"
+>example</a> for this Integer block.
+</p>
+<pre></PRE><P></P>
+
+<P><H3>Parameters</H3><P>
+<TABLE BORDER=1 CELLSPACING=0 CELLPADDING=2>
+<TR><TH>Name</TH><TH>Description</TH></TR>
+<TR><TD>y_start</TD><TD>Value of output y before the first clock tick of the input u</TD></TR>
+<TR bgcolor="#e0e0e0"><TD colspan=2>Shift first clock activation backwards in time for &#39;shiftCounter/resolution*interval(u)&#39; seconds</TD></TR>
+<TR><TD>backCounter</TD><TD>Numerator of shifting formula</TD></TR>
+<TR><TD>resolution</TD><TD>Denominator of shifting formula</TD></TR>
+</TABLE>
+<P><H3>Connectors</H3><P>
+<TABLE BORDER=1 CELLSPACING=0 CELLPADDING=2>
+<TR><TH>Name</TH><TH>Description</TH></TR>
+<TR><TD>u</TD><TD>Connector of clocked, Integer input signal</TD></TR>
+<TR><TD>y</TD><TD>Connector of clocked, Integer output signal (clock of y is faster als clock of u)</TD></TR>
+</TABLE>
+<!--[if supportFields]><span style='mso-element:field-begin'></span>
+<span style='mso-spacerun:yes'></span>XE AssignClock<![endif]-->
+<!--[if supportFields]><span style='mso-element:field-end'></span><![endif]-->
+<H2><IMG SRC="Modelica_Synchronous.Intee94b9b0650a00bccClockI.png" ALT="Modelica_Synchronous.IntegerSignals.Sampler.AssignClock" ALIGN=RIGHT BORDER=1 WIDTH=80  HEIGHT=80 >
+<A NAME="Modelica_Synchronous.IntegerSignals.Sampler.AssignClock"></A><A HREF="Modelica_Synchronous_IntegerSignals_Sampler.html#Modelica_Synchronous.IntegerSignals.Sampler"
+>Modelica_Synchronous.IntegerSignals.Sampler</A>.AssignClock</H2>
+<B>Assigns a clock to a clocked Integer signal</B><p></P>
+<P></P><H3>Information</H3>
+<PRE></pre>
+<p>
+This block for Integer signals works similarly as the corresponding block for Real signals (see <A HREF="Modelica_Synchronous_RealSignals_Sampler.html#Modelica_Synchronous.RealSignals.Sampler.AssignClock"
+>RealSignals.Sampler.AssignClock</a>).
+</p>
+<p>
+Analog to the corresponding Real signal block example there exists an elementary <A HREF="Modelica_Synchronous_Examples_Elementary_IntegerSignals.html#Modelica_Synchronous.Examples.Elementary.IntegerSignals.AssignClock"
+>example</a> for this Integer block.
+</p>
+<pre></PRE><P></P>
+
+<P><H3>Connectors</H3><P>
+<TABLE BORDER=1 CELLSPACING=0 CELLPADDING=2>
+<TR><TH>Name</TH><TH>Description</TH></TR>
+<TR><TD>u</TD><TD>Connector of clocked, Integer input signal</TD></TR>
+<TR><TD>y</TD><TD>Connector of clocked, Integer output signal</TD></TR>
+<TR><TD>clock</TD><TD>&nbsp;</TD></TR>
+</TABLE>
+<!--[if supportFields]><span style='mso-element:field-begin'></span>
+<span style='mso-spacerun:yes'></span>XE AssignClockVectorized<![endif]-->
+<!--[if supportFields]><span style='mso-element:field-end'></span><![endif]-->
+<H2><IMG SRC="Modelica_Synchronous.Intee94b9b0650a00bccClockI.png" ALT="Modelica_Synchronous.IntegerSignals.Sampler.AssignClockVectorized" ALIGN=RIGHT BORDER=1 WIDTH=80  HEIGHT=80 >
+<A NAME="Modelica_Synchronous.IntegerSignals.Sampler.AssignClockVectorized"></A><A HREF="Modelica_Synchronous_IntegerSignals_Sampler.html#Modelica_Synchronous.IntegerSignals.Sampler"
+>Modelica_Synchronous.IntegerSignals.Sampler</A>.AssignClockVectorized</H2>
+<B>Assigns a clock to a clocked Integer signal vector</B><p></P>
+<P></P><H3>Information</H3>
+<PRE></pre>
+<p>
+This block for Integer signals works similarly as the corresponding block for Real signals (see <A HREF="Modelica_Synchronous_RealSignals_Sampler.html#Modelica_Synchronous.RealSignals.Sampler.AssignClockVectorized"
+>RealSignals.Sampler.AssignClockVectorized</a>).
+</p>
+<p>
+Analog to the corresponding Real signal block example there exists an elementary <A HREF="Modelica_Synchronous_Examples_Elementary_IntegerSignals.html#Modelica_Synchronous.Examples.Elementary.IntegerSignals.AssignClockVectorized"
+>example</a> for this Integer block.
+</p>
+<pre></PRE><P></P>
+
+<P><H3>Parameters</H3><P>
+<TABLE BORDER=1 CELLSPACING=0 CELLPADDING=2>
+<TR><TH>Name</TH><TH>Description</TH></TR>
+<TR><TD>n</TD><TD>Size of input signal vector u (= size of output signal vector y)</TD></TR>
+</TABLE>
+<P><H3>Connectors</H3><P>
+<TABLE BORDER=1 CELLSPACING=0 CELLPADDING=2>
+<TR><TH>Name</TH><TH>Description</TH></TR>
+<TR><TD>u[n]</TD><TD>Connector of clocked, Integer input signal</TD></TR>
+<TR><TD>y[n]</TD><TD>Connector of clocked, Integer output signal</TD></TR>
+<TR><TD>clock</TD><TD>&nbsp;</TD></TR>
+</TABLE>
+<address><a href="http://www.3ds.com/">Automatically generated</a> Mon Oct 28 10:26:06 2013.
+</address></BODY>
+</HTML>

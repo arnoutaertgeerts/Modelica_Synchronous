@@ -1,0 +1,140 @@
+<HTML>
+<HEAD>
+<TITLE>Modelica_Synchronous.Examples.CascadeControlledDrive</TITLE>
+<META name="HTML-Generator" content="Dymola">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<META name="description" content="&quot;Examples based on a simple drive with cascade controller and different ways to define the sampling and super-sampling&quot;">
+<style type="text/css">
+*       { font-size: 10pt; font-family: Arial,sans-serif; }
+pre     { font-size:  9pt; font-family: Courier,monospace;}
+h4      { font-size: 10pt; font-weight: bold; color: green; }
+h3      { font-size: 11pt; font-weight: bold; color: green; }
+h2      { font-size: 13pt; font-weight: bold; color: green; }
+address {                  font-weight: normal} 
+td      { solid #000; vertical-align:top; }
+th      { solid #000; vertical-align:top; font-weight: bold; }
+table   { solid #000; border-collapse: collapse;}
+</style>
+</HEAD>
+<BODY><P></P>
+<!--[if supportFields]><span style='mso-element:field-begin'></span>
+<span style='mso-spacerun:yes'></span>XE CascadeControlledDrive<![endif]-->
+<!--[if supportFields]><span style='mso-element:field-end'></span><![endif]-->
+<H2><A NAME="Modelica_Synchronous.Examples.CascadeControlledDrive"></A><A HREF="Modelica_Synchronous_Examples.html#Modelica_Synchronous.Examples"
+>Modelica_Synchronous.Examples</A>.CascadeControlledDrive</H2>
+<B>Examples based on a simple drive with cascade controller and different ways to define the sampling and super-sampling</B>
+<P></P>
+<P></P><H3>Information</H3>
+<PRE></pre>
+<p>
+This package shows the same example in different variants.
+</p>
+
+<p>
+Model <A HREF="Modelica_Synchronous_Examples_CascadeControlledDrive.html#Modelica_Synchronous.Examples.CascadeControlledDrive.Continuous"
+>CascadeControlledDrive.Continuous</a>
+is the <b>continuous-time</b> model from which the sampled-data versions are derived.
+The "CascadeControlledDrive" example adds another position control cascade to the
+<A HREF="Modelica_Synchronous_Examples_SimpleControlledDrive.html#Modelica_Synchronous.Examples.SimpleControlledDrive"
+>SimpleControlledDrive</a>
+example. This model demonstrates a control system with two cascaded control loops.
+The goal is to control the angle of the load inertia.
+</p>
+
+<p>
+The other example models under this package show different variants how
+the continuous-time model from above can be transformed to a periodic sampled-data
+system with two sample periods, where the two discrete-time controllers are
+precisely time-synchronized to each other.
+</p>
+<pre></PRE><P></P>
+Extends from Modelica.Icons.ExamplesPackage (Icon for packages containing runnable examples).
+<P></P><H3>Package Content</H3>
+<TABLE BORDER=1 CELLSPACING=0 CELLPADDING=2 >
+<TR><TH >Name</TH><TH>Description</TH></TR>
+<TR><TD><IMG SRC="Modelica_Synchronous.Exam3833e21a33b478aanuousS.png" ALT="Modelica_Synchronous.Examples.CascadeControlledDrive.Continuous" WIDTH=20  HEIGHT=20 ALIGN = TOP >&nbsp;<A HREF="Modelica_Synchronous_Examples_CascadeControlledDrive.html#Modelica_Synchronous.Examples.CascadeControlledDrive.Continuous"
+>Continuous</A>
+</TD><TD>Drive with continuous-time cascade controller</TD></TR>
+<TR><TD><IMG SRC="Modelica_Synchronous.Exam3833e21a33b478aanuousS.png" ALT="Modelica_Synchronous.Examples.CascadeControlledDrive.SubClocked" WIDTH=20  HEIGHT=20 ALIGN = TOP >&nbsp;<A HREF="Modelica_Synchronous_Examples_CascadeControlledDrive.html#Modelica_Synchronous.Examples.CascadeControlledDrive.SubClocked"
+>SubClocked</A>
+</TD><TD>Drive with clocked cascade controller where clocks are defined with sub-sampling and partitions with super-sampling</TD></TR>
+<TR><TD><IMG SRC="Modelica_Synchronous.Exam3833e21a33b478aanuousS.png" ALT="Modelica_Synchronous.Examples.CascadeControlledDrive.SuperSampled" WIDTH=20  HEIGHT=20 ALIGN = TOP >&nbsp;<A HREF="Modelica_Synchronous_Examples_CascadeControlledDrive.html#Modelica_Synchronous.Examples.CascadeControlledDrive.SuperSampled"
+>SuperSampled</A>
+</TD><TD>Drive with clocked cascade controller where fastest partition is defined with a clock and slower partition is defined with super-sampling</TD></TR>
+<TR><TD><IMG SRC="Modelica_Synchronous.Exam3833e21a33b478aanuousS.png" ALT="Modelica_Synchronous.Examples.CascadeControlledDrive.AbsoluteClocks" WIDTH=20  HEIGHT=20 ALIGN = TOP >&nbsp;<A HREF="Modelica_Synchronous_Examples_CascadeControlledDrive.html#Modelica_Synchronous.Examples.CascadeControlledDrive.AbsoluteClocks"
+>AbsoluteClocks</A>
+</TD><TD>Drive with clocked cascade controller where all partitions are defined with exact (integer) clock that need to be compatible to each other</TD></TR>
+</TABLE>
+<!--[if supportFields]><span style='mso-element:field-begin'></span>
+<span style='mso-spacerun:yes'></span>XE Continuous<![endif]-->
+<!--[if supportFields]><span style='mso-element:field-end'></span><![endif]-->
+<H2><IMG SRC="Modelica_Synchronous.Exam3186665ac77520e0nuousI.png" ALT="Modelica_Synchronous.Examples.CascadeControlledDrive.Continuous" ALIGN=RIGHT BORDER=1 WIDTH=80  HEIGHT=80 >
+<A NAME="Modelica_Synchronous.Examples.CascadeControlledDrive.Continuous"></A><A HREF="Modelica_Synchronous_Examples_CascadeControlledDrive.html#Modelica_Synchronous.Examples.CascadeControlledDrive"
+>Modelica_Synchronous.Examples.CascadeControlledDrive</A>.Continuous</H2>
+<B>Drive with continuous-time cascade controller</B><p></P>
+<P></P><H3>Information</H3>
+<PRE></pre>
+<p>
+Original cascade controlled drive with a
+<b>continuous-time</b> controller.
+</p>
+<pre></PRE><P></P>
+Extends from Modelica.Icons.Example (Icon for runnable examples).
+<!--[if supportFields]><span style='mso-element:field-begin'></span>
+<span style='mso-spacerun:yes'></span>XE SubClocked<![endif]-->
+<!--[if supportFields]><span style='mso-element:field-end'></span><![endif]-->
+<H2><IMG SRC="Modelica_Synchronous.Exam3186665ac77520e0nuousI.png" ALT="Modelica_Synchronous.Examples.CascadeControlledDrive.SubClocked" ALIGN=RIGHT BORDER=1 WIDTH=80  HEIGHT=80 >
+<A NAME="Modelica_Synchronous.Examples.CascadeControlledDrive.SubClocked"></A><A HREF="Modelica_Synchronous_Examples_CascadeControlledDrive.html#Modelica_Synchronous.Examples.CascadeControlledDrive"
+>Modelica_Synchronous.Examples.CascadeControlledDrive</A>.SubClocked</H2>
+<B>Drive with clocked cascade controller where clocks are defined with sub-sampling and partitions with super-sampling</B><p></P>
+<P></P><H3>Information</H3>
+<PRE></pre>
+<p>
+Cascade control drive with discrete-time controller where one
+periodic clock is defined, the second periodic clock is derived by
+sub-sampling of the first clock, and both clocks are associated to
+the corresponding controller partitions.
+The super-sampling factor of block "super" is derived by
+clock inference.
+</p>
+<pre></PRE><P></P>
+Extends from Modelica.Icons.Example (Icon for runnable examples).
+<!--[if supportFields]><span style='mso-element:field-begin'></span>
+<span style='mso-spacerun:yes'></span>XE SuperSampled<![endif]-->
+<!--[if supportFields]><span style='mso-element:field-end'></span><![endif]-->
+<H2><IMG SRC="Modelica_Synchronous.Exam3186665ac77520e0nuousI.png" ALT="Modelica_Synchronous.Examples.CascadeControlledDrive.SuperSampled" ALIGN=RIGHT BORDER=1 WIDTH=80  HEIGHT=80 >
+<A NAME="Modelica_Synchronous.Examples.CascadeControlledDrive.SuperSampled"></A><A HREF="Modelica_Synchronous_Examples_CascadeControlledDrive.html#Modelica_Synchronous.Examples.CascadeControlledDrive"
+>Modelica_Synchronous.Examples.CascadeControlledDrive</A>.SuperSampled</H2>
+<B>Drive with clocked cascade controller where fastest partition is defined with a clock and slower partition is defined with super-sampling</B><p></P>
+<P></P><H3>Information</H3>
+<PRE></pre>
+<p>
+Cascade control drive with discrete-time controller where one
+periodic clock is defined for the fastest control loop,
+and the periodic clock of the slower control loop is implicitly
+defined by the super-sampling factor defined at the "super" block.
+</p>
+<pre></PRE><P></P>
+Extends from Modelica.Icons.Example (Icon for runnable examples).
+<!--[if supportFields]><span style='mso-element:field-begin'></span>
+<span style='mso-spacerun:yes'></span>XE AbsoluteClocks<![endif]-->
+<!--[if supportFields]><span style='mso-element:field-end'></span><![endif]-->
+<H2><IMG SRC="Modelica_Synchronous.Exam3186665ac77520e0nuousI.png" ALT="Modelica_Synchronous.Examples.CascadeControlledDrive.AbsoluteClocks" ALIGN=RIGHT BORDER=1 WIDTH=80  HEIGHT=80 >
+<A NAME="Modelica_Synchronous.Examples.CascadeControlledDrive.AbsoluteClocks"></A><A HREF="Modelica_Synchronous_Examples_CascadeControlledDrive.html#Modelica_Synchronous.Examples.CascadeControlledDrive"
+>Modelica_Synchronous.Examples.CascadeControlledDrive</A>.AbsoluteClocks</H2>
+<B>Drive with clocked cascade controller where all partitions are defined with exact (integer) clock that need to be compatible to each other</B><p></P>
+<P></P><H3>Information</H3>
+<PRE></pre>
+<p>
+Cascade control drive with discrete-time controller where two
+periodic clock with absolute periods are defined and
+are associated to
+the corresponding controller partitions.
+The super-sampling factor of block "super" is derived by
+clock inference.
+</p>
+<pre></PRE><P></P>
+Extends from Modelica.Icons.Example (Icon for runnable examples).
+<address><a href="http://www.3ds.com/">Automatically generated</a> Mon Oct 28 10:26:05 2013.
+</address></BODY>
+</HTML>

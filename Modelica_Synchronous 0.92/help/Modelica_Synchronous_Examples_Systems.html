@@ -1,0 +1,289 @@
+<HTML>
+<HEAD>
+<TITLE>Modelica_Synchronous.Examples.Systems</TITLE>
+<META name="HTML-Generator" content="Dymola">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<META name="description" content="&quot;Examples of complete systems&quot;">
+<style type="text/css">
+*       { font-size: 10pt; font-family: Arial,sans-serif; }
+pre     { font-size:  9pt; font-family: Courier,monospace;}
+h4      { font-size: 10pt; font-weight: bold; color: green; }
+h3      { font-size: 11pt; font-weight: bold; color: green; }
+h2      { font-size: 13pt; font-weight: bold; color: green; }
+address {                  font-weight: normal} 
+td      { solid #000; vertical-align:top; }
+th      { solid #000; vertical-align:top; font-weight: bold; }
+table   { solid #000; border-collapse: collapse;}
+</style>
+</HEAD>
+<BODY><P></P>
+<!--[if supportFields]><span style='mso-element:field-begin'></span>
+<span style='mso-spacerun:yes'></span>XE Systems<![endif]-->
+<!--[if supportFields]><span style='mso-element:field-end'></span><![endif]-->
+<H2><A NAME="Modelica_Synchronous.Examples.Systems"></A><A HREF="Modelica_Synchronous_Examples.html#Modelica_Synchronous.Examples"
+>Modelica_Synchronous.Examples</A>.Systems</H2>
+<B>Examples of complete systems</B>
+<P></P>
+<P></P><H3>Information</H3>
+<PRE></pre>
+<p>
+This package contains complete <b>system models</b> of
+simplified realistic applications.
+</p>
+<pre></PRE><P></P>
+Extends from Modelica.Icons.ExamplesPackage (Icon for packages containing runnable examples).
+<P></P><H3>Package Content</H3>
+<TABLE BORDER=1 CELLSPACING=0 CELLPADDING=2 >
+<TR><TH >Name</TH><TH>Description</TH></TR>
+<TR><TD><IMG SRC="Modelica_Synchronous.Exam3833e21a33b478aanuousS.png" ALT="Modelica_Synchronous.Examples.Systems.ControlledMixingUnit" WIDTH=20  HEIGHT=20 ALIGN = TOP >&nbsp;<A HREF="Modelica_Synchronous_Examples_Systems.html#Modelica_Synchronous.Examples.Systems.ControlledMixingUnit"
+>ControlledMixingUnit</A>
+</TD><TD>Simple example of a mixing unit where a (discretized) nonlinear inverse plant model is used as feedforward controller</TD></TR>
+<TR><TD><IMG SRC="Modelica_Synchronous.Exam3833e21a33b478aanuousS.png" ALT="Modelica_Synchronous.Examples.Systems.EngineThrottleControl" WIDTH=20  HEIGHT=20 ALIGN = TOP >&nbsp;<A HREF="Modelica_Synchronous_Examples_Systems.html#Modelica_Synchronous.Examples.Systems.EngineThrottleControl"
+>EngineThrottleControl</A>
+</TD><TD>&nbsp;</TD></TR>
+<TR><TD><IMG SRC="Modelica_Synchronous.Exam3a4af3111aa28f72itiesS.png" ALT="Modelica_Synchronous.Examples.Systems.Utilities" WIDTH=20  HEIGHT=20 ALIGN = TOP >&nbsp;<A HREF="Modelica_Synchronous_Examples_Systems_Utilities.html#Modelica_Synchronous.Examples.Systems.Utilities"
+>Utilities</A>
+</TD><TD>&nbsp;</TD></TR>
+</TABLE>
+<!--[if supportFields]><span style='mso-element:field-begin'></span>
+<span style='mso-spacerun:yes'></span>XE ControlledMixingUnit<![endif]-->
+<!--[if supportFields]><span style='mso-element:field-end'></span><![endif]-->
+<H2><IMG SRC="Modelica_Synchronous.Exam1a189fedd537705cgUnitI.png" ALT="Modelica_Synchronous.Examples.Systems.ControlledMixingUnit" ALIGN=RIGHT BORDER=1 WIDTH=80  HEIGHT=80 >
+<A NAME="Modelica_Synchronous.Examples.Systems.ControlledMixingUnit"></A><A HREF="Modelica_Synchronous_Examples_Systems.html#Modelica_Synchronous.Examples.Systems"
+>Modelica_Synchronous.Examples.Systems</A>.ControlledMixingUnit</H2>
+<B>Simple example of a mixing unit where a (discretized) nonlinear inverse plant model is used as feedforward controller</B><p></P>
+<P></P><H3>Information</H3>
+<PRE></pre>
+<p>
+Since a long time, Modelica is used to model advanced nonlinear control systems.
+Especially, Modelica allows a semi-automatic treatment of inverse nonlinear
+plant models. In the fundamental article (Looye et.al. 2005, see
+<A HREF="Modelica_Synchronous_UsersGuide.html#Modelica_Synchronous.UsersGuide.Literature"
+>Literature</a> or
+<a href="https://www.modelica.org/events/Conference2005/online_proceedings/Session3/Session3c3.pdf">Download</a>)
+this approach is described and several controller structures are presented to
+utilize an inverse plant model in the controller. This approach is attractive
+because it results in a systematic procedure to design a controller for the
+whole operating range of a plant. This is in contrast to standard controller
+design techniques that usually design a linear controller for a plant model
+that is linearized at a specific operating point. Therefore the operating range of such controllers is inherently limited.
+</p>
+
+<p>
+Up to Modelica 3.2, controllers with inverse plant models can only be
+defined as continuous-time systems. Via the export mechanism of a Modelica tool
+they could be exported with solvers embedded in the code and then used as
+sampled data system in other environments. However, it is not possible
+to re-import the sampled data system to Modelica.
+</p>
+
+<p>
+The synchronous features of Modelica 3.3 together with the
+Modelica_Synchronous library offer now completely new possibilities,
+so that the inverse model can be designed and evaluated as sampled data
+system within Modelica and a Modelica simulation environment.
+This approach is shown at hand of a simple example using
+a nonlinear plant model of a
+mixing unit (F&ouml;llinger O. (1998): Nichtlineare Regelungen I,
+Oldenbourg Verlag, 8. Auflage, page 279) and utilizing this plant
+model as nonlinear feed-forward controller according to (Looye et.al. 2005):
+</p>
+
+<p>
+A substance A is flowing continuously into a mixing reactor.
+Due to a catalyst, the substance reacts and splits into several base
+substances that are continuously removed. The reaction generates
+energy and therefore the reactor is cooled with a cooling medium.
+The cooling temperature T_c(t) in [K] is the primary actuation signal.
+Substance A is described by its concentration c(t) in [mol/l] and
+its temperature T(t) in [K].
+The concentration c(t) is the signal to be primarily controlled
+and the temperature T(t) is the signal that is measured.
+These equations are collected together in input/output block
+<A HREF="Modelica_Synchronous_Examples_Systems_Utilities_ComponentsMixingUnit.html#Modelica_Synchronous.Examples.Systems.Utilities.ComponentsMixingUnit.MixingUnit"
+>Utilities.ComponentsMixingUnit.MixingUnit</a>.
+</p>
+
+<p>
+<img src="../Resources/Images/Examples/ControlledMixingUnit_PlantModel.png">
+</p>
+
+<p>
+The design of the control system proceeds now in the following steps:
+</p>
+
+<h4>Pre-Filter</h4>
+<p>
+Inverting a model usually means that equations need to be symbolically
+differentiated and that higher derivatives of the inputs are needed
+(that are usually not available). One approach is to filter the inputs,
+so that a Modelica tool can determine the derivatives of the filtered
+input from the filter states. The minimum needed filter order is determined
+by first inverting the continuous-time plant model from the variable
+to be primarily controlled (here: "c") to the actuator input
+(here: "T_c"). This is performed with the help of block
+Modelica.Blocks.Math.InverseBlockConstraints</a>
+that allows connecting an external input to an output
+in the pre-filter design block
+<A HREF="Modelica_Synchronous_Examples_Systems_Utilities_ComponentsMixingUnit.html#Modelica_Synchronous.Examples.Systems.Utilities.ComponentsMixingUnit.FilterOrder"
+>Utilities.ComponentsMixingUnit.FilterOrder</a>:
+</p>
+
+<p>
+<img src="../Resources/Images/Examples/ControlledMixingUnit_FilterDesign.png">
+</p>
+
+
+<p>
+Translating this
+model will generate the continuous-time inverse plant model.
+However, a Modelica tool will give an error message that it
+has to differentiate the model, but this requires the
+<b>second derivative</b> of the external input c_ref and this derivative
+is not available. The conclusion is that a low pass filter of at
+least second order has to be connected between c_ref and c, for example
+Modelica.Blocks.Continuous.Filter</a>. Only filter types should be used that do not have "vibrations" in the time domain for
+a step input. Therefore, parameter <b>analogFilter</b> of the component should be
+selected as <b>CriticalDamping</b> (= only real poles), or
+<b>Bessel</b> (= nearly no vibrations, but steeper frequency response as
+CriticalDamping). The cut-off frequency <b>f_cut</b> is manually
+selected by simulations of the closed loop system. In the example,
+a CriticalDamping filter of third order (the third order is selected to
+get smoother signals) and a cut-off frequency of 1/300 Hz is used.
+</p>
+
+<h4>Design of Controller</h4>
+<p>
+The controller for the mixing unit is shown in the diagram layer of block
+at hand, as
+well as in the following figure:
+</p>
+
+<p>
+<img src="../Resources/Images/Examples/ControlledMixingUnit_Controller.png">
+</p>
+
+It consists of the filter discussed above. The input to the filter is the reference
+concentration which is filtered by the low pass filter. The output of the filter
+is used as input to the concentration c in the inverse plant model.
+This model computes the desired cooling temperature T_c (which is used
+as desired cooling temperature at the output of the controller)
+and the desired temperature T (which is used as desired value for
+the feedback controller). This part of the control system is the
+"feed-forward" part that computes the desired actuator signal.
+As feedback controller a simple P-Controller with one gain is used.
+</p>
+
+<p>
+This controller could be defined as continuous-time system in previous Modelica
+versions. However, with Modelica 3.3 it is now also possible to define the
+controller as sampled data system. For this, the two inputs are sampled
+(sample1 and sample2) and the actuator output is hold (hold1).
+The controller partition is then associated with a periodic clock
+(via sample2) that has a sample period of 1 s and a
+solverMethod = "ExplicitEuler". Since the controller partition is a
+continuous-time system, it is discretized and solved with an explicit
+Euler method at every clock tick (by integrating from the previous to
+the actual time instant of the clock).
+</p>
+
+<h4>Simulation Results</h4>
+<p>
+The controller works perfectly if the same parameters for the plant
+and the inverse plant model are used (follows perfectly the filtered reference
+concentration). Changing all parameters of the inverse plant model by 50 %
+(with exception of parameter <b>e</b> since the plant is very sensitive to it)
+still results in a reasonable control behavior as shown in the next two figures:
+</p>
+
+<p>
+<img src="../Resources/Images/Examples/ControlledMixingUnit_Result.png">
+</p>
+
+<p>
+The green curve in the upper window is the (clocked) output of the filter,
+that is, it is the desired concentration. The red curve in the upper window is the
+concentration of model mixingUnit, which is the concentration in the plant.
+Obviously, the concentration follows reasonably well the desired one. By using a more involved feedback controller, the control error could be substantially reduced.
+</p>
+<pre></PRE><P></P>
+Extends from Modelica.Icons.Example (Icon for runnable examples).
+<P><H3>Parameters</H3><P>
+<TABLE BORDER=1 CELLSPACING=0 CELLPADDING=2>
+<TR><TH>Name</TH><TH>Description</TH></TR>
+<TR><TD>freq</TD><TD>Critical frequency of filter [Hz]</TD></TR>
+<TR><TD>c0</TD><TD>Nominal concentration [mol/l]</TD></TR>
+<TR><TD>T0</TD><TD>Nominal temperature [K]</TD></TR>
+<TR><TD>a1_inv</TD><TD>&nbsp;</TD></TR>
+<TR><TD>a21_inv</TD><TD>&nbsp;</TD></TR>
+<TR><TD>a22_inv</TD><TD>&nbsp;</TD></TR>
+<TR><TD>b_inv</TD><TD>&nbsp;</TD></TR>
+<TR><TD>k0_inv</TD><TD>&nbsp;</TD></TR>
+<TR><TD>eps</TD><TD>&nbsp;</TD></TR>
+<TR><TD>x10</TD><TD>&nbsp;</TD></TR>
+<TR><TD>x10_inv</TD><TD>&nbsp;</TD></TR>
+<TR><TD>x20</TD><TD>&nbsp;</TD></TR>
+<TR><TD>u0</TD><TD>&nbsp;</TD></TR>
+<TR><TD>pro</TD><TD>Deviations of plant to inverse plant parameters</TD></TR>
+</TABLE>
+<!--[if supportFields]><span style='mso-element:field-begin'></span>
+<span style='mso-spacerun:yes'></span>XE EngineThrottleControl<![endif]-->
+<!--[if supportFields]><span style='mso-element:field-end'></span><![endif]-->
+<H2><IMG SRC="Modelica_Synchronous.Exam1a189fedd537705cgUnitI.png" ALT="Modelica_Synchronous.Examples.Systems.EngineThrottleControl" ALIGN=RIGHT BORDER=1 WIDTH=80  HEIGHT=80 >
+<A NAME="Modelica_Synchronous.Examples.Systems.EngineThrottleControl"></A><A HREF="Modelica_Synchronous_Examples_Systems.html#Modelica_Synchronous.Examples.Systems"
+>Modelica_Synchronous.Examples.Systems</A>.EngineThrottleControl</H2>
+<P></P><H3>Information</H3>
+<PRE></pre>
+<p>
+This example shows how to model a non-periodic synchronous sampled data systems
+with the Modelica_Synchronous library.
+This is demonstrated at hand of a closed-loop throttle control synchronized
+to the crankshaft angle of an internal combustion engine.
+This system has the following properties:
+</p>
+
+<ul>
+<li> Engine speed is regulated with a throttle actuator.</li>
+<li> Controller execution is synchronized with the engine crankshaft angle.</li>
+<li> The influence of disturbances, such as a change in load torque, is reduced.</li>
+</ul>
+
+<p>
+The complete system is shown in the diagram layer and in the figure below:
+</p>
+
+<p>
+<img src="../Resources/Images/Examples/EngineThrottleControl_Model.png">
+</p>
+
+<p>
+Block speedControl is the discrete control system. The boundaries of this controller
+are defined by sample1 and hold1. A special element triggeredSpeed
+has the crankshaft angle as input and provides the sampled crankshaft
+speed as output. Additionally, the clock associated with the output
+(and therefore also to component speedControl) ticks, at every 180 degree
+rotation of the crankshaft angle. This special application is implemented
+in the text layer of component
+<A HREF="Modelica_Synchronous_Examples_Systems_Utilities_ComponentsThrottleControl.html#Modelica_Synchronous.Examples.Systems.Utilities.ComponentsThrottleControl.CrankshaftPositionEvent"
+>triggeredSpeed</a> as:
+</p>
+
+<pre>
+ N = der(angle);
+ when Clock(angle >= hold(offset)+Modelica.Constants.pi) then
+      offset = sample(angle);
+     N_clocked = sample(N);
+ end when;
+</pre>
+
+<p>
+Here, N is the derivative of the crankshaft angle. Whenever this angle becomes
+larger as 180 degree an event clock is activated due to Clock(..).
+In such a case the when-clause becomes active, and the speed N is sampled,
+and the new offset for the next event is computed.
+</p>
+<pre></PRE><P></P>
+Extends from Modelica.Icons.Example (Icon for runnable examples).
+<address><a href="http://www.3ds.com/">Automatically generated</a> Mon Oct 28 10:26:05 2013.
+</address></BODY>
+</HTML>

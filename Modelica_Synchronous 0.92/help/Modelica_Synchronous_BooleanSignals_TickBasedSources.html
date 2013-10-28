@@ -1,0 +1,123 @@
+<HTML>
+<HEAD>
+<TITLE>Modelica_Synchronous.BooleanSignals.TickBasedSources</TITLE>
+<META name="HTML-Generator" content="Dymola">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<META name="description" content="&quot;Package of signal source blocks generating clocked tick/sample based Boolean signals&quot;">
+<style type="text/css">
+*       { font-size: 10pt; font-family: Arial,sans-serif; }
+pre     { font-size:  9pt; font-family: Courier,monospace;}
+h4      { font-size: 10pt; font-weight: bold; color: green; }
+h3      { font-size: 11pt; font-weight: bold; color: green; }
+h2      { font-size: 13pt; font-weight: bold; color: green; }
+address {                  font-weight: normal} 
+td      { solid #000; vertical-align:top; }
+th      { solid #000; vertical-align:top; font-weight: bold; }
+table   { solid #000; border-collapse: collapse;}
+</style>
+</HEAD>
+<BODY><P></P>
+<!--[if supportFields]><span style='mso-element:field-begin'></span>
+<span style='mso-spacerun:yes'></span>XE TickBasedSources<![endif]-->
+<!--[if supportFields]><span style='mso-element:field-end'></span><![endif]-->
+<H2><A NAME="Modelica_Synchronous.BooleanSignals.TickBasedSources"></A><A HREF="Modelica_Synchronous_BooleanSignals.html#Modelica_Synchronous.BooleanSignals"
+>Modelica_Synchronous.BooleanSignals</A>.TickBasedSources</H2>
+<B>Package of signal source blocks generating clocked tick/sample based Boolean signals</B>
+<P></P>
+<P></P><H3>Information</H3>
+<PRE></pre>
+<p>This package provides <b>source</b> components akin to the blocks provided in Modelica.Blocks.Sources</a>, but with the difference that they provide </p>
+<p><ol>
+<li>a <b>clocked</b> output signal and</li>
+<li>are parametrized in terms of <b>clock ticks</b> rather than simulation time.</li>
+</ol></p>
+<pre></PRE><P></P>
+Extends from Modelica.Icons.SourcesPackage (Icon for packages containing sources).
+<P></P><H3>Package Content</H3>
+<TABLE BORDER=1 CELLSPACING=0 CELLPADDING=2 >
+<TR><TH >Name</TH><TH>Description</TH></TR>
+<TR><TD><IMG SRC="Modelica_Synchronous.Bool2855b6579027733b.StepS.png" ALT="Modelica_Synchronous.BooleanSignals.TickBasedSources.Step" WIDTH=20  HEIGHT=20 ALIGN = TOP >&nbsp;<A HREF="Modelica_Synchronous_BooleanSignals_TickBasedSources.html#Modelica_Synchronous.BooleanSignals.TickBasedSources.Step"
+>Step</A>
+</TD><TD>Generate step signal of type Boolean</TD></TR>
+<TR><TD><IMG SRC="Modelica_Synchronous.Bool6f57505a04dec37bPulseS.png" ALT="Modelica_Synchronous.BooleanSignals.TickBasedSources.Pulse" WIDTH=20  HEIGHT=20 ALIGN = TOP >&nbsp;<A HREF="Modelica_Synchronous_BooleanSignals_TickBasedSources.html#Modelica_Synchronous.BooleanSignals.TickBasedSources.Pulse"
+>Pulse</A>
+</TD><TD>Generate pulse signal of type Boolean</TD></TR>
+</TABLE>
+<!--[if supportFields]><span style='mso-element:field-begin'></span>
+<span style='mso-spacerun:yes'></span>XE Step<![endif]-->
+<!--[if supportFields]><span style='mso-element:field-end'></span><![endif]-->
+<H2><IMG SRC="Modelica_Synchronous.Bool2855b6579027733b.StepI.png" ALT="Modelica_Synchronous.BooleanSignals.TickBasedSources.Step" ALIGN=RIGHT BORDER=1 WIDTH=80  HEIGHT=80 >
+<A NAME="Modelica_Synchronous.BooleanSignals.TickBasedSources.Step"></A><A HREF="Modelica_Synchronous_BooleanSignals_TickBasedSources.html#Modelica_Synchronous.BooleanSignals.TickBasedSources"
+>Modelica_Synchronous.BooleanSignals.TickBasedSources</A>.Step</H2>
+<B>Generate step signal of type Boolean</B><p></P>
+<P></P><H3>Information</H3>
+<PRE></pre>
+<p>
+The Boolean output y is a step signal. The signal is defined in terms of clock ticks instead of simulation time:
+</p>
+
+<p>
+<img src="../Resources/Images/BooleanSignals/TickBasedSources_Step.png">
+</p>
+
+<h4>Example</h4>
+<p>
+See model <A HREF="Modelica_Synchronous_Examples_Elementary_BooleanSignals.html#Modelica_Synchronous.Examples.Elementary.BooleanSignals.TickBasedStep"
+>Modelica_Synchronous.Examples.Elementary.BooleanSignals.TickBasedStep</a>.
+</p>
+<pre></PRE><P></P>
+Extends from <A HREF="Modelica_Synchronous_BooleanSignals_Interfaces.html#Modelica_Synchronous.BooleanSignals.Interfaces.PartialClockedSO"
+>BooleanSignals.Interfaces.PartialClockedSO</A> (Block with clocked single output Boolean signals).
+<P><H3>Parameters</H3><P>
+<TABLE BORDER=1 CELLSPACING=0 CELLPADDING=2>
+<TR><TH>Name</TH><TH>Description</TH></TR>
+<TR><TD>startTick</TD><TD>Output y = startValue for clock tick &lt; startTick</TD></TR>
+<TR><TD>startValue</TD><TD>Output before startTick</TD></TR>
+</TABLE>
+<P><H3>Connectors</H3><P>
+<TABLE BORDER=1 CELLSPACING=0 CELLPADDING=2>
+<TR><TH>Name</TH><TH>Description</TH></TR>
+<TR><TD>y</TD><TD>Connector of clocked, Real output signal</TD></TR>
+</TABLE>
+<!--[if supportFields]><span style='mso-element:field-begin'></span>
+<span style='mso-spacerun:yes'></span>XE Pulse<![endif]-->
+<!--[if supportFields]><span style='mso-element:field-end'></span><![endif]-->
+<H2><IMG SRC="Modelica_Synchronous.Bool6f57505a04dec37bPulseI.png" ALT="Modelica_Synchronous.BooleanSignals.TickBasedSources.Pulse" ALIGN=RIGHT BORDER=1 WIDTH=80  HEIGHT=80 >
+<A NAME="Modelica_Synchronous.BooleanSignals.TickBasedSources.Pulse"></A><A HREF="Modelica_Synchronous_BooleanSignals_TickBasedSources.html#Modelica_Synchronous.BooleanSignals.TickBasedSources"
+>Modelica_Synchronous.BooleanSignals.TickBasedSources</A>.Pulse</H2>
+<B>Generate pulse signal of type Boolean</B><p></P>
+<P></P><H3>Information</H3>
+<PRE></pre>
+<p>The block is similar to the block in Modelica.Blocks.Sources.BooleanPulse</a>, 
+but adapted to work in clocked partitions (by internal sampling of the continuous <b>time</b> variable).
+</p>
+<p>
+The Boolean output y is a pulse signal:
+</p>
+
+<p>
+<img src="../Resources/Images/BooleanSignals/TickBasedSources_Pulse.png">
+</p>
+<h4>Example</h4>
+<p>
+See model <A HREF="Modelica_Synchronous_Examples_Elementary_BooleanSignals.html#Modelica_Synchronous.Examples.Elementary.BooleanSignals.TickBasedPulse"
+>Modelica_Synchronous.Examples.Elementary.BooleanSignals.TickBasedPulse</a>.
+</p>
+<pre></PRE><P></P>
+Extends from <A HREF="Modelica_Synchronous_BooleanSignals_Interfaces.html#Modelica_Synchronous.BooleanSignals.Interfaces.PartialClockedSO"
+>BooleanSignals.Interfaces.PartialClockedSO</A> (Block with clocked single output Boolean signals).
+<P><H3>Parameters</H3><P>
+<TABLE BORDER=1 CELLSPACING=0 CELLPADDING=2>
+<TR><TH>Name</TH><TH>Description</TH></TR>
+<TR><TD>widthTicks</TD><TD>Width of one pulse in clock ticks</TD></TR>
+<TR><TD>periodTicks</TD><TD>Number of clock ticks for one period [s]</TD></TR>
+<TR><TD>startTick</TD><TD>Clock tick at which the first pulse starts</TD></TR>
+</TABLE>
+<P><H3>Connectors</H3><P>
+<TABLE BORDER=1 CELLSPACING=0 CELLPADDING=2>
+<TR><TH>Name</TH><TH>Description</TH></TR>
+<TR><TD>y</TD><TD>Connector of clocked, Real output signal</TD></TR>
+</TABLE>
+<address><a href="http://www.3ds.com/">Automatically generated</a> Mon Oct 28 10:26:06 2013.
+</address></BODY>
+</HTML>

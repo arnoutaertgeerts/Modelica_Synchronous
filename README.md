@@ -23,6 +23,12 @@ Download [Modelica_Synchronous v0.91 (2012-09-20)](../../archive/v0.91.zip)
 
 #### Release notes
 
+*  [Version v0.92 (2013-09-19)](../../archive/v0.92.zip)
+ * The library uses the latest Modelica Standard Libary (MSL) version 3.2.1 (but still works with version 3.2).
+ * Added a couple of convenience source blocks for Real, Integer, and Boolean signals that are similar to the blocks
+   found in the MSL, but have as output a clocked signal.
+ * Added a couple of source blocks that are parametrized in terms of clock ticks rather than simulation time.
+ * All new blocks are utilized in at least one test.
 *  [Version v0.91 (2012-09-20)](../../archive/v0.91.zip)
  * The library has been tested with Dymola 2013 FD01:
    * "Check" with "Pedantic = true" is successful (so the library should be completly compatible to the Modelica 3.3 specification).

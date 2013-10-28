@@ -1,0 +1,150 @@
+<HTML>
+<HEAD>
+<TITLE>Modelica_Synchronous.Types</TITLE>
+<META name="HTML-Generator" content="Dymola">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<META name="description" content="&quot;Library of types with choices, especially to build menus&quot;">
+<style type="text/css">
+*       { font-size: 10pt; font-family: Arial,sans-serif; }
+pre     { font-size:  9pt; font-family: Courier,monospace;}
+h4      { font-size: 10pt; font-weight: bold; color: green; }
+h3      { font-size: 11pt; font-weight: bold; color: green; }
+h2      { font-size: 13pt; font-weight: bold; color: green; }
+address {                  font-weight: normal} 
+td      { solid #000; vertical-align:top; }
+th      { solid #000; vertical-align:top; font-weight: bold; }
+table   { solid #000; border-collapse: collapse;}
+</style>
+</HEAD>
+<BODY><P></P>
+<!--[if supportFields]><span style='mso-element:field-begin'></span>
+<span style='mso-spacerun:yes'></span>XE Types<![endif]-->
+<!--[if supportFields]><span style='mso-element:field-end'></span><![endif]-->
+<H2><A NAME="Modelica_Synchronous.Types"></A><A HREF="Modelica_Synchronous.html#Modelica_Synchronous"
+>Modelica_Synchronous</A>.Types</H2>
+<B>Library of types with choices, especially to build menus</B>
+<P></P>
+<P></P><H3>Information</H3>
+<PRE></pre>
+<p>
+This package contains type definitions utilized
+in blocks of the Modelica_Synchronous package.
+</p>
+<pre></PRE><P></P>
+Extends from Modelica.Icons.Package (Icon for standard packages).
+<P></P><H3>Package Content</H3>
+<TABLE BORDER=1 CELLSPACING=0 CELLPADDING=2 >
+<TR><TH >Name</TH><TH>Description</TH></TR>
+<TR><TD><A HREF="Modelica_Synchronous_Types.html#Modelica_Synchronous.Types.SolverMethod"
+>SolverMethod</A>
+</TD><TD>Enumeration defining the integration method to solve differential equations in a clocked discretized continuous-time partition</TD></TR>
+<TR><TD><A HREF="Modelica_Synchronous_Types.html#Modelica_Synchronous.Types.Resolution"
+>Resolution</A>
+</TD><TD>Enumeration defining the resolution of a clocked signal</TD></TR>
+</TABLE>
+<!--[if supportFields]><span style='mso-element:field-begin'></span>
+<span style='mso-spacerun:yes'></span>XE SolverMethod<![endif]-->
+<!--[if supportFields]><span style='mso-element:field-end'></span><![endif]-->
+<H2><A NAME="Modelica_Synchronous.Types.SolverMethod"></A><A HREF="Modelica_Synchronous_Types.html#Modelica_Synchronous.Types"
+>Modelica_Synchronous.Types</A>.SolverMethod</H2>
+<B>Enumeration defining the integration method to solve differential equations in a clocked discretized continuous-time partition</B><p></P>
+<P></P><H3>Information</H3>
+<PRE></pre>
+<p>
+Type <b>SolverMethod</b> is a String type with menu choices to select the
+integration method to solve differential equations in a clocked discretized
+continuous-time partition. The choices are tool dependent.
+For details, see chapter 16.8.2 "Solver Method" in the Modelica Language
+Specification (version &ge; 3.3). This type is used in the Advanced menu of
+<A HREF="Modelica_Synchronous_ClockSignals_Clocks.html#Modelica_Synchronous.ClockSignals.Clocks"
+>clocks</a>,
+in order to select the solver method for a clocked partition.
+</p>
+
+<p>
+It is planned to move this type definition in version 1.0 of this
+library to the (tool specific) ModelicaServices
+library, in order that different tools can adapt the choices menu
+to their supported integration methods.
+</p>
+
+<p>
+The following solver methods are standardized in chapter 16.8.2 "Solver Method" in the Modelica Language
+Specification (version &ge; 3.3):
+</p>
+
+<table border=1 cellspacing=0 cellpadding=2>
+<tr><th><b>Types.SolverMethod.</b></th><th><b>Meaning</b></th></tr>
+<tr><td valign="top">"External"</td>
+    <td valign="top">Solver specified externally</td></tr>
+    
+<tr><td valign="top">"ExplicitEuler"</td>
+    <td valign="top">Explicit Euler method</td></tr>
+    
+<tr><td valign="top">"ExplicitMidPoint2"</td>
+    <td valign="top">Explicit mid point rule (order 2)</td></tr>
+        
+<tr><td valign="top">"ExplicitRungeKutta4"</td>
+    <td valign="top">Explicit Runge-Kutta method (order 4)</td></tr>        
+
+<tr><td valign="top">"ImplicitEuler"</td>
+    <td valign="top">Implicit Euler method</td></tr>
+    
+<tr><td valign="top">"ImplicitTrapezoid"</td>
+    <td valign="top">Implicit trapezoid rule (order 2)</td></tr>    
+</table>
+
+
+<pre></PRE><P></P>
+Extends from String.
+<!--[if supportFields]><span style='mso-element:field-begin'></span>
+<span style='mso-spacerun:yes'></span>XE Resolution<![endif]-->
+<!--[if supportFields]><span style='mso-element:field-end'></span><![endif]-->
+<H2><A NAME="Modelica_Synchronous.Types.Resolution"></A><A HREF="Modelica_Synchronous_Types.html#Modelica_Synchronous.Types"
+>Modelica_Synchronous.Types</A>.Resolution</H2>
+<B>Enumeration defining the resolution of a clocked signal</B><p></P>
+<P></P><H3>Information</H3>
+<PRE></pre>
+<p>
+Enumeration defining the resolution of a clock signal, especially
+of the clock signal generated by block
+<a href="modelica://Modelica_Synchronous.Clocks.PeriodicExactClock">PeriodicExactClock</a>.
+The following values are possible:
+</p>
+
+<table border=1 cellspacing=0 cellpadding=2>
+<tr><th><b>Types.Resolution.</b></th><th><b>Meaning</b></th></tr>
+<tr><td valign="top">y</td>
+    <td valign="top">year (= 365*24*60*60 seconds)</td></tr>
+
+<tr><td valign="top">d</td>
+    <td valign="top">day (= 24*60*60 seconds)</td></tr>
+
+<tr><td valign="top">h</td>
+    <td valign="top">hour (= 60*60 seconds)</td></tr>
+
+<tr><td valign="top">m</td>
+    <td valign="top">minute (= 60 seconds)</td></tr>
+
+<tr><td valign="top">s</td>
+    <td valign="top">seconds</td></tr>
+
+<tr><td valign="top">ms</td>
+    <td valign="top">milli seconds (= 1/1000 seconds)</td></tr>
+
+
+<tr><td valign="top">us</td>
+    <td valign="top">micro seconds (= 1/(1000*1000) seconds)</td></tr>
+
+
+<tr><td valign="top">ns</td>
+    <td valign="top">nano seconds (= 1/(1000*1000*1000) seconds)</td></tr>
+</table>
+
+
+
+<pre></PRE><P></P>
+
+<address><a href="http://www.3ds.com/">Automatically generated</a> Mon Oct 28 10:26:06 2013.
+</address></BODY>
+</HTML>
