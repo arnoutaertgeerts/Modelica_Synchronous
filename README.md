@@ -19,7 +19,7 @@ It is planned to include this library in a future version of the Modelica Standa
 
 ## Current release
 
-Download [Modelica_Synchronous v0.91 (2012-09-20)](../../archive/v0.91.zip)
+Download [Modelica_Synchronous v0.92 (2013-09-19)](../../archive/v0.92.zip)
 
 #### Release notes
 
