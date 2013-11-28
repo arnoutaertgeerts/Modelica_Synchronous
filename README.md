@@ -19,11 +19,11 @@ It is planned to include this library in a future version of the Modelica Standa
 
 ## Current release
 
-Download [Modelica_Synchronous v0.92 (2013-09-19)](../../archive/v0.92.zip)
+Download [Modelica_Synchronous v0.92 (2013-09-19)](../../archive/v0.92+build2.zip)
 
 #### Release notes
 
-*  [Version v0.92 (2013-09-19)](../../archive/v0.92.zip)
+*  [Version v0.92 (2013-09-19)](../../archive/v0.92+build2.zip)
  * The library uses the latest Modelica Standard Libary (MSL) version 3.2.1 (but still works with version 3.2).
  * Added a couple of convenience source blocks for Real, Integer, and Boolean signals that are similar to the blocks
    found in the MSL, but have as output a clocked signal.
