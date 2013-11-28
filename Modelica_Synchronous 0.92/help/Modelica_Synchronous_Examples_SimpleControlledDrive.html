@@ -1,37 +1,39 @@
-<HTML>
-<HEAD>
-<TITLE>Modelica_Synchronous.Examples.SimpleControlledDrive</TITLE>
-<META name="HTML-Generator" content="Dymola">
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Modelica_Synchronous.Examples.SimpleControlledDrive</title>
+<meta name="HTML-Generator" content="Dymola">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<META name="description" content="&quot;Examples based on a simple controlled drive with different ways to define the sampling&quot;">
+<meta name="description" content="&quot;Examples based on a simple controlled drive with different ways to define the sampling&quot;">
 <style type="text/css">
-*       { font-size: 10pt; font-family: Arial,sans-serif; }
-pre     { font-size:  9pt; font-family: Courier,monospace;}
+*       { font-size: 10pt; font-family: Arial, sans-serif; }
+.modelica, .modelica * { font-size: 9pt; font-family: Courier, monospace; white-space: pre; }
 h4      { font-size: 10pt; font-weight: bold; color: green; }
 h3      { font-size: 11pt; font-weight: bold; color: green; }
 h2      { font-size: 13pt; font-weight: bold; color: green; }
-address {                  font-weight: normal} 
-td      { solid #000; vertical-align:top; }
-th      { solid #000; vertical-align:top; font-weight: bold; }
-table   { solid #000; border-collapse: collapse;}
+address { font-weight: normal; }
+td      { border: 1px solid #808080; vertical-align: top; }
+th      { border: 1px solid #808080; vertical-align: top; font-weight: bold; }
+table   { border: 1px solid #808080; border-collapse: collapse; }
 </style>
-</HEAD>
-<BODY><P></P>
-<!--[if supportFields]><span style='mso-element:field-begin'></span>
-<span style='mso-spacerun:yes'></span>XE SimpleControlledDrive<![endif]-->
-<!--[if supportFields]><span style='mso-element:field-end'></span><![endif]-->
-<H2><A NAME="Modelica_Synchronous.Examples.SimpleControlledDrive"></A><A HREF="Modelica_Synchronous_Examples.html#Modelica_Synchronous.Examples"
->Modelica_Synchronous.Examples</A>.SimpleControlledDrive</H2>
-<B>Examples based on a simple controlled drive with different ways to define the sampling</B>
-<P></P>
-<P></P><H3>Information</H3>
-<PRE></pre>
+</head>
+<body>
+<!--[if supportFields]><span style="mso-element:field-begin"></span>
+<span style="mso-spacerun:yes"></span>XE SimpleControlledDrive<![endif]-->
+<!--[if supportFields]><span style="mso-element:field-end"></span><![endif]-->
+<h2><a name="Modelica_Synchronous.Examples.SimpleControlledDrive"></a><a href="Modelica_Synchronous_Examples.html#Modelica_Synchronous.Examples"
+>Modelica_Synchronous.Examples</a>.SimpleControlledDrive</h2>
+<p>
+<b>Examples based on a simple controlled drive with different ways to define the sampling</b><br>
+</p>
+<h3>Information</h3>
+
 <p>
 This package shows the same example in different variants.
 </p>
 
 <p>
-Model <A HREF="Modelica_Synchronous_Examples_SimpleControlledDrive.html#Modelica_Synchronous.Examples.SimpleControlledDrive.Continuous"
+Model <a href="Modelica_Synchronous_Examples_SimpleControlledDrive.html#Modelica_Synchronous.Examples.SimpleControlledDrive.Continuous"
 >SimpleControlledDrive.Continuous</a>
 is the <b>continuous-time</b> model from which the sampled-data versions are derived.
 The model consists of a reference controller ("ramp"), a feedback controller
@@ -45,70 +47,97 @@ The other example models under this package show different variants how
 the continuous-time model from above can be transformed to a periodic sampled-data
 system with one sample period.
 </p>
-<pre></PRE><P></P>
-Extends from Modelica.Icons.ExamplesPackage (Icon for packages containing runnable examples).
-<P></P><H3>Package Content</H3>
-<TABLE BORDER=1 CELLSPACING=0 CELLPADDING=2 >
-<TR><TH >Name</TH><TH>Description</TH></TR>
-<TR><TD><IMG SRC="Modelica_Synchronous.Exam3833e21a33b478aanuousS.png" ALT="Modelica_Synchronous.Examples.SimpleControlledDrive.Continuous" WIDTH=20  HEIGHT=20 ALIGN = TOP >&nbsp;<A HREF="Modelica_Synchronous_Examples_SimpleControlledDrive.html#Modelica_Synchronous.Examples.SimpleControlledDrive.Continuous"
->Continuous</A>
-</TD><TD>Simple controlled drive with continuous controller</TD></TR>
-<TR><TD><IMG SRC="Modelica_Synchronous.Exam3833e21a33b478aanuousS.png" ALT="Modelica_Synchronous.Examples.SimpleControlledDrive.ClockedWithDiscreteTextbookController" WIDTH=20  HEIGHT=20 ALIGN = TOP >&nbsp;<A HREF="Modelica_Synchronous_Examples_SimpleControlledDrive.html#Modelica_Synchronous.Examples.SimpleControlledDrive.ClockedWithDiscreteTextbookController"
->ClockedWithDiscreteTextbookController</A>
-</TD><TD>Simple controlled drive with discrete textbook controller (period is not used in the controller)</TD></TR>
-<TR><TD><IMG SRC="Modelica_Synchronous.Exam3833e21a33b478aanuousS.png" ALT="Modelica_Synchronous.Examples.SimpleControlledDrive.ClockedWithDiscreteController" WIDTH=20  HEIGHT=20 ALIGN = TOP >&nbsp;<A HREF="Modelica_Synchronous_Examples_SimpleControlledDrive.html#Modelica_Synchronous.Examples.SimpleControlledDrive.ClockedWithDiscreteController"
->ClockedWithDiscreteController</A>
-</TD><TD>Simple controlled drive with discrete controller (period is used in the controller)</TD></TR>
-<TR><TD><IMG SRC="Modelica_Synchronous.Exam3833e21a33b478aanuousS.png" ALT="Modelica_Synchronous.Examples.SimpleControlledDrive.ExactlyClockedWithDiscreteController" WIDTH=20  HEIGHT=20 ALIGN = TOP >&nbsp;<A HREF="Modelica_Synchronous_Examples_SimpleControlledDrive.html#Modelica_Synchronous.Examples.SimpleControlledDrive.ExactlyClockedWithDiscreteController"
->ExactlyClockedWithDiscreteController</A>
-</TD><TD>Simple controlled drive with discrete controller and exact periodic clocks (period is used in the controller)</TD></TR>
-<TR><TD><IMG SRC="Modelica_Synchronous.Exam3833e21a33b478aanuousS.png" ALT="Modelica_Synchronous.Examples.SimpleControlledDrive.ClockedWithDiscretizedContinuousController" WIDTH=20  HEIGHT=20 ALIGN = TOP >&nbsp;<A HREF="Modelica_Synchronous_Examples_SimpleControlledDrive.html#Modelica_Synchronous.Examples.SimpleControlledDrive.ClockedWithDiscretizedContinuousController"
->ClockedWithDiscretizedContinuousController</A>
-</TD><TD>Simple controlled drive with discretized continuous-time controller</TD></TR>
-<TR><TD><IMG SRC="Modelica_Synchronous.Exam3833e21a33b478aanuousS.png" ALT="Modelica_Synchronous.Examples.SimpleControlledDrive.ClockedWith_AD_DA_Effects" WIDTH=20  HEIGHT=20 ALIGN = TOP >&nbsp;<A HREF="Modelica_Synchronous_Examples_SimpleControlledDrive.html#Modelica_Synchronous.Examples.SimpleControlledDrive.ClockedWith_AD_DA_Effects"
->ClockedWith_AD_DA_Effects</A>
-</TD><TD>Simple controlled drive with discrete controller and simulated AD and DA effects</TD></TR>
-</TABLE>
-<!--[if supportFields]><span style='mso-element:field-begin'></span>
-<span style='mso-spacerun:yes'></span>XE Continuous<![endif]-->
-<!--[if supportFields]><span style='mso-element:field-end'></span><![endif]-->
-<H2><IMG SRC="Modelica_Synchronous.Exam3833e21a33b478aanuousI.png" ALT="Modelica_Synchronous.Examples.SimpleControlledDrive.Continuous" ALIGN=RIGHT BORDER=1 WIDTH=80  HEIGHT=80 >
-<A NAME="Modelica_Synchronous.Examples.SimpleControlledDrive.Continuous"></A><A HREF="Modelica_Synchronous_Examples_SimpleControlledDrive.html#Modelica_Synchronous.Examples.SimpleControlledDrive"
->Modelica_Synchronous.Examples.SimpleControlledDrive</A>.Continuous</H2>
-<B>Simple controlled drive with continuous controller</B><p></P>
-<P></P><H3>Information</H3>
-<PRE></pre>
+
+<p>Extends from Modelica.Icons.ExamplesPackage (Icon for packages containing runnable examples).</p>
+<h3>Package Content</h3>
+<table border="1" cellspacing="0" cellpadding="2" summary="Package Content">
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+<tr>
+<td><img src="Modelica_Synchronous.Exam3833e21a33b478aanuousS.png" alt="Modelica_Synchronous.Examples.SimpleControlledDrive.Continuous" width="20" height="20" align="top">&nbsp;<a href="Modelica_Synchronous_Examples_SimpleControlledDrive.html#Modelica_Synchronous.Examples.SimpleControlledDrive.Continuous"
+>Continuous</a>
+</td>
+<td>Simple controlled drive with continuous controller</td>
+</tr>
+<tr>
+<td><img src="Modelica_Synchronous.Exam3833e21a33b478aanuousS.png" alt="Modelica_Synchronous.Examples.SimpleControlledDrive.ClockedWithDiscreteTextbookController" width="20" height="20" align="top">&nbsp;<a href="Modelica_Synchronous_Examples_SimpleControlledDrive.html#Modelica_Synchronous.Examples.SimpleControlledDrive.ClockedWithDiscreteTextbookController"
+>ClockedWithDiscreteTextbookController</a>
+</td>
+<td>Simple controlled drive with discrete textbook controller (period is not used in the controller)</td>
+</tr>
+<tr>
+<td><img src="Modelica_Synchronous.Exam3833e21a33b478aanuousS.png" alt="Modelica_Synchronous.Examples.SimpleControlledDrive.ClockedWithDiscreteController" width="20" height="20" align="top">&nbsp;<a href="Modelica_Synchronous_Examples_SimpleControlledDrive.html#Modelica_Synchronous.Examples.SimpleControlledDrive.ClockedWithDiscreteController"
+>ClockedWithDiscreteController</a>
+</td>
+<td>Simple controlled drive with discrete controller (period is used in the controller)</td>
+</tr>
+<tr>
+<td><img src="Modelica_Synchronous.Exam3833e21a33b478aanuousS.png" alt="Modelica_Synchronous.Examples.SimpleControlledDrive.ExactlyClockedWithDiscreteController" width="20" height="20" align="top">&nbsp;<a href="Modelica_Synchronous_Examples_SimpleControlledDrive.html#Modelica_Synchronous.Examples.SimpleControlledDrive.ExactlyClockedWithDiscreteController"
+>ExactlyClockedWithDiscreteController</a>
+</td>
+<td>Simple controlled drive with discrete controller and exact periodic clocks (period is used in the controller)</td>
+</tr>
+<tr>
+<td><img src="Modelica_Synchronous.Exam3833e21a33b478aanuousS.png" alt="Modelica_Synchronous.Examples.SimpleControlledDrive.ClockedWithDiscretizedContinuousController" width="20" height="20" align="top">&nbsp;<a href="Modelica_Synchronous_Examples_SimpleControlledDrive.html#Modelica_Synchronous.Examples.SimpleControlledDrive.ClockedWithDiscretizedContinuousController"
+>ClockedWithDiscretizedContinuousController</a>
+</td>
+<td>Simple controlled drive with discretized continuous-time controller</td>
+</tr>
+<tr>
+<td><img src="Modelica_Synchronous.Exam3833e21a33b478aanuousS.png" alt="Modelica_Synchronous.Examples.SimpleControlledDrive.ClockedWith_AD_DA_Effects" width="20" height="20" align="top">&nbsp;<a href="Modelica_Synchronous_Examples_SimpleControlledDrive.html#Modelica_Synchronous.Examples.SimpleControlledDrive.ClockedWith_AD_DA_Effects"
+>ClockedWith_AD_DA_Effects</a>
+</td>
+<td>Simple controlled drive with discrete controller and simulated AD and DA effects</td>
+</tr>
+</table>
+<!--[if supportFields]><span style="mso-element:field-begin"></span>
+<span style="mso-spacerun:yes"></span>XE Continuous<![endif]-->
+<!--[if supportFields]><span style="mso-element:field-end"></span><![endif]-->
+<h2><img src="Modelica_Synchronous.Exam3833e21a33b478aanuousI.png" alt="Modelica_Synchronous.Examples.SimpleControlledDrive.Continuous" align="right" style="border: 1px solid" width="80" height="80">
+<a name="Modelica_Synchronous.Examples.SimpleControlledDrive.Continuous"></a><a href="Modelica_Synchronous_Examples_SimpleControlledDrive.html#Modelica_Synchronous.Examples.SimpleControlledDrive"
+>Modelica_Synchronous.Examples.SimpleControlledDrive</a>.Continuous</h2>
+<p>
+<b>Simple controlled drive with continuous controller</b>
+</p>
+<h3>Information</h3>
+
 <p>
 Original simple controlled drive with a
 <b>continuous-time</b> controller.
 </p>
-<pre></PRE><P></P>
-Extends from Modelica.Icons.Example (Icon for runnable examples).
-<!--[if supportFields]><span style='mso-element:field-begin'></span>
-<span style='mso-spacerun:yes'></span>XE ClockedWithDiscreteTextbookController<![endif]-->
-<!--[if supportFields]><span style='mso-element:field-end'></span><![endif]-->
-<H2><IMG SRC="Modelica_Synchronous.Exam3833e21a33b478aanuousI.png" ALT="Modelica_Synchronous.Examples.SimpleControlledDrive.ClockedWithDiscreteTextbookController" ALIGN=RIGHT BORDER=1 WIDTH=80  HEIGHT=80 >
-<A NAME="Modelica_Synchronous.Examples.SimpleControlledDrive.ClockedWithDiscreteTextbookController"></A><A HREF="Modelica_Synchronous_Examples_SimpleControlledDrive.html#Modelica_Synchronous.Examples.SimpleControlledDrive"
->Modelica_Synchronous.Examples.SimpleControlledDrive</A>.ClockedWithDiscreteTextbookController</H2>
-<B>Simple controlled drive with discrete textbook controller (period is not used in the controller)</B><p></P>
-<P></P><H3>Information</H3>
-<PRE></pre>
+
+<p>Extends from Modelica.Icons.Example (Icon for runnable examples).</p>
+<!--[if supportFields]><span style="mso-element:field-begin"></span>
+<span style="mso-spacerun:yes"></span>XE ClockedWithDiscreteTextbookController<![endif]-->
+<!--[if supportFields]><span style="mso-element:field-end"></span><![endif]-->
+<h2><img src="Modelica_Synchronous.Exam3833e21a33b478aanuousI.png" alt="Modelica_Synchronous.Examples.SimpleControlledDrive.ClockedWithDiscreteTextbookController" align="right" style="border: 1px solid" width="80" height="80">
+<a name="Modelica_Synchronous.Examples.SimpleControlledDrive.ClockedWithDiscreteTextbookController"></a><a href="Modelica_Synchronous_Examples_SimpleControlledDrive.html#Modelica_Synchronous.Examples.SimpleControlledDrive"
+>Modelica_Synchronous.Examples.SimpleControlledDrive</a>.ClockedWithDiscreteTextbookController</h2>
+<p>
+<b>Simple controlled drive with discrete textbook controller (period is not used in the controller)</b>
+</p>
+<h3>Information</h3>
+
 <p>
 Simple controlled drive with discrete-time textbook controller
 modelled as a clocked partition
 (period is not used in the controller)
 </p>
-<pre></PRE><P></P>
-Extends from Modelica.Icons.Example (Icon for runnable examples).
-<!--[if supportFields]><span style='mso-element:field-begin'></span>
-<span style='mso-spacerun:yes'></span>XE ClockedWithDiscreteController<![endif]-->
-<!--[if supportFields]><span style='mso-element:field-end'></span><![endif]-->
-<H2><IMG SRC="Modelica_Synchronous.Exam3833e21a33b478aanuousI.png" ALT="Modelica_Synchronous.Examples.SimpleControlledDrive.ClockedWithDiscreteController" ALIGN=RIGHT BORDER=1 WIDTH=80  HEIGHT=80 >
-<A NAME="Modelica_Synchronous.Examples.SimpleControlledDrive.ClockedWithDiscreteController"></A><A HREF="Modelica_Synchronous_Examples_SimpleControlledDrive.html#Modelica_Synchronous.Examples.SimpleControlledDrive"
->Modelica_Synchronous.Examples.SimpleControlledDrive</A>.ClockedWithDiscreteController</H2>
-<B>Simple controlled drive with discrete controller (period is used in the controller)</B><p></P>
-<P></P><H3>Information</H3>
-<PRE></pre>
+
+<p>Extends from Modelica.Icons.Example (Icon for runnable examples).</p>
+<!--[if supportFields]><span style="mso-element:field-begin"></span>
+<span style="mso-spacerun:yes"></span>XE ClockedWithDiscreteController<![endif]-->
+<!--[if supportFields]><span style="mso-element:field-end"></span><![endif]-->
+<h2><img src="Modelica_Synchronous.Exam3833e21a33b478aanuousI.png" alt="Modelica_Synchronous.Examples.SimpleControlledDrive.ClockedWithDiscreteController" align="right" style="border: 1px solid" width="80" height="80">
+<a name="Modelica_Synchronous.Examples.SimpleControlledDrive.ClockedWithDiscreteController"></a><a href="Modelica_Synchronous_Examples_SimpleControlledDrive.html#Modelica_Synchronous.Examples.SimpleControlledDrive"
+>Modelica_Synchronous.Examples.SimpleControlledDrive</a>.ClockedWithDiscreteController</h2>
+<p>
+<b>Simple controlled drive with discrete controller (period is used in the controller)</b>
+</p>
+<h3>Information</h3>
+
 <p>
 Simple controlled drive with discrete-timer controller
 modelled as a clocked partition.
@@ -117,35 +146,39 @@ with the parameters of the continuous-time version and the
 discrete-time version is derived from this parameterization
 taken into account the actual sample period.
 </p>
-<pre></PRE><P></P>
-Extends from Modelica.Icons.Example (Icon for runnable examples).
-<!--[if supportFields]><span style='mso-element:field-begin'></span>
-<span style='mso-spacerun:yes'></span>XE ExactlyClockedWithDiscreteController<![endif]-->
-<!--[if supportFields]><span style='mso-element:field-end'></span><![endif]-->
-<H2><IMG SRC="Modelica_Synchronous.Exam3833e21a33b478aanuousI.png" ALT="Modelica_Synchronous.Examples.SimpleControlledDrive.ExactlyClockedWithDiscreteController" ALIGN=RIGHT BORDER=1 WIDTH=80  HEIGHT=80 >
-<A NAME="Modelica_Synchronous.Examples.SimpleControlledDrive.ExactlyClockedWithDiscreteController"></A><A HREF="Modelica_Synchronous_Examples_SimpleControlledDrive.html#Modelica_Synchronous.Examples.SimpleControlledDrive"
->Modelica_Synchronous.Examples.SimpleControlledDrive</A>.ExactlyClockedWithDiscreteController</H2>
-<B>Simple controlled drive with discrete controller and exact periodic clocks (period is used in the controller)</B><p></P>
-<P></P><H3>Information</H3>
-<PRE></pre>
+
+<p>Extends from Modelica.Icons.Example (Icon for runnable examples).</p>
+<!--[if supportFields]><span style="mso-element:field-begin"></span>
+<span style="mso-spacerun:yes"></span>XE ExactlyClockedWithDiscreteController<![endif]-->
+<!--[if supportFields]><span style="mso-element:field-end"></span><![endif]-->
+<h2><img src="Modelica_Synchronous.Exam3833e21a33b478aanuousI.png" alt="Modelica_Synchronous.Examples.SimpleControlledDrive.ExactlyClockedWithDiscreteController" align="right" style="border: 1px solid" width="80" height="80">
+<a name="Modelica_Synchronous.Examples.SimpleControlledDrive.ExactlyClockedWithDiscreteController"></a><a href="Modelica_Synchronous_Examples_SimpleControlledDrive.html#Modelica_Synchronous.Examples.SimpleControlledDrive"
+>Modelica_Synchronous.Examples.SimpleControlledDrive</a>.ExactlyClockedWithDiscreteController</h2>
+<p>
+<b>Simple controlled drive with discrete controller and exact periodic clocks (period is used in the controller)</b>
+</p>
+<h3>Information</h3>
+
 <p>
 This is the same model as
-<A HREF="Modelica_Synchronous_Examples_SimpleControlledDrive.html#Modelica_Synchronous.Examples.SimpleControlledDrive.ClockedWithDiscreteController"
+<a href="Modelica_Synchronous_Examples_SimpleControlledDrive.html#Modelica_Synchronous.Examples.SimpleControlledDrive.ClockedWithDiscreteController"
 >ClockedWithDiscreteController</a>.
 The only difference is that the clock is defined with an exact periodic clock and not with
 a Real periodic clock.
 </p>
-<pre></PRE><P></P>
-Extends from Modelica.Icons.Example (Icon for runnable examples).
-<!--[if supportFields]><span style='mso-element:field-begin'></span>
-<span style='mso-spacerun:yes'></span>XE ClockedWithDiscretizedContinuousController<![endif]-->
-<!--[if supportFields]><span style='mso-element:field-end'></span><![endif]-->
-<H2><IMG SRC="Modelica_Synchronous.Exam3833e21a33b478aanuousI.png" ALT="Modelica_Synchronous.Examples.SimpleControlledDrive.ClockedWithDiscretizedContinuousController" ALIGN=RIGHT BORDER=1 WIDTH=80  HEIGHT=80 >
-<A NAME="Modelica_Synchronous.Examples.SimpleControlledDrive.ClockedWithDiscretizedContinuousController"></A><A HREF="Modelica_Synchronous_Examples_SimpleControlledDrive.html#Modelica_Synchronous.Examples.SimpleControlledDrive"
->Modelica_Synchronous.Examples.SimpleControlledDrive</A>.ClockedWithDiscretizedContinuousController</H2>
-<B>Simple controlled drive with discretized continuous-time controller</B><p></P>
-<P></P><H3>Information</H3>
-<PRE></pre>
+
+<p>Extends from Modelica.Icons.Example (Icon for runnable examples).</p>
+<!--[if supportFields]><span style="mso-element:field-begin"></span>
+<span style="mso-spacerun:yes"></span>XE ClockedWithDiscretizedContinuousController<![endif]-->
+<!--[if supportFields]><span style="mso-element:field-end"></span><![endif]-->
+<h2><img src="Modelica_Synchronous.Exam3833e21a33b478aanuousI.png" alt="Modelica_Synchronous.Examples.SimpleControlledDrive.ClockedWithDiscretizedContinuousController" align="right" style="border: 1px solid" width="80" height="80">
+<a name="Modelica_Synchronous.Examples.SimpleControlledDrive.ClockedWithDiscretizedContinuousController"></a><a href="Modelica_Synchronous_Examples_SimpleControlledDrive.html#Modelica_Synchronous.Examples.SimpleControlledDrive"
+>Modelica_Synchronous.Examples.SimpleControlledDrive</a>.ClockedWithDiscretizedContinuousController</h2>
+<p>
+<b>Simple controlled drive with discretized continuous-time controller</b>
+</p>
+<h3>Information</h3>
+
 <p>
 Simple controlled drive with discrete-time controller
 modelled as a clocked partition.
@@ -156,26 +189,30 @@ implicit Euler method by setting parameter
 of block <b>periodicClock</b> and then selecting
 <b>ImplicitEuler</b> as <b>SolverMethod</b> for the partition.
 </p>
-<pre></PRE><P></P>
-Extends from Modelica.Icons.Example (Icon for runnable examples).
-<!--[if supportFields]><span style='mso-element:field-begin'></span>
-<span style='mso-spacerun:yes'></span>XE ClockedWith_AD_DA_Effects<![endif]-->
-<!--[if supportFields]><span style='mso-element:field-end'></span><![endif]-->
-<H2><IMG SRC="Modelica_Synchronous.Exam3833e21a33b478aanuousI.png" ALT="Modelica_Synchronous.Examples.SimpleControlledDrive.ClockedWith_AD_DA_Effects" ALIGN=RIGHT BORDER=1 WIDTH=80  HEIGHT=80 >
-<A NAME="Modelica_Synchronous.Examples.SimpleControlledDrive.ClockedWith_AD_DA_Effects"></A><A HREF="Modelica_Synchronous_Examples_SimpleControlledDrive.html#Modelica_Synchronous.Examples.SimpleControlledDrive"
->Modelica_Synchronous.Examples.SimpleControlledDrive</A>.ClockedWith_AD_DA_Effects</H2>
-<B>Simple controlled drive with discrete controller and simulated AD and DA effects</B><p></P>
-<P></P><H3>Information</H3>
-<PRE></pre>
+
+<p>Extends from Modelica.Icons.Example (Icon for runnable examples).</p>
+<!--[if supportFields]><span style="mso-element:field-begin"></span>
+<span style="mso-spacerun:yes"></span>XE ClockedWith_AD_DA_Effects<![endif]-->
+<!--[if supportFields]><span style="mso-element:field-end"></span><![endif]-->
+<h2><img src="Modelica_Synchronous.Exam3833e21a33b478aanuousI.png" alt="Modelica_Synchronous.Examples.SimpleControlledDrive.ClockedWith_AD_DA_Effects" align="right" style="border: 1px solid" width="80" height="80">
+<a name="Modelica_Synchronous.Examples.SimpleControlledDrive.ClockedWith_AD_DA_Effects"></a><a href="Modelica_Synchronous_Examples_SimpleControlledDrive.html#Modelica_Synchronous.Examples.SimpleControlledDrive"
+>Modelica_Synchronous.Examples.SimpleControlledDrive</a>.ClockedWith_AD_DA_Effects</h2>
+<p>
+<b>Simple controlled drive with discrete controller and simulated AD and DA effects</b>
+</p>
+<h3>Information</h3>
+
 <p>
 This is the same model as
-<A HREF="Modelica_Synchronous_Examples_SimpleControlledDrive.html#Modelica_Synchronous.Examples.SimpleControlledDrive.ClockedWithDiscreteController"
+<a href="Modelica_Synchronous_Examples_SimpleControlledDrive.html#Modelica_Synchronous.Examples.SimpleControlledDrive.ClockedWithDiscreteController"
 >ClockedWithDiscreteController</a>.
 The only difference is that real world effects like limitation, value discretization, noise
 and computing time are taken into account.
 </p>
-<pre></PRE><P></P>
-Extends from Modelica.Icons.Example (Icon for runnable examples).
-<address><a href="http://www.3ds.com/">Automatically generated</a> Mon Oct 28 10:26:05 2013.
-</address></BODY>
-</HTML>
+
+<p>Extends from Modelica.Icons.Example (Icon for runnable examples).</p>
+<address>
+<a href="http://www.3ds.com/">Automatically generated</a> Thu Nov 28 13:08:01 2013.
+</address>
+</body>
+</html>

@@ -1,31 +1,33 @@
-<HTML>
-<HEAD>
-<TITLE>Modelica_Synchronous.RealSignals.Sampler</TITLE>
-<META name="HTML-Generator" content="Dymola">
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Modelica_Synchronous.RealSignals.Sampler</title>
+<meta name="HTML-Generator" content="Dymola">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<META name="description" content="&quot;Library of sampler and hold blocks for Real signals&quot;">
+<meta name="description" content="&quot;Library of sampler and hold blocks for Real signals&quot;">
 <style type="text/css">
-*       { font-size: 10pt; font-family: Arial,sans-serif; }
-pre     { font-size:  9pt; font-family: Courier,monospace;}
+*       { font-size: 10pt; font-family: Arial, sans-serif; }
+.modelica, .modelica * { font-size: 9pt; font-family: Courier, monospace; white-space: pre; }
 h4      { font-size: 10pt; font-weight: bold; color: green; }
 h3      { font-size: 11pt; font-weight: bold; color: green; }
 h2      { font-size: 13pt; font-weight: bold; color: green; }
-address {                  font-weight: normal} 
-td      { solid #000; vertical-align:top; }
-th      { solid #000; vertical-align:top; font-weight: bold; }
-table   { solid #000; border-collapse: collapse;}
+address { font-weight: normal; }
+td      { border: 1px solid #808080; vertical-align: top; }
+th      { border: 1px solid #808080; vertical-align: top; font-weight: bold; }
+table   { border: 1px solid #808080; border-collapse: collapse; }
 </style>
-</HEAD>
-<BODY><P></P>
-<!--[if supportFields]><span style='mso-element:field-begin'></span>
-<span style='mso-spacerun:yes'></span>XE Sampler<![endif]-->
-<!--[if supportFields]><span style='mso-element:field-end'></span><![endif]-->
-<H2><A NAME="Modelica_Synchronous.RealSignals.Sampler"></A><A HREF="Modelica_Synchronous_RealSignals.html#Modelica_Synchronous.RealSignals"
->Modelica_Synchronous.RealSignals</A>.Sampler</H2>
-<B>Library of sampler and hold blocks for Real signals</B>
-<P></P>
-<P></P><H3>Information</H3>
-<PRE></pre>
+</head>
+<body>
+<!--[if supportFields]><span style="mso-element:field-begin"></span>
+<span style="mso-spacerun:yes"></span>XE Sampler<![endif]-->
+<!--[if supportFields]><span style="mso-element:field-end"></span><![endif]-->
+<h2><a name="Modelica_Synchronous.RealSignals.Sampler"></a><a href="Modelica_Synchronous_RealSignals.html#Modelica_Synchronous.RealSignals"
+>Modelica_Synchronous.RealSignals</a>.Sampler</h2>
+<p>
+<b>Library of sampler and hold blocks for Real signals</b><br>
+</p>
+<h3>Information</h3>
+
 <p>
 This package contains blocks that mark boundaries of a clocked partition
 and transform a <b>Real</b> signal from one partition to the next. Especially,
@@ -38,75 +40,75 @@ the following blocks are provided:<br>&nbsp;
     <th align="left"><b>Description</b></th></tr>
 
 <tr><td valign="top" rowspan="4">continuous-time &rarr; clocked</td>
-      <td><A HREF="Modelica_Synchronous_RealSignals_Sampler.html#Modelica_Synchronous.RealSignals.Sampler.Sample"
+      <td><a href="Modelica_Synchronous_RealSignals_Sampler.html#Modelica_Synchronous.RealSignals.Sampler.Sample"
 >Sample</a></td>
       <td>Sample a continuous-time signal.</td>
     </tr>
     <tr>
-      <td><A HREF="Modelica_Synchronous_RealSignals_Sampler.html#Modelica_Synchronous.RealSignals.Sampler.SampleClocked"
+      <td><a href="Modelica_Synchronous_RealSignals_Sampler.html#Modelica_Synchronous.RealSignals.Sampler.SampleClocked"
 >SampleClocked</a></td>
       <td>Sample and associate a clock to the sampled <b>scalar</b> signal.</td>
     </tr>
     <tr>
-      <td><A HREF="Modelica_Synchronous_RealSignals_Sampler.html#Modelica_Synchronous.RealSignals.Sampler.SampleVectorizedAndClocked"
+      <td><a href="Modelica_Synchronous_RealSignals_Sampler.html#Modelica_Synchronous.RealSignals.Sampler.SampleVectorizedAndClocked"
 >SampleVectorizedAndClocked</a></td>
       <td>Sample an input vector and associate a clock to the sampled <b>vector</b> signal.</td>
     </tr>
     <tr>
-      <td><A HREF="Modelica_Synchronous_RealSignals_Sampler.html#Modelica_Synchronous.RealSignals.Sampler.SampleWithADeffects"
+      <td><a href="Modelica_Synchronous_RealSignals_Sampler.html#Modelica_Synchronous.RealSignals.Sampler.SampleWithADeffects"
 >SampleWithADeffects</a></td>
       <td>Sample with (simulated) Analog-Digital converter effects including noise.</td>
     </tr>
 
 <tr><td valign="top" rowspan="2">clocked &rarr; continuous-time</td>
-      <td><A HREF="Modelica_Synchronous_RealSignals_Sampler.html#Modelica_Synchronous.RealSignals.Sampler.Hold"
+      <td><a href="Modelica_Synchronous_RealSignals_Sampler.html#Modelica_Synchronous.RealSignals.Sampler.Hold"
 >Hold</a></td>
       <td>Hold a clocked signal with zero-order hold.</td>
     </tr>
     <tr>
-      <td><A HREF="Modelica_Synchronous_RealSignals_Sampler.html#Modelica_Synchronous.RealSignals.Sampler.HoldWithDAeffects"
+      <td><a href="Modelica_Synchronous_RealSignals_Sampler.html#Modelica_Synchronous.RealSignals.Sampler.HoldWithDAeffects"
 >HoldWithDAeffects</a></td>
       <td>Hold with (simulated) Digital-Analog converter effects and computational delay.</td>
     </tr>
 
 <tr><td valign="top" rowspan="5">clocked &rarr; clocked</td>
-      <td><A HREF="Modelica_Synchronous_RealSignals_Sampler.html#Modelica_Synchronous.RealSignals.Sampler.SubSample"
+      <td><a href="Modelica_Synchronous_RealSignals_Sampler.html#Modelica_Synchronous.RealSignals.Sampler.SubSample"
 >SubSample</a></td>
       <td>Sub-sample a signal (output clock is slower as input clock). </td>
     </tr>
 
     <tr>
-      <td><A HREF="Modelica_Synchronous_RealSignals_Sampler.html#Modelica_Synchronous.RealSignals.Sampler.SuperSample"
+      <td><a href="Modelica_Synchronous_RealSignals_Sampler.html#Modelica_Synchronous.RealSignals.Sampler.SuperSample"
 >SuperSample</a></td>
       <td>Super-sample a signal (output clock is faster as input clock). </td>
     </tr>
 
     <tr>
-      <td><A HREF="Modelica_Synchronous_RealSignals_Sampler.html#Modelica_Synchronous.RealSignals.Sampler.SuperSampleInterpolated"
+      <td><a href="Modelica_Synchronous_RealSignals_Sampler.html#Modelica_Synchronous.RealSignals.Sampler.SuperSampleInterpolated"
 >SuperSampleInterpolated</a></td>
       <td>Super-sample a signal with linear interpolation (output clock is faster as input clock). </td>
     </tr>
 
     <tr>
-      <td><A HREF="Modelica_Synchronous_RealSignals_Sampler.html#Modelica_Synchronous.RealSignals.Sampler.ShiftSample"
+      <td><a href="Modelica_Synchronous_RealSignals_Sampler.html#Modelica_Synchronous.RealSignals.Sampler.ShiftSample"
 >ShiftSample</a></td>
       <td>Shift a signal (output clock is delayed with respect to input clock).  </td>
     </tr>
 
     <tr>
-      <td><A HREF="Modelica_Synchronous_RealSignals_Sampler.html#Modelica_Synchronous.RealSignals.Sampler.BackSample"
+      <td><a href="Modelica_Synchronous_RealSignals_Sampler.html#Modelica_Synchronous.RealSignals.Sampler.BackSample"
 >BackSample</a></td>
       <td>Shift a signal and start the output clock before the input clock with a start value.  </td>
     </tr>
 
 
 <tr><td valign="top" rowspan="2">within clocked partition</td>
-      <td><A HREF="Modelica_Synchronous_RealSignals_Sampler.html#Modelica_Synchronous.RealSignals.Sampler.AssignClock"
+      <td><a href="Modelica_Synchronous_RealSignals_Sampler.html#Modelica_Synchronous.RealSignals.Sampler.AssignClock"
 >AssignClock</a></td>
       <td>Assign a clock to a clocked <b>scalar</b> signal.</td>
     </tr>
     <tr>
-      <td><A HREF="Modelica_Synchronous_RealSignals_Sampler.html#Modelica_Synchronous.RealSignals.Sampler.AssignClockVectorized"
+      <td><a href="Modelica_Synchronous_RealSignals_Sampler.html#Modelica_Synchronous.RealSignals.Sampler.AssignClockVectorized"
 >AssignClockVectorized</a></td>
       <td>Assign a clock to a clocked <b>vector</b> signal.</td>
     </tr>
@@ -114,80 +116,127 @@ the following blocks are provided:<br>&nbsp;
 
 <p>
 Additionally, package
-<A HREF="Modelica_Synchronous_RealSignals_Sampler_Utilities.html#Modelica_Synchronous.RealSignals.Sampler.Utilities"
+<a href="Modelica_Synchronous_RealSignals_Sampler_Utilities.html#Modelica_Synchronous.RealSignals.Sampler.Utilities"
 >Utilities</a></td>
 contains utility blocks that are used as building blocks for user-relevant blocks.
 Especially, block
-<A HREF="Modelica_Synchronous_RealSignals_Sampler_Utilities.html#Modelica_Synchronous.RealSignals.Sampler.Utilities.UpSample"
+<a href="Modelica_Synchronous_RealSignals_Sampler_Utilities.html#Modelica_Synchronous.RealSignals.Sampler.Utilities.UpSample"
 >UpSample</a>
 can be used in combination with a
-<A HREF="Modelica_Synchronous_RealSignals_Periodic.html#Modelica_Synchronous.RealSignals.Periodic.FIRbyCoefficients"
+<a href="Modelica_Synchronous_RealSignals_Periodic.html#Modelica_Synchronous.RealSignals.Periodic.FIRbyCoefficients"
 >FIR filter</a>
 block to model super-sampling with interpolation and filtering.
 </p>
-<pre></PRE><P></P>
-Extends from Modelica.Icons.Package (Icon for standard packages).
-<P></P><H3>Package Content</H3>
-<TABLE BORDER=1 CELLSPACING=0 CELLPADDING=2 >
-<TR><TH >Name</TH><TH>Description</TH></TR>
-<TR><TD><IMG SRC="Modelica_Synchronous.Real86f29cb364f55b38ampleS.png" ALT="Modelica_Synchronous.RealSignals.Sampler.Sample" WIDTH=20  HEIGHT=20 ALIGN = TOP >&nbsp;<A HREF="Modelica_Synchronous_RealSignals_Sampler.html#Modelica_Synchronous.RealSignals.Sampler.Sample"
->Sample</A>
-</TD><TD>Sample the continuous-time, Real input signal and provide it as clocked output signal (clock is infered)</TD></TR>
-<TR><TD><IMG SRC="Modelica_Synchronous.Reald9f2e2e6396cb917ockedS.png" ALT="Modelica_Synchronous.RealSignals.Sampler.SampleClocked" WIDTH=20  HEIGHT=20 ALIGN = TOP >&nbsp;<A HREF="Modelica_Synchronous_RealSignals_Sampler.html#Modelica_Synchronous.RealSignals.Sampler.SampleClocked"
->SampleClocked</A>
-</TD><TD>Sample the continuous-time, Real input signal and provide it as clocked output signal. The clock is provided as input signal</TD></TR>
-<TR><TD><IMG SRC="Modelica_Synchronous.Reald9f2e2e6396cb917ockedS.png" ALT="Modelica_Synchronous.RealSignals.Sampler.SampleVectorizedAndClocked" WIDTH=20  HEIGHT=20 ALIGN = TOP >&nbsp;<A HREF="Modelica_Synchronous_RealSignals_Sampler.html#Modelica_Synchronous.RealSignals.Sampler.SampleVectorizedAndClocked"
->SampleVectorizedAndClocked</A>
-</TD><TD>Sample the continuous-time, Real input signal vector and provide it as clocked output signal vector. The clock is provided as input signal</TD></TR>
-<TR><TD><IMG SRC="Modelica_Synchronous.Real1696a92206e5c7bffectsS.png" ALT="Modelica_Synchronous.RealSignals.Sampler.SampleWithADeffects" WIDTH=20  HEIGHT=20 ALIGN = TOP >&nbsp;<A HREF="Modelica_Synchronous_RealSignals_Sampler.html#Modelica_Synchronous.RealSignals.Sampler.SampleWithADeffects"
->SampleWithADeffects</A>
-</TD><TD>Sample with (simulated) Analog-Digital converter effects including noise</TD></TR>
-<TR><TD><IMG SRC="Modelica_Synchronous.Real4a582180b7548565.HoldS.png" ALT="Modelica_Synchronous.RealSignals.Sampler.Hold" WIDTH=20  HEIGHT=20 ALIGN = TOP >&nbsp;<A HREF="Modelica_Synchronous_RealSignals_Sampler.html#Modelica_Synchronous.RealSignals.Sampler.Hold"
->Hold</A>
-</TD><TD>Hold the clocked, Real input signal and provide it as continuous-time output signal (zero order hold)</TD></TR>
-<TR><TD><IMG SRC="Modelica_Synchronous.Real61e2925ba1a74e70fectsS.png" ALT="Modelica_Synchronous.RealSignals.Sampler.HoldWithDAeffects" WIDTH=20  HEIGHT=20 ALIGN = TOP >&nbsp;<A HREF="Modelica_Synchronous_RealSignals_Sampler.html#Modelica_Synchronous.RealSignals.Sampler.HoldWithDAeffects"
->HoldWithDAeffects</A>
-</TD><TD>Hold with (simulated) Digital-Analog converter effects and computational delay</TD></TR>
-<TR><TD><IMG SRC="Modelica_Synchronous.Reald02f9cd95f49ff3campleS.png" ALT="Modelica_Synchronous.RealSignals.Sampler.SubSample" WIDTH=20  HEIGHT=20 ALIGN = TOP >&nbsp;<A HREF="Modelica_Synchronous_RealSignals_Sampler.html#Modelica_Synchronous.RealSignals.Sampler.SubSample"
->SubSample</A>
-</TD><TD>Sub-sample the clocked Real input signal and provide it as clocked output signal</TD></TR>
-<TR><TD><IMG SRC="Modelica_Synchronous.Realf91705d89aec3b4campleS.png" ALT="Modelica_Synchronous.RealSignals.Sampler.SuperSample" WIDTH=20  HEIGHT=20 ALIGN = TOP >&nbsp;<A HREF="Modelica_Synchronous_RealSignals_Sampler.html#Modelica_Synchronous.RealSignals.Sampler.SuperSample"
->SuperSample</A>
-</TD><TD>Super-sample the clocked Real input signal and provide it as clocked output signal</TD></TR>
-<TR><TD><IMG SRC="Modelica_Synchronous.Real8f3ad12b34697988latedS.png" ALT="Modelica_Synchronous.RealSignals.Sampler.SuperSampleInterpolated" WIDTH=20  HEIGHT=20 ALIGN = TOP >&nbsp;<A HREF="Modelica_Synchronous_RealSignals_Sampler.html#Modelica_Synchronous.RealSignals.Sampler.SuperSampleInterpolated"
->SuperSampleInterpolated</A>
-</TD><TD>Super-sample the clocked Real input signal and provide it linearly interpolated as clocked output signal (this is also called an Interpolator)</TD></TR>
-<TR><TD><IMG SRC="Modelica_Synchronous.Real6882e4271aef8255ampleS.png" ALT="Modelica_Synchronous.RealSignals.Sampler.ShiftSample" WIDTH=20  HEIGHT=20 ALIGN = TOP >&nbsp;<A HREF="Modelica_Synchronous_RealSignals_Sampler.html#Modelica_Synchronous.RealSignals.Sampler.ShiftSample"
->ShiftSample</A>
-</TD><TD>Shift the clocked Real input signal by a fraction of the last interval and and provide it as clocked output signal</TD></TR>
-<TR><TD><IMG SRC="Modelica_Synchronous.Real55a0f27e0df322c8ampleS.png" ALT="Modelica_Synchronous.RealSignals.Sampler.BackSample" WIDTH=20  HEIGHT=20 ALIGN = TOP >&nbsp;<A HREF="Modelica_Synchronous_RealSignals_Sampler.html#Modelica_Synchronous.RealSignals.Sampler.BackSample"
->BackSample</A>
-</TD><TD>Shift the clock of the Real input signal backwards in time (and access the most recent value of the input at this new clock)</TD></TR>
-<TR><TD><IMG SRC="Modelica_Synchronous.Realf3cb5e56a28405c7ClockS.png" ALT="Modelica_Synchronous.RealSignals.Sampler.AssignClock" WIDTH=20  HEIGHT=20 ALIGN = TOP >&nbsp;<A HREF="Modelica_Synchronous_RealSignals_Sampler.html#Modelica_Synchronous.RealSignals.Sampler.AssignClock"
->AssignClock</A>
-</TD><TD>Assigns a clock to a clocked Real signal</TD></TR>
-<TR><TD><IMG SRC="Modelica_Synchronous.Realbb3dc901cc8148d1rizedS.png" ALT="Modelica_Synchronous.RealSignals.Sampler.AssignClockVectorized" WIDTH=20  HEIGHT=20 ALIGN = TOP >&nbsp;<A HREF="Modelica_Synchronous_RealSignals_Sampler.html#Modelica_Synchronous.RealSignals.Sampler.AssignClockVectorized"
->AssignClockVectorized</A>
-</TD><TD>Assigns a clock to a clocked Real signal vector</TD></TR>
-<TR><TD><IMG SRC="Modelica_Synchronous.Real99160239e1c51c00itiesS.png" ALT="Modelica_Synchronous.RealSignals.Sampler.Utilities" WIDTH=20  HEIGHT=20 ALIGN = TOP >&nbsp;<A HREF="Modelica_Synchronous_RealSignals_Sampler_Utilities.html#Modelica_Synchronous.RealSignals.Sampler.Utilities"
->Utilities</A>
-</TD><TD>Utility components that are usually not directly used</TD></TR>
-</TABLE>
-<!--[if supportFields]><span style='mso-element:field-begin'></span>
-<span style='mso-spacerun:yes'></span>XE Sample<![endif]-->
-<!--[if supportFields]><span style='mso-element:field-end'></span><![endif]-->
-<H2><IMG SRC="Modelica_Synchronous.Real86f29cb364f55b38ampleI.png" ALT="Modelica_Synchronous.RealSignals.Sampler.Sample" ALIGN=RIGHT BORDER=1 WIDTH=80  HEIGHT=80 >
-<A NAME="Modelica_Synchronous.RealSignals.Sampler.Sample"></A><A HREF="Modelica_Synchronous_RealSignals_Sampler.html#Modelica_Synchronous.RealSignals.Sampler"
->Modelica_Synchronous.RealSignals.Sampler</A>.Sample</H2>
-<B>Sample the continuous-time, Real input signal and provide it as clocked output signal (clock is infered)</B><p></P>
-<P></P><H3>Information</H3>
-<PRE></pre>
+
+<p>Extends from Modelica.Icons.Package (Icon for standard packages).</p>
+<h3>Package Content</h3>
+<table border="1" cellspacing="0" cellpadding="2" summary="Package Content">
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+<tr>
+<td><img src="Modelica_Synchronous.Real86f29cb364f55b38ampleS.png" alt="Modelica_Synchronous.RealSignals.Sampler.Sample" width="20" height="20" align="top">&nbsp;<a href="Modelica_Synchronous_RealSignals_Sampler.html#Modelica_Synchronous.RealSignals.Sampler.Sample"
+>Sample</a>
+</td>
+<td>Sample the continuous-time, Real input signal and provide it as clocked output signal (clock is infered)</td>
+</tr>
+<tr>
+<td><img src="Modelica_Synchronous.Reald9f2e2e6396cb917ockedS.png" alt="Modelica_Synchronous.RealSignals.Sampler.SampleClocked" width="20" height="20" align="top">&nbsp;<a href="Modelica_Synchronous_RealSignals_Sampler.html#Modelica_Synchronous.RealSignals.Sampler.SampleClocked"
+>SampleClocked</a>
+</td>
+<td>Sample the continuous-time, Real input signal and provide it as clocked output signal. The clock is provided as input signal</td>
+</tr>
+<tr>
+<td><img src="Modelica_Synchronous.Reald9f2e2e6396cb917ockedS.png" alt="Modelica_Synchronous.RealSignals.Sampler.SampleVectorizedAndClocked" width="20" height="20" align="top">&nbsp;<a href="Modelica_Synchronous_RealSignals_Sampler.html#Modelica_Synchronous.RealSignals.Sampler.SampleVectorizedAndClocked"
+>SampleVectorizedAndClocked</a>
+</td>
+<td>Sample the continuous-time, Real input signal vector and provide it as clocked output signal vector. The clock is provided as input signal</td>
+</tr>
+<tr>
+<td><img src="Modelica_Synchronous.Real1696a92206e5c7bffectsS.png" alt="Modelica_Synchronous.RealSignals.Sampler.SampleWithADeffects" width="20" height="20" align="top">&nbsp;<a href="Modelica_Synchronous_RealSignals_Sampler.html#Modelica_Synchronous.RealSignals.Sampler.SampleWithADeffects"
+>SampleWithADeffects</a>
+</td>
+<td>Sample with (simulated) Analog-Digital converter effects including noise</td>
+</tr>
+<tr>
+<td><img src="Modelica_Synchronous.Real4a582180b7548565.HoldS.png" alt="Modelica_Synchronous.RealSignals.Sampler.Hold" width="20" height="20" align="top">&nbsp;<a href="Modelica_Synchronous_RealSignals_Sampler.html#Modelica_Synchronous.RealSignals.Sampler.Hold"
+>Hold</a>
+</td>
+<td>Hold the clocked, Real input signal and provide it as continuous-time output signal (zero order hold)</td>
+</tr>
+<tr>
+<td><img src="Modelica_Synchronous.Real61e2925ba1a74e70fectsS.png" alt="Modelica_Synchronous.RealSignals.Sampler.HoldWithDAeffects" width="20" height="20" align="top">&nbsp;<a href="Modelica_Synchronous_RealSignals_Sampler.html#Modelica_Synchronous.RealSignals.Sampler.HoldWithDAeffects"
+>HoldWithDAeffects</a>
+</td>
+<td>Hold with (simulated) Digital-Analog converter effects and computational delay</td>
+</tr>
+<tr>
+<td><img src="Modelica_Synchronous.Reald02f9cd95f49ff3campleS.png" alt="Modelica_Synchronous.RealSignals.Sampler.SubSample" width="20" height="20" align="top">&nbsp;<a href="Modelica_Synchronous_RealSignals_Sampler.html#Modelica_Synchronous.RealSignals.Sampler.SubSample"
+>SubSample</a>
+</td>
+<td>Sub-sample the clocked Real input signal and provide it as clocked output signal</td>
+</tr>
+<tr>
+<td><img src="Modelica_Synchronous.Realf91705d89aec3b4campleS.png" alt="Modelica_Synchronous.RealSignals.Sampler.SuperSample" width="20" height="20" align="top">&nbsp;<a href="Modelica_Synchronous_RealSignals_Sampler.html#Modelica_Synchronous.RealSignals.Sampler.SuperSample"
+>SuperSample</a>
+</td>
+<td>Super-sample the clocked Real input signal and provide it as clocked output signal</td>
+</tr>
+<tr>
+<td><img src="Modelica_Synchronous.Real8f3ad12b34697988latedS.png" alt="Modelica_Synchronous.RealSignals.Sampler.SuperSampleInterpolated" width="20" height="20" align="top">&nbsp;<a href="Modelica_Synchronous_RealSignals_Sampler.html#Modelica_Synchronous.RealSignals.Sampler.SuperSampleInterpolated"
+>SuperSampleInterpolated</a>
+</td>
+<td>Super-sample the clocked Real input signal and provide it linearly interpolated as clocked output signal (this is also called an Interpolator)</td>
+</tr>
+<tr>
+<td><img src="Modelica_Synchronous.Real6882e4271aef8255ampleS.png" alt="Modelica_Synchronous.RealSignals.Sampler.ShiftSample" width="20" height="20" align="top">&nbsp;<a href="Modelica_Synchronous_RealSignals_Sampler.html#Modelica_Synchronous.RealSignals.Sampler.ShiftSample"
+>ShiftSample</a>
+</td>
+<td>Shift the clocked Real input signal by a fraction of the last interval and and provide it as clocked output signal</td>
+</tr>
+<tr>
+<td><img src="Modelica_Synchronous.Real55a0f27e0df322c8ampleS.png" alt="Modelica_Synchronous.RealSignals.Sampler.BackSample" width="20" height="20" align="top">&nbsp;<a href="Modelica_Synchronous_RealSignals_Sampler.html#Modelica_Synchronous.RealSignals.Sampler.BackSample"
+>BackSample</a>
+</td>
+<td>Shift the clock of the Real input signal backwards in time (and access the most recent value of the input at this new clock)</td>
+</tr>
+<tr>
+<td><img src="Modelica_Synchronous.Realf3cb5e56a28405c7ClockS.png" alt="Modelica_Synchronous.RealSignals.Sampler.AssignClock" width="20" height="20" align="top">&nbsp;<a href="Modelica_Synchronous_RealSignals_Sampler.html#Modelica_Synchronous.RealSignals.Sampler.AssignClock"
+>AssignClock</a>
+</td>
+<td>Assigns a clock to a clocked Real signal</td>
+</tr>
+<tr>
+<td><img src="Modelica_Synchronous.Realbb3dc901cc8148d1rizedS.png" alt="Modelica_Synchronous.RealSignals.Sampler.AssignClockVectorized" width="20" height="20" align="top">&nbsp;<a href="Modelica_Synchronous_RealSignals_Sampler.html#Modelica_Synchronous.RealSignals.Sampler.AssignClockVectorized"
+>AssignClockVectorized</a>
+</td>
+<td>Assigns a clock to a clocked Real signal vector</td>
+</tr>
+<tr>
+<td><img src="Modelica_Synchronous.Real99160239e1c51c00itiesS.png" alt="Modelica_Synchronous.RealSignals.Sampler.Utilities" width="20" height="20" align="top">&nbsp;<a href="Modelica_Synchronous_RealSignals_Sampler_Utilities.html#Modelica_Synchronous.RealSignals.Sampler.Utilities"
+>Utilities</a>
+</td>
+<td>Utility components that are usually not directly used</td>
+</tr>
+</table>
+<!--[if supportFields]><span style="mso-element:field-begin"></span>
+<span style="mso-spacerun:yes"></span>XE Sample<![endif]-->
+<!--[if supportFields]><span style="mso-element:field-end"></span><![endif]-->
+<h2><img src="Modelica_Synchronous.Real86f29cb364f55b38ampleI.png" alt="Modelica_Synchronous.RealSignals.Sampler.Sample" align="right" style="border: 1px solid" width="80" height="80">
+<a name="Modelica_Synchronous.RealSignals.Sampler.Sample"></a><a href="Modelica_Synchronous_RealSignals_Sampler.html#Modelica_Synchronous.RealSignals.Sampler"
+>Modelica_Synchronous.RealSignals.Sampler</a>.Sample</h2>
+<p>
+<b>Sample the continuous-time, Real input signal and provide it as clocked output signal (clock is infered)</b>
+</p>
+<h3>Information</h3>
+
 <p>
 This block samples the continuous-time, Real input signal u and provides it as
 clocked output signal y. The clock of the output signal is infered
 (that is, it needs to be defined somewhere else in the clocked partition).
 If this is not desired, use block
-<A HREF="Modelica_Synchronous_RealSignals_Sampler.html#Modelica_Synchronous.RealSignals.Sampler.SampleClocked"
+<a href="Modelica_Synchronous_RealSignals_Sampler.html#Modelica_Synchronous.RealSignals.Sampler.SampleClocked"
 >SampleClocked</a>
 instead, to explicitly assign a clock to the output signal.
 </p>
@@ -209,7 +258,7 @@ occur.
 
 <p>
 The following
-<A HREF="Modelica_Synchronous_Examples_Elementary_RealSignals.html#Modelica_Synchronous.Examples.Elementary.RealSignals.Sample1"
+<a href="Modelica_Synchronous_Examples_Elementary_RealSignals.html#Modelica_Synchronous.Examples.Elementary.RealSignals.Sample1"
 >example</a>
 samples a sine signal with a periodic clock of 20 ms period:<br>
 </p>
@@ -228,7 +277,7 @@ samples a sine signal with a periodic clock of 20 ms period:<br>
 
 <p>
 <br>In the following
-<A HREF="Modelica_Synchronous_Examples_Elementary_RealSignals.html#Modelica_Synchronous.Examples.Elementary.RealSignals.Sample2"
+<a href="Modelica_Synchronous_Examples_Elementary_RealSignals.html#Modelica_Synchronous.Examples.Elementary.RealSignals.Sample2"
 >example</a>
 the continuous-time input signal contains a discontinuous value change at the 0.1 s
 clock tick. It can be seen that the Sample block samples the left limit of the
@@ -249,7 +298,7 @@ step signal:<br>
 
 <p>
 <br>In the following
-<A HREF="Modelica_Synchronous_Examples_Elementary_RealSignals.html#Modelica_Synchronous.Examples.Elementary.RealSignals.Sample3"
+<a href="Modelica_Synchronous_Examples_Elementary_RealSignals.html#Modelica_Synchronous.Examples.Elementary.RealSignals.Sample3"
 >example</a>
 a direct feedthrough in the continuous-time and in the clocked partition is present.
 Without a time-delay, this would result in an algebraic loop. However, since block
@@ -277,26 +326,28 @@ delay of one sample period that breaks the algebraic loop:
 Note, the reason for the delay is that sample2.y (= the green, clocked signal)
 is the left limit of hold.y (= the red, continuous-time signal).
 </p>
-<pre></PRE><P></P>
-Extends from <A HREF="Modelica_Synchronous_RealSignals_Interfaces.html#Modelica_Synchronous.RealSignals.Interfaces.PartialSISOSampler"
->Modelica_Synchronous.RealSignals.Interfaces.PartialSISOSampler</A> (Basic block used for sampling of Real signals).
-<P><H3>Connectors</H3><P>
-<TABLE BORDER=1 CELLSPACING=0 CELLPADDING=2>
-<TR><TH>Name</TH><TH>Description</TH></TR>
-<TR><TD>u</TD><TD>Connector of continuous-time, Real input signal</TD></TR>
-<TR><TD>y</TD><TD>Connector of clocked, Real output signal</TD></TR>
-</TABLE>
-<!--[if supportFields]><span style='mso-element:field-begin'></span>
-<span style='mso-spacerun:yes'></span>XE SampleClocked<![endif]-->
-<!--[if supportFields]><span style='mso-element:field-end'></span><![endif]-->
-<H2><IMG SRC="Modelica_Synchronous.Reald9f2e2e6396cb917ockedI.png" ALT="Modelica_Synchronous.RealSignals.Sampler.SampleClocked" ALIGN=RIGHT BORDER=1 WIDTH=80  HEIGHT=80 >
-<A NAME="Modelica_Synchronous.RealSignals.Sampler.SampleClocked"></A><A HREF="Modelica_Synchronous_RealSignals_Sampler.html#Modelica_Synchronous.RealSignals.Sampler"
->Modelica_Synchronous.RealSignals.Sampler</A>.SampleClocked</H2>
-<B>Sample the continuous-time, Real input signal and provide it as clocked output signal. The clock is provided as input signal</B><p></P>
-<P></P><H3>Information</H3>
-<PRE></pre>
+
+<p>Extends from <a href="Modelica_Synchronous_RealSignals_Interfaces.html#Modelica_Synchronous.RealSignals.Interfaces.PartialSISOSampler"
+>Modelica_Synchronous.RealSignals.Interfaces.PartialSISOSampler</a> (Basic block used for sampling of Real signals).</p>
+<h3>Connectors</h3>
+<table border="1" cellspacing="0" cellpadding="2" summary="Connectors">
+<tr><th>Name</th><th>Description</th></tr>
+<tr><td>u</td><td>Connector of continuous-time, Real input signal</td></tr>
+<tr><td>y</td><td>Connector of clocked, Real output signal</td></tr>
+</table>
+<!--[if supportFields]><span style="mso-element:field-begin"></span>
+<span style="mso-spacerun:yes"></span>XE SampleClocked<![endif]-->
+<!--[if supportFields]><span style="mso-element:field-end"></span><![endif]-->
+<h2><img src="Modelica_Synchronous.Reald9f2e2e6396cb917ockedI.png" alt="Modelica_Synchronous.RealSignals.Sampler.SampleClocked" align="right" style="border: 1px solid" width="80" height="80">
+<a name="Modelica_Synchronous.RealSignals.Sampler.SampleClocked"></a><a href="Modelica_Synchronous_RealSignals_Sampler.html#Modelica_Synchronous.RealSignals.Sampler"
+>Modelica_Synchronous.RealSignals.Sampler</a>.SampleClocked</h2>
+<p>
+<b>Sample the continuous-time, Real input signal and provide it as clocked output signal. The clock is provided as input signal</b>
+</p>
+<h3>Information</h3>
+
 This block is similar to the
-<A HREF="Modelica_Synchronous_RealSignals_Sampler.html#Modelica_Synchronous.RealSignals.Sampler.Sample"
+<a href="Modelica_Synchronous_RealSignals_Sampler.html#Modelica_Synchronous.RealSignals.Sampler.Sample"
 >Sample</a>
 block. The only difference is that a clock signal is provided via a second
 input and the output is associated to this clock.
@@ -305,7 +356,7 @@ input and the output is associated to this clock.
 <p>
 Note, it does not make much sense to vectorize this block, because then
 also the clock input is vectorized. Instead, if the input signal is a vector, use block
-<A HREF="Modelica_Synchronous_RealSignals_Sampler.html#Modelica_Synchronous.RealSignals.Sampler.SampleVectorizedAndClocked"
+<a href="Modelica_Synchronous_RealSignals_Sampler.html#Modelica_Synchronous.RealSignals.Sampler.SampleVectorizedAndClocked"
 >SampleVectorizedAndClocked</a>
 that has a <b>vector</b> Real input and output, as well as a <b>scalar</b> clock input.
 </p>
@@ -314,7 +365,7 @@ that has a <b>vector</b> Real input and output, as well as a <b>scalar</b> clock
 
 <p>
 The following
-<A HREF="Modelica_Synchronous_Examples_Elementary_RealSignals.html#Modelica_Synchronous.Examples.Elementary.RealSignals.SampleClocked"
+<a href="Modelica_Synchronous_Examples_Elementary_RealSignals.html#Modelica_Synchronous.Examples.Elementary.RealSignals.SampleClocked"
 >example</a>
 samples a sine signal with a periodic clock of 20 ms period:<br>
 </p>
@@ -330,28 +381,30 @@ samples a sine signal with a periodic clock of 20 ms period:<br>
     <td align="center">simulation result<br></td>
    </tr>
 </table>
-<pre></PRE><P></P>
-Extends from <A HREF="Modelica_Synchronous_RealSignals_Interfaces.html#Modelica_Synchronous.RealSignals.Interfaces.SamplerIcon"
->Modelica_Synchronous.RealSignals.Interfaces.SamplerIcon</A> (Basic graphical layout of block used for sampling of Real signals).
-<P><H3>Connectors</H3><P>
-<TABLE BORDER=1 CELLSPACING=0 CELLPADDING=2>
-<TR><TH>Name</TH><TH>Description</TH></TR>
-<TR><TD>u</TD><TD>Connector of continuous-time, Real input signal</TD></TR>
-<TR><TD>y</TD><TD>Connector of clocked, Real output signal</TD></TR>
-<TR><TD>clock</TD><TD>Output signal y is associated with this clock input</TD></TR>
-</TABLE>
-<!--[if supportFields]><span style='mso-element:field-begin'></span>
-<span style='mso-spacerun:yes'></span>XE SampleVectorizedAndClocked<![endif]-->
-<!--[if supportFields]><span style='mso-element:field-end'></span><![endif]-->
-<H2><IMG SRC="Modelica_Synchronous.Reald9f2e2e6396cb917ockedI.png" ALT="Modelica_Synchronous.RealSignals.Sampler.SampleVectorizedAndClocked" ALIGN=RIGHT BORDER=1 WIDTH=80  HEIGHT=80 >
-<A NAME="Modelica_Synchronous.RealSignals.Sampler.SampleVectorizedAndClocked"></A><A HREF="Modelica_Synchronous_RealSignals_Sampler.html#Modelica_Synchronous.RealSignals.Sampler"
->Modelica_Synchronous.RealSignals.Sampler</A>.SampleVectorizedAndClocked</H2>
-<B>Sample the continuous-time, Real input signal vector and provide it as clocked output signal vector. The clock is provided as input signal</B><p></P>
-<P></P><H3>Information</H3>
-<PRE></pre>
+
+<p>Extends from <a href="Modelica_Synchronous_RealSignals_Interfaces.html#Modelica_Synchronous.RealSignals.Interfaces.SamplerIcon"
+>Modelica_Synchronous.RealSignals.Interfaces.SamplerIcon</a> (Basic graphical layout of block used for sampling of Real signals).</p>
+<h3>Connectors</h3>
+<table border="1" cellspacing="0" cellpadding="2" summary="Connectors">
+<tr><th>Name</th><th>Description</th></tr>
+<tr><td>u</td><td>Connector of continuous-time, Real input signal</td></tr>
+<tr><td>y</td><td>Connector of clocked, Real output signal</td></tr>
+<tr><td>clock</td><td>Output signal y is associated with this clock input</td></tr>
+</table>
+<!--[if supportFields]><span style="mso-element:field-begin"></span>
+<span style="mso-spacerun:yes"></span>XE SampleVectorizedAndClocked<![endif]-->
+<!--[if supportFields]><span style="mso-element:field-end"></span><![endif]-->
+<h2><img src="Modelica_Synchronous.Reald9f2e2e6396cb917ockedI.png" alt="Modelica_Synchronous.RealSignals.Sampler.SampleVectorizedAndClocked" align="right" style="border: 1px solid" width="80" height="80">
+<a name="Modelica_Synchronous.RealSignals.Sampler.SampleVectorizedAndClocked"></a><a href="Modelica_Synchronous_RealSignals_Sampler.html#Modelica_Synchronous.RealSignals.Sampler"
+>Modelica_Synchronous.RealSignals.Sampler</a>.SampleVectorizedAndClocked</h2>
+<p>
+<b>Sample the continuous-time, Real input signal vector and provide it as clocked output signal vector. The clock is provided as input signal</b>
+</p>
+<h3>Information</h3>
+
 <p>
 This block is similar to the
-<A HREF="Modelica_Synchronous_RealSignals_Sampler.html#Modelica_Synchronous.RealSignals.Sampler.SampleClocked"
+<a href="Modelica_Synchronous_RealSignals_Sampler.html#Modelica_Synchronous.RealSignals.Sampler.SampleClocked"
 >SampleClocked</a>
 block. The only difference is that the continuous-time input signal is a vector: All input
 signals are sampled and are associated with the
@@ -362,7 +415,7 @@ scalar clock signal provided via the second input.
 
 <p>
 The following
-<A HREF="Modelica_Synchronous_Examples_Elementary_RealSignals.html#Modelica_Synchronous.Examples.Elementary.RealSignals.SampleVectorizedAndClocked"
+<a href="Modelica_Synchronous_Examples_Elementary_RealSignals.html#Modelica_Synchronous.Examples.Elementary.RealSignals.SampleVectorizedAndClocked"
 >example</a>
 has a vector as input, consisting of two different sine signals. These
 signals are sampled with a periodic clock of 20 ms period:<br>
@@ -379,32 +432,34 @@ signals are sampled with a periodic clock of 20 ms period:<br>
     <td align="center">simulation result<br></td>
    </tr>
 </table>
-<pre></PRE><P></P>
-Extends from <A HREF="Modelica_Synchronous_RealSignals_Interfaces.html#Modelica_Synchronous.RealSignals.Interfaces.SamplerIcon"
->Modelica_Synchronous.RealSignals.Interfaces.SamplerIcon</A> (Basic graphical layout of block used for sampling of Real signals).
-<P><H3>Parameters</H3><P>
-<TABLE BORDER=1 CELLSPACING=0 CELLPADDING=2>
-<TR><TH>Name</TH><TH>Description</TH></TR>
-<TR><TD>n</TD><TD>Size of input signal vector u (= size of output signal vector y)</TD></TR>
-</TABLE>
-<P><H3>Connectors</H3><P>
-<TABLE BORDER=1 CELLSPACING=0 CELLPADDING=2>
-<TR><TH>Name</TH><TH>Description</TH></TR>
-<TR><TD>u[n]</TD><TD>Connector of continuous-time, Real input signal vector</TD></TR>
-<TR><TD>y[n]</TD><TD>Connector of clocked, Real output signal vector</TD></TR>
-<TR><TD>clock</TD><TD>Output signal vector y is associated with this clock input</TD></TR>
-</TABLE>
-<!--[if supportFields]><span style='mso-element:field-begin'></span>
-<span style='mso-spacerun:yes'></span>XE SampleWithADeffects<![endif]-->
-<!--[if supportFields]><span style='mso-element:field-end'></span><![endif]-->
-<H2><IMG SRC="Modelica_Synchronous.Real1696a92206e5c7bffectsI.png" ALT="Modelica_Synchronous.RealSignals.Sampler.SampleWithADeffects" ALIGN=RIGHT BORDER=1 WIDTH=80  HEIGHT=80 >
-<A NAME="Modelica_Synchronous.RealSignals.Sampler.SampleWithADeffects"></A><A HREF="Modelica_Synchronous_RealSignals_Sampler.html#Modelica_Synchronous.RealSignals.Sampler"
->Modelica_Synchronous.RealSignals.Sampler</A>.SampleWithADeffects</H2>
-<B>Sample with (simulated) Analog-Digital converter effects including noise</B><p></P>
-<P></P><H3>Information</H3>
-<PRE></pre>
+
+<p>Extends from <a href="Modelica_Synchronous_RealSignals_Interfaces.html#Modelica_Synchronous.RealSignals.Interfaces.SamplerIcon"
+>Modelica_Synchronous.RealSignals.Interfaces.SamplerIcon</a> (Basic graphical layout of block used for sampling of Real signals).</p>
+<h3>Parameters</h3>
+<table border="1" cellspacing="0" cellpadding="2" summary="Parameters">
+<tr><th>Name</th><th>Description</th></tr>
+<tr><td>n</td><td>Size of input signal vector u (= size of output signal vector y)</td></tr>
+</table>
+<h3>Connectors</h3>
+<table border="1" cellspacing="0" cellpadding="2" summary="Connectors">
+<tr><th>Name</th><th>Description</th></tr>
+<tr><td>u[n]</td><td>Connector of continuous-time, Real input signal vector</td></tr>
+<tr><td>y[n]</td><td>Connector of clocked, Real output signal vector</td></tr>
+<tr><td>clock</td><td>Output signal vector y is associated with this clock input</td></tr>
+</table>
+<!--[if supportFields]><span style="mso-element:field-begin"></span>
+<span style="mso-spacerun:yes"></span>XE SampleWithADeffects<![endif]-->
+<!--[if supportFields]><span style="mso-element:field-end"></span><![endif]-->
+<h2><img src="Modelica_Synchronous.Real1696a92206e5c7bffectsI.png" alt="Modelica_Synchronous.RealSignals.Sampler.SampleWithADeffects" align="right" style="border: 1px solid" width="80" height="80">
+<a name="Modelica_Synchronous.RealSignals.Sampler.SampleWithADeffects"></a><a href="Modelica_Synchronous_RealSignals_Sampler.html#Modelica_Synchronous.RealSignals.Sampler"
+>Modelica_Synchronous.RealSignals.Sampler</a>.SampleWithADeffects</h2>
+<p>
+<b>Sample with (simulated) Analog-Digital converter effects including noise</b>
+</p>
+<h3>Information</h3>
+
 This block is similar to the
-<A HREF="Modelica_Synchronous_RealSignals_Sampler.html#Modelica_Synchronous.RealSignals.Sampler.Sample"
+<a href="Modelica_Synchronous_RealSignals_Sampler.html#Modelica_Synchronous.RealSignals.Sampler.Sample"
 >Sample</a>
 block. The only difference is that after the sampling of the input signal,
 simulated real-world effects are applied on the sampled signal. In particular:
@@ -425,7 +480,7 @@ simulated real-world effects are applied on the sampled signal. In particular:
 
 <p>
 The following
-<A HREF="Modelica_Synchronous_Examples_Elementary_RealSignals.html#Modelica_Synchronous.Examples.Elementary.RealSignals.SampleWithADeffects"
+<a href="Modelica_Synchronous_Examples_Elementary_RealSignals.html#Modelica_Synchronous.Examples.Elementary.RealSignals.SampleWithADeffects"
 >example</a>
 samples a sine signal with a periodic clock of 20 ms period, and adds the following effects:
 </p>
@@ -451,37 +506,39 @@ samples a sine signal with a periodic clock of 20 ms period, and adds the follow
     due to the strong discretization and large noise applied to the
     sampled input.
 </p>
-<pre></PRE><P></P>
-Extends from <A HREF="Modelica_Synchronous_RealSignals_Interfaces.html#Modelica_Synchronous.RealSignals.Interfaces.PartialSISOSampler"
->Modelica_Synchronous.RealSignals.Interfaces.PartialSISOSampler</A> (Basic block used for sampling of Real signals).
-<P><H3>Parameters</H3><P>
-<TABLE BORDER=1 CELLSPACING=0 CELLPADDING=2>
-<TR><TH>Name</TH><TH>Description</TH></TR>
-<TR bgcolor="#e0e0e0"><TD colspan=2>Sampling and noise</TD></TR>
-<TR><TD>noisy</TD><TD>= true, if output should be superimposed with noise</TD></TR>
-<TR><TD>noise</TD><TD>Noise model</TD></TR>
-<TR bgcolor="#e0e0e0"><TD colspan=2>Limiting and quantization</TD></TR>
-<TR><TD>limited</TD><TD>= true, if output is limited</TD></TR>
-<TR><TD>quantized</TD><TD>= true, if output quantization effects included</TD></TR>
-<TR><TD>yMax</TD><TD>Upper limit of output (if limited = true)</TD></TR>
-<TR><TD>yMin</TD><TD>Lower limit of output (if limited = true)</TD></TR>
-<TR><TD>bits</TD><TD>Number of bits of quantization (if quantized = true)</TD></TR>
-</TABLE>
-<P><H3>Connectors</H3><P>
-<TABLE BORDER=1 CELLSPACING=0 CELLPADDING=2>
-<TR><TH>Name</TH><TH>Description</TH></TR>
-<TR><TD>u</TD><TD>Connector of continuous-time, Real input signal</TD></TR>
-<TR><TD>y</TD><TD>Connector of clocked, Real output signal</TD></TR>
-</TABLE>
-<!--[if supportFields]><span style='mso-element:field-begin'></span>
-<span style='mso-spacerun:yes'></span>XE Hold<![endif]-->
-<!--[if supportFields]><span style='mso-element:field-end'></span><![endif]-->
-<H2><IMG SRC="Modelica_Synchronous.Real4a582180b7548565.HoldI.png" ALT="Modelica_Synchronous.RealSignals.Sampler.Hold" ALIGN=RIGHT BORDER=1 WIDTH=80  HEIGHT=80 >
-<A NAME="Modelica_Synchronous.RealSignals.Sampler.Hold"></A><A HREF="Modelica_Synchronous_RealSignals_Sampler.html#Modelica_Synchronous.RealSignals.Sampler"
->Modelica_Synchronous.RealSignals.Sampler</A>.Hold</H2>
-<B>Hold the clocked, Real input signal and provide it as continuous-time output signal (zero order hold)</B><p></P>
-<P></P><H3>Information</H3>
-<PRE></pre>
+
+<p>Extends from <a href="Modelica_Synchronous_RealSignals_Interfaces.html#Modelica_Synchronous.RealSignals.Interfaces.PartialSISOSampler"
+>Modelica_Synchronous.RealSignals.Interfaces.PartialSISOSampler</a> (Basic block used for sampling of Real signals).</p>
+<h3>Parameters</h3>
+<table border="1" cellspacing="0" cellpadding="2" summary="Parameters">
+<tr><th>Name</th><th>Description</th></tr>
+<tr style="background-color: #e0e0e0"><td colspan="2">Sampling and noise</td></tr>
+<tr><td>noisy</td><td>= true, if output should be superimposed with noise</td></tr>
+<tr><td>noise</td><td>Noise model</td></tr>
+<tr style="background-color: #e0e0e0"><td colspan="2">Limiting and quantization</td></tr>
+<tr><td>limited</td><td>= true, if output is limited</td></tr>
+<tr><td>quantized</td><td>= true, if output quantization effects included</td></tr>
+<tr><td>yMax</td><td>Upper limit of output (if limited = true)</td></tr>
+<tr><td>yMin</td><td>Lower limit of output (if limited = true)</td></tr>
+<tr><td>bits</td><td>Number of bits of quantization (if quantized = true)</td></tr>
+</table>
+<h3>Connectors</h3>
+<table border="1" cellspacing="0" cellpadding="2" summary="Connectors">
+<tr><th>Name</th><th>Description</th></tr>
+<tr><td>u</td><td>Connector of continuous-time, Real input signal</td></tr>
+<tr><td>y</td><td>Connector of clocked, Real output signal</td></tr>
+</table>
+<!--[if supportFields]><span style="mso-element:field-begin"></span>
+<span style="mso-spacerun:yes"></span>XE Hold<![endif]-->
+<!--[if supportFields]><span style="mso-element:field-end"></span><![endif]-->
+<h2><img src="Modelica_Synchronous.Real4a582180b7548565.HoldI.png" alt="Modelica_Synchronous.RealSignals.Sampler.Hold" align="right" style="border: 1px solid" width="80" height="80">
+<a name="Modelica_Synchronous.RealSignals.Sampler.Hold"></a><a href="Modelica_Synchronous_RealSignals_Sampler.html#Modelica_Synchronous.RealSignals.Sampler"
+>Modelica_Synchronous.RealSignals.Sampler</a>.Hold</h2>
+<p>
+<b>Hold the clocked, Real input signal and provide it as continuous-time output signal (zero order hold)</b>
+</p>
+<h3>Information</h3>
+
 <p>
 This block holds the clocked Real input signal u with a zero order hold
 and provides it as continuous-time output signal y.
@@ -502,7 +559,7 @@ this parameter is displayed below the icon.
 
 <p>
 The following
-<A HREF="Modelica_Synchronous_Examples_Elementary_RealSignals.html#Modelica_Synchronous.Examples.Elementary.RealSignals.Hold"
+<a href="Modelica_Synchronous_Examples_Elementary_RealSignals.html#Modelica_Synchronous.Examples.Elementary.RealSignals.Hold"
 >example</a>
 samples a sine signal with a periodic clock of 20 ms period and delays it for 2 sample periods.
 The resulting signal is hold with the Hold block. As a result, the clock of hold.u starts
@@ -523,31 +580,33 @@ to -1.0 (= the value of parameter hold.y_start).<br>
    </tr>
 </table>
 &nbsp;
-<pre></PRE><P></P>
-Extends from <A HREF="Modelica_Synchronous_RealSignals_Interfaces.html#Modelica_Synchronous.RealSignals.Interfaces.PartialSISOHold"
->Modelica_Synchronous.RealSignals.Interfaces.PartialSISOHold</A> (Basic block used for zero order hold of Real signals).
-<P><H3>Parameters</H3><P>
-<TABLE BORDER=1 CELLSPACING=0 CELLPADDING=2>
-<TR><TH>Name</TH><TH>Description</TH></TR>
-<TR><TD>y_start</TD><TD>Value of output y before the first tick of the clock associated to input u</TD></TR>
-</TABLE>
-<P><H3>Connectors</H3><P>
-<TABLE BORDER=1 CELLSPACING=0 CELLPADDING=2>
-<TR><TH>Name</TH><TH>Description</TH></TR>
-<TR><TD>u</TD><TD>Connector of clocked, Real input signal</TD></TR>
-<TR><TD>y</TD><TD>Connector of continuous-time, Real output signal</TD></TR>
-</TABLE>
-<!--[if supportFields]><span style='mso-element:field-begin'></span>
-<span style='mso-spacerun:yes'></span>XE HoldWithDAeffects<![endif]-->
-<!--[if supportFields]><span style='mso-element:field-end'></span><![endif]-->
-<H2><IMG SRC="Modelica_Synchronous.Real61e2925ba1a74e70fectsI.png" ALT="Modelica_Synchronous.RealSignals.Sampler.HoldWithDAeffects" ALIGN=RIGHT BORDER=1 WIDTH=80  HEIGHT=80 >
-<A NAME="Modelica_Synchronous.RealSignals.Sampler.HoldWithDAeffects"></A><A HREF="Modelica_Synchronous_RealSignals_Sampler.html#Modelica_Synchronous.RealSignals.Sampler"
->Modelica_Synchronous.RealSignals.Sampler</A>.HoldWithDAeffects</H2>
-<B>Hold with (simulated) Digital-Analog converter effects and computational delay</B><p></P>
-<P></P><H3>Information</H3>
-<PRE></pre>
+
+<p>Extends from <a href="Modelica_Synchronous_RealSignals_Interfaces.html#Modelica_Synchronous.RealSignals.Interfaces.PartialSISOHold"
+>Modelica_Synchronous.RealSignals.Interfaces.PartialSISOHold</a> (Basic block used for zero order hold of Real signals).</p>
+<h3>Parameters</h3>
+<table border="1" cellspacing="0" cellpadding="2" summary="Parameters">
+<tr><th>Name</th><th>Description</th></tr>
+<tr><td>y_start</td><td>Value of output y before the first tick of the clock associated to input u</td></tr>
+</table>
+<h3>Connectors</h3>
+<table border="1" cellspacing="0" cellpadding="2" summary="Connectors">
+<tr><th>Name</th><th>Description</th></tr>
+<tr><td>u</td><td>Connector of clocked, Real input signal</td></tr>
+<tr><td>y</td><td>Connector of continuous-time, Real output signal</td></tr>
+</table>
+<!--[if supportFields]><span style="mso-element:field-begin"></span>
+<span style="mso-spacerun:yes"></span>XE HoldWithDAeffects<![endif]-->
+<!--[if supportFields]><span style="mso-element:field-end"></span><![endif]-->
+<h2><img src="Modelica_Synchronous.Real61e2925ba1a74e70fectsI.png" alt="Modelica_Synchronous.RealSignals.Sampler.HoldWithDAeffects" align="right" style="border: 1px solid" width="80" height="80">
+<a name="Modelica_Synchronous.RealSignals.Sampler.HoldWithDAeffects"></a><a href="Modelica_Synchronous_RealSignals_Sampler.html#Modelica_Synchronous.RealSignals.Sampler"
+>Modelica_Synchronous.RealSignals.Sampler</a>.HoldWithDAeffects</h2>
+<p>
+<b>Hold with (simulated) Digital-Analog converter effects and computational delay</b>
+</p>
+<h3>Information</h3>
+
 This block is similar to the
-<A HREF="Modelica_Synchronous_RealSignals_Sampler.html#Modelica_Synchronous.RealSignals.Sampler.Hold"
+<a href="Modelica_Synchronous_RealSignals_Sampler.html#Modelica_Synchronous.RealSignals.Sampler.Hold"
 >Hold</a>
 block. The only difference is that simulated real-world effects are applied on the
 clocked input signal u before transforming the signal to a continuous-time signal
@@ -573,7 +632,7 @@ with a zero-order hold. In particular:
 
 <p>
 The following
-<A HREF="Modelica_Synchronous_Examples_Elementary_RealSignals.html#Modelica_Synchronous.Examples.Elementary.RealSignals.HoldWithDAeffects1"
+<a href="Modelica_Synchronous_Examples_Elementary_RealSignals.html#Modelica_Synchronous.Examples.Elementary.RealSignals.HoldWithDAeffects1"
 >example</a>
 samples a sine signal with an amplitude of 2.0 with a periodic clock of 20 ms period
 and delays it for 2 sample periods.
@@ -608,7 +667,7 @@ the following effects are added to the hold block:</p>
 If the hold output is delayed by one sample period, then the <b>previous</b>(..) value of the
 input is output, and the first tick is delayed by one sample period,
 as shown by the
-<A HREF="Modelica_Synchronous_Examples_Elementary_RealSignals.html#Modelica_Synchronous.Examples.Elementary.RealSignals.HoldWithDAeffects2"
+<a href="Modelica_Synchronous_Examples_Elementary_RealSignals.html#Modelica_Synchronous.Examples.Elementary.RealSignals.HoldWithDAeffects2"
 >modified example</a>
 from above:<br>
 </p>
@@ -629,39 +688,41 @@ from above:<br>
     by shiftCounter=1, resolution=1, as shown in the icon of the
     hold block.
 </p>
-<pre></PRE><P></P>
-Extends from <A HREF="Modelica_Synchronous_RealSignals_Interfaces.html#Modelica_Synchronous.RealSignals.Interfaces.PartialSISOHold"
->Modelica_Synchronous.RealSignals.Interfaces.PartialSISOHold</A> (Basic block used for zero order hold of Real signals).
-<P><H3>Parameters</H3><P>
-<TABLE BORDER=1 CELLSPACING=0 CELLPADDING=2>
-<TR><TH>Name</TH><TH>Description</TH></TR>
-<TR><TD>y_start</TD><TD>Value of output y before the first tick of the clock associated to input u</TD></TR>
-<TR bgcolor="#e0e0e0"><TD colspan=2>Computational delay in seconds = interval() * shiftCounter/resolution</TD></TR>
-<TR><TD>computationalDelay</TD><TD>=true, if a computational delay should be imposed</TD></TR>
-<TR><TD>shiftCounter</TD><TD>(min=0, max=resolution), computational delay = interval()*shiftCounter/resolution</TD></TR>
-<TR><TD>resolution</TD><TD>Time quantization resolution of sample interval</TD></TR>
-<TR bgcolor="#e0e0e0"><TD colspan=2>Limiting and quantization</TD></TR>
-<TR><TD>limited</TD><TD>= true, if output is limited</TD></TR>
-<TR><TD>quantized</TD><TD>= true, if output quantization effects included</TD></TR>
-<TR><TD>yMax</TD><TD>Upper limit of output (if limited = true)</TD></TR>
-<TR><TD>yMin</TD><TD>Lower limit of output (if limited = true)</TD></TR>
-<TR><TD>bits</TD><TD>Number of bits of quantization (if quantized = true)</TD></TR>
-</TABLE>
-<P><H3>Connectors</H3><P>
-<TABLE BORDER=1 CELLSPACING=0 CELLPADDING=2>
-<TR><TH>Name</TH><TH>Description</TH></TR>
-<TR><TD>u</TD><TD>Connector of clocked, Real input signal</TD></TR>
-<TR><TD>y</TD><TD>Connector of continuous-time, Real output signal</TD></TR>
-</TABLE>
-<!--[if supportFields]><span style='mso-element:field-begin'></span>
-<span style='mso-spacerun:yes'></span>XE SubSample<![endif]-->
-<!--[if supportFields]><span style='mso-element:field-end'></span><![endif]-->
-<H2><IMG SRC="Modelica_Synchronous.Reald02f9cd95f49ff3campleI.png" ALT="Modelica_Synchronous.RealSignals.Sampler.SubSample" ALIGN=RIGHT BORDER=1 WIDTH=80  HEIGHT=80 >
-<A NAME="Modelica_Synchronous.RealSignals.Sampler.SubSample"></A><A HREF="Modelica_Synchronous_RealSignals_Sampler.html#Modelica_Synchronous.RealSignals.Sampler"
->Modelica_Synchronous.RealSignals.Sampler</A>.SubSample</H2>
-<B>Sub-sample the clocked Real input signal and provide it as clocked output signal</B><p></P>
-<P></P><H3>Information</H3>
-<PRE></pre>
+
+<p>Extends from <a href="Modelica_Synchronous_RealSignals_Interfaces.html#Modelica_Synchronous.RealSignals.Interfaces.PartialSISOHold"
+>Modelica_Synchronous.RealSignals.Interfaces.PartialSISOHold</a> (Basic block used for zero order hold of Real signals).</p>
+<h3>Parameters</h3>
+<table border="1" cellspacing="0" cellpadding="2" summary="Parameters">
+<tr><th>Name</th><th>Description</th></tr>
+<tr><td>y_start</td><td>Value of output y before the first tick of the clock associated to input u</td></tr>
+<tr style="background-color: #e0e0e0"><td colspan="2">Computational delay in seconds = interval() * shiftCounter/resolution</td></tr>
+<tr><td>computationalDelay</td><td>=true, if a computational delay should be imposed</td></tr>
+<tr><td>shiftCounter</td><td>(min=0, max=resolution), computational delay = interval()*shiftCounter/resolution</td></tr>
+<tr><td>resolution</td><td>Time quantization resolution of sample interval</td></tr>
+<tr style="background-color: #e0e0e0"><td colspan="2">Limiting and quantization</td></tr>
+<tr><td>limited</td><td>= true, if output is limited</td></tr>
+<tr><td>quantized</td><td>= true, if output quantization effects included</td></tr>
+<tr><td>yMax</td><td>Upper limit of output (if limited = true)</td></tr>
+<tr><td>yMin</td><td>Lower limit of output (if limited = true)</td></tr>
+<tr><td>bits</td><td>Number of bits of quantization (if quantized = true)</td></tr>
+</table>
+<h3>Connectors</h3>
+<table border="1" cellspacing="0" cellpadding="2" summary="Connectors">
+<tr><th>Name</th><th>Description</th></tr>
+<tr><td>u</td><td>Connector of clocked, Real input signal</td></tr>
+<tr><td>y</td><td>Connector of continuous-time, Real output signal</td></tr>
+</table>
+<!--[if supportFields]><span style="mso-element:field-begin"></span>
+<span style="mso-spacerun:yes"></span>XE SubSample<![endif]-->
+<!--[if supportFields]><span style="mso-element:field-end"></span><![endif]-->
+<h2><img src="Modelica_Synchronous.Reald02f9cd95f49ff3campleI.png" alt="Modelica_Synchronous.RealSignals.Sampler.SubSample" align="right" style="border: 1px solid" width="80" height="80">
+<a name="Modelica_Synchronous.RealSignals.Sampler.SubSample"></a><a href="Modelica_Synchronous_RealSignals_Sampler.html#Modelica_Synchronous.RealSignals.Sampler"
+>Modelica_Synchronous.RealSignals.Sampler</a>.SubSample</h2>
+<p>
+<b>Sub-sample the clocked Real input signal and provide it as clocked output signal</b>
+</p>
+<h3>Information</h3>
+
 <p>
 This block sub-samples the clocked Real input signal u and provides it as
 clocked output signal y.
@@ -678,7 +739,7 @@ then the sub-sampling factor is defined by Integer parameter <b>factor</b>.
 
 <p>
 The following
-<A HREF="Modelica_Synchronous_Examples_Elementary_RealSignals.html#Modelica_Synchronous.Examples.Elementary.RealSignals.SubSample"
+<a href="Modelica_Synchronous_Examples_Elementary_RealSignals.html#Modelica_Synchronous.Examples.Elementary.RealSignals.SubSample"
 >example</a>
 samples a sine signal with a periodic clock of 20 ms period, and
 then sub-samples the resulting clocked signal with a factor of 3:<br>
@@ -701,29 +762,30 @@ sub-sampling, and the sub-sampling factor = 3 is displayed in the icon of the
 subSample block. Note the down-arrow in the icon of the subSample block indicates that the
 clock of subSample.y is slower as the clock of subSample.u.
 </p>
-<pre></PRE><P></P>
 
-<P><H3>Parameters</H3><P>
-<TABLE BORDER=1 CELLSPACING=0 CELLPADDING=2>
-<TR><TH>Name</TH><TH>Description</TH></TR>
-<TR><TD>inferFactor</TD><TD>= true, if sub-sampling factor is inferred</TD></TR>
-<TR><TD>factor</TD><TD>Sub-sampling factor &gt;= 1 (ignored if inferFactor=true)</TD></TR>
-</TABLE>
-<P><H3>Connectors</H3><P>
-<TABLE BORDER=1 CELLSPACING=0 CELLPADDING=2>
-<TR><TH>Name</TH><TH>Description</TH></TR>
-<TR><TD>u</TD><TD>Connector of clocked, Real input signal</TD></TR>
-<TR><TD>y</TD><TD>Connector of clocked, Real output signal (clock of y is slower as clock of u)</TD></TR>
-</TABLE>
-<!--[if supportFields]><span style='mso-element:field-begin'></span>
-<span style='mso-spacerun:yes'></span>XE SuperSample<![endif]-->
-<!--[if supportFields]><span style='mso-element:field-end'></span><![endif]-->
-<H2><IMG SRC="Modelica_Synchronous.Realf91705d89aec3b4campleI.png" ALT="Modelica_Synchronous.RealSignals.Sampler.SuperSample" ALIGN=RIGHT BORDER=1 WIDTH=80  HEIGHT=80 >
-<A NAME="Modelica_Synchronous.RealSignals.Sampler.SuperSample"></A><A HREF="Modelica_Synchronous_RealSignals_Sampler.html#Modelica_Synchronous.RealSignals.Sampler"
->Modelica_Synchronous.RealSignals.Sampler</A>.SuperSample</H2>
-<B>Super-sample the clocked Real input signal and provide it as clocked output signal</B><p></P>
-<P></P><H3>Information</H3>
-<PRE></pre>
+<h3>Parameters</h3>
+<table border="1" cellspacing="0" cellpadding="2" summary="Parameters">
+<tr><th>Name</th><th>Description</th></tr>
+<tr><td>inferFactor</td><td>= true, if sub-sampling factor is inferred</td></tr>
+<tr><td>factor</td><td>Sub-sampling factor &gt;= 1 (ignored if inferFactor=true)</td></tr>
+</table>
+<h3>Connectors</h3>
+<table border="1" cellspacing="0" cellpadding="2" summary="Connectors">
+<tr><th>Name</th><th>Description</th></tr>
+<tr><td>u</td><td>Connector of clocked, Real input signal</td></tr>
+<tr><td>y</td><td>Connector of clocked, Real output signal (clock of y is slower as clock of u)</td></tr>
+</table>
+<!--[if supportFields]><span style="mso-element:field-begin"></span>
+<span style="mso-spacerun:yes"></span>XE SuperSample<![endif]-->
+<!--[if supportFields]><span style="mso-element:field-end"></span><![endif]-->
+<h2><img src="Modelica_Synchronous.Realf91705d89aec3b4campleI.png" alt="Modelica_Synchronous.RealSignals.Sampler.SuperSample" align="right" style="border: 1px solid" width="80" height="80">
+<a name="Modelica_Synchronous.RealSignals.Sampler.SuperSample"></a><a href="Modelica_Synchronous_RealSignals_Sampler.html#Modelica_Synchronous.RealSignals.Sampler"
+>Modelica_Synchronous.RealSignals.Sampler</a>.SuperSample</h2>
+<p>
+<b>Super-sample the clocked Real input signal and provide it as clocked output signal</b>
+</p>
+<h3>Information</h3>
+
 <p>
 This block super-samples the clocked Real input signal u and provides it as
 clocked output signal y.
@@ -740,7 +802,7 @@ then the super-sampling factor is defined by Integer parameter <b>factor</b>.
 <p>
 For control applications this block introduces unnecessary "vibrations".
 In such a case it is better to use block
-<A HREF="Modelica_Synchronous_RealSignals_Sampler.html#Modelica_Synchronous.RealSignals.Sampler.SuperSampleInterpolated"
+<a href="Modelica_Synchronous_RealSignals_Sampler.html#Modelica_Synchronous.RealSignals.Sampler.SuperSampleInterpolated"
 >SuperSampleInterpolated</a>
 instead.
 </p>
@@ -749,7 +811,7 @@ instead.
 
 <p>
 The following
-<A HREF="Modelica_Synchronous_Examples_Elementary_RealSignals.html#Modelica_Synchronous.Examples.Elementary.RealSignals.SuperSample"
+<a href="Modelica_Synchronous_Examples_Elementary_RealSignals.html#Modelica_Synchronous.Examples.Elementary.RealSignals.SuperSample"
 >example</a>
 samples a sine signal with a periodic clock of 20 ms period, and
 then super-samples the resulting clocked signal with a factor of 3:<br>
@@ -772,29 +834,30 @@ output y. The super-sampling factor = 3 is displayed in the icon of the
 superSample block. Note the up-arrow in the icon of the superSample block indicates that the
 clock of superSample.y is faster as the clock of superSample.u.
 </p>
-<pre></PRE><P></P>
 
-<P><H3>Parameters</H3><P>
-<TABLE BORDER=1 CELLSPACING=0 CELLPADDING=2>
-<TR><TH>Name</TH><TH>Description</TH></TR>
-<TR><TD>inferFactor</TD><TD>= true, if super-sampling factor is inferred</TD></TR>
-<TR><TD>factor</TD><TD>Super-sampling factor &gt;= 1 (ignored if inferFactor=true)</TD></TR>
-</TABLE>
-<P><H3>Connectors</H3><P>
-<TABLE BORDER=1 CELLSPACING=0 CELLPADDING=2>
-<TR><TH>Name</TH><TH>Description</TH></TR>
-<TR><TD>u</TD><TD>Connector of clocked, Real input signal</TD></TR>
-<TR><TD>y</TD><TD>Connector of clocked, Real output signal (clock of y is faster as clock of u)</TD></TR>
-</TABLE>
-<!--[if supportFields]><span style='mso-element:field-begin'></span>
-<span style='mso-spacerun:yes'></span>XE SuperSampleInterpolated<![endif]-->
-<!--[if supportFields]><span style='mso-element:field-end'></span><![endif]-->
-<H2><IMG SRC="Modelica_Synchronous.Real8f3ad12b34697988latedI.png" ALT="Modelica_Synchronous.RealSignals.Sampler.SuperSampleInterpolated" ALIGN=RIGHT BORDER=1 WIDTH=80  HEIGHT=80 >
-<A NAME="Modelica_Synchronous.RealSignals.Sampler.SuperSampleInterpolated"></A><A HREF="Modelica_Synchronous_RealSignals_Sampler.html#Modelica_Synchronous.RealSignals.Sampler"
->Modelica_Synchronous.RealSignals.Sampler</A>.SuperSampleInterpolated</H2>
-<B>Super-sample the clocked Real input signal and provide it linearly interpolated as clocked output signal (this is also called an Interpolator)</B><p></P>
-<P></P><H3>Information</H3>
-<PRE></pre>
+<h3>Parameters</h3>
+<table border="1" cellspacing="0" cellpadding="2" summary="Parameters">
+<tr><th>Name</th><th>Description</th></tr>
+<tr><td>inferFactor</td><td>= true, if super-sampling factor is inferred</td></tr>
+<tr><td>factor</td><td>Super-sampling factor &gt;= 1 (ignored if inferFactor=true)</td></tr>
+</table>
+<h3>Connectors</h3>
+<table border="1" cellspacing="0" cellpadding="2" summary="Connectors">
+<tr><th>Name</th><th>Description</th></tr>
+<tr><td>u</td><td>Connector of clocked, Real input signal</td></tr>
+<tr><td>y</td><td>Connector of clocked, Real output signal (clock of y is faster as clock of u)</td></tr>
+</table>
+<!--[if supportFields]><span style="mso-element:field-begin"></span>
+<span style="mso-spacerun:yes"></span>XE SuperSampleInterpolated<![endif]-->
+<!--[if supportFields]><span style="mso-element:field-end"></span><![endif]-->
+<h2><img src="Modelica_Synchronous.Real8f3ad12b34697988latedI.png" alt="Modelica_Synchronous.RealSignals.Sampler.SuperSampleInterpolated" align="right" style="border: 1px solid" width="80" height="80">
+<a name="Modelica_Synchronous.RealSignals.Sampler.SuperSampleInterpolated"></a><a href="Modelica_Synchronous_RealSignals_Sampler.html#Modelica_Synchronous.RealSignals.Sampler"
+>Modelica_Synchronous.RealSignals.Sampler</a>.SuperSampleInterpolated</h2>
+<p>
+<b>Super-sample the clocked Real input signal and provide it linearly interpolated as clocked output signal (this is also called an Interpolator)</b>
+</p>
+<h3>Information</h3>
+
 <p>
 This block super-samples the clocked Real input signal u and provides it
 linearly interpolated between the u-values as
@@ -813,7 +876,7 @@ then the super-sampling factor is defined by Integer parameter <b>factor</b>.
 
 <p>
 For control applications, this block is better suited as block
-<A HREF="Modelica_Synchronous_RealSignals_Sampler.html#Modelica_Synchronous.RealSignals.Sampler.SuperSample"
+<a href="Modelica_Synchronous_RealSignals_Sampler.html#Modelica_Synchronous.RealSignals.Sampler.SuperSample"
 >SuperSample</a>
 since it does not induce "vibrations".
 </p>
@@ -822,7 +885,7 @@ since it does not induce "vibrations".
 
 <p>
 The following
-<A HREF="Modelica_Synchronous_Examples_Elementary_RealSignals.html#Modelica_Synchronous.Examples.Elementary.RealSignals.SuperSampleInterpolated"
+<a href="Modelica_Synchronous_Examples_Elementary_RealSignals.html#Modelica_Synchronous.Examples.Elementary.RealSignals.SuperSampleInterpolated"
 >example</a>
 samples a sine signal with a periodic clock of 20 ms period, and
 then super-samples the resulting clocked signal with a factor of 3
@@ -847,29 +910,30 @@ values of the input u are linearly interpolated. The super-sampling factor = 3 i
 superSampleIpo block. Note the up-arrow in the icon of the SuperSampleInterpolation block indicates that the
 clock of superSampleIpo.y is faster as the clock of superSampleIpo.u.
 </p>
-<pre></PRE><P></P>
 
-<P><H3>Parameters</H3><P>
-<TABLE BORDER=1 CELLSPACING=0 CELLPADDING=2>
-<TR><TH>Name</TH><TH>Description</TH></TR>
-<TR><TD>inferFactor</TD><TD>= true, if super-sampling factor is inferred</TD></TR>
-<TR><TD>factor</TD><TD>Super-sampling factor &gt;= 1 (if inferFactor=false)</TD></TR>
-</TABLE>
-<P><H3>Connectors</H3><P>
-<TABLE BORDER=1 CELLSPACING=0 CELLPADDING=2>
-<TR><TH>Name</TH><TH>Description</TH></TR>
-<TR><TD>u</TD><TD>Connector of clocked, Real input signal</TD></TR>
-<TR><TD>y</TD><TD>Connector of clocked, Real output signal</TD></TR>
-</TABLE>
-<!--[if supportFields]><span style='mso-element:field-begin'></span>
-<span style='mso-spacerun:yes'></span>XE ShiftSample<![endif]-->
-<!--[if supportFields]><span style='mso-element:field-end'></span><![endif]-->
-<H2><IMG SRC="Modelica_Synchronous.Real6882e4271aef8255ampleI.png" ALT="Modelica_Synchronous.RealSignals.Sampler.ShiftSample" ALIGN=RIGHT BORDER=1 WIDTH=80  HEIGHT=80 >
-<A NAME="Modelica_Synchronous.RealSignals.Sampler.ShiftSample"></A><A HREF="Modelica_Synchronous_RealSignals_Sampler.html#Modelica_Synchronous.RealSignals.Sampler"
->Modelica_Synchronous.RealSignals.Sampler</A>.ShiftSample</H2>
-<B>Shift the clocked Real input signal by a fraction of the last interval and and provide it as clocked output signal</B><p></P>
-<P></P><H3>Information</H3>
-<PRE></pre>
+<h3>Parameters</h3>
+<table border="1" cellspacing="0" cellpadding="2" summary="Parameters">
+<tr><th>Name</th><th>Description</th></tr>
+<tr><td>inferFactor</td><td>= true, if super-sampling factor is inferred</td></tr>
+<tr><td>factor</td><td>Super-sampling factor &gt;= 1 (if inferFactor=false)</td></tr>
+</table>
+<h3>Connectors</h3>
+<table border="1" cellspacing="0" cellpadding="2" summary="Connectors">
+<tr><th>Name</th><th>Description</th></tr>
+<tr><td>u</td><td>Connector of clocked, Real input signal</td></tr>
+<tr><td>y</td><td>Connector of clocked, Real output signal</td></tr>
+</table>
+<!--[if supportFields]><span style="mso-element:field-begin"></span>
+<span style="mso-spacerun:yes"></span>XE ShiftSample<![endif]-->
+<!--[if supportFields]><span style="mso-element:field-end"></span><![endif]-->
+<h2><img src="Modelica_Synchronous.Real6882e4271aef8255ampleI.png" alt="Modelica_Synchronous.RealSignals.Sampler.ShiftSample" align="right" style="border: 1px solid" width="80" height="80">
+<a name="Modelica_Synchronous.RealSignals.Sampler.ShiftSample"></a><a href="Modelica_Synchronous_RealSignals_Sampler.html#Modelica_Synchronous.RealSignals.Sampler"
+>Modelica_Synchronous.RealSignals.Sampler</a>.ShiftSample</h2>
+<p>
+<b>Shift the clocked Real input signal by a fraction of the last interval and and provide it as clocked output signal</b>
+</p>
+<h3>Information</h3>
+
 <p>
 This block shifts the first activation of the clock of the output y by
 fraction shiftCounter/resolution of the period (or for a non-periodic signal by a fraction of the last interval)
@@ -893,7 +957,7 @@ the operator returns the value of u from the last tick of the clock of u.
 
 <p>
 Note, for
-<A HREF="Modelica_Synchronous_ClockSignals_Clocks.html#Modelica_Synchronous.ClockSignals.Clocks.EventClock"
+<a href="Modelica_Synchronous_ClockSignals_Clocks.html#Modelica_Synchronous.ClockSignals.Clocks.EventClock"
 >EventClock</a>s
 there is the restriction that
 block <b>ShiftSample</b> can only shift the number of ticks of the EventClock clock,
@@ -905,7 +969,7 @@ EventClocks.
 Also note, that this block does not simply shift the signal in time,
 since only the value of u from the last tick of the clock of u is used for the output.
 If a time-delayed clock is desired, use instead block
-<A HREF="Modelica_Synchronous_RealSignals_NonPeriodic.html#Modelica_Synchronous.RealSignals.NonPeriodic.FractionalDelay"
+<a href="Modelica_Synchronous_RealSignals_NonPeriodic.html#Modelica_Synchronous.RealSignals.NonPeriodic.FractionalDelay"
 >NonPeriodic.FractionalDelay</a>
 where the input signal is delayed by a time period and old values of u are stored in a buffer.
 If the time delay is less than one period, the two blocks, ShiftSample and FractionalDelay,
@@ -916,7 +980,7 @@ give the same result.
 
 <p>
 The following
-<A HREF="Modelica_Synchronous_Examples_Elementary_RealSignals.html#Modelica_Synchronous.Examples.Elementary.RealSignals.ShiftSample"
+<a href="Modelica_Synchronous_Examples_Elementary_RealSignals.html#Modelica_Synchronous.Examples.Elementary.RealSignals.ShiftSample"
 >example</a>
 samples a sine signal with a periodic clock of 20 ms period, and
 then shifts it with shiftCounter = 4 and resolution = 3:<br>
@@ -937,30 +1001,31 @@ then shifts it with shiftCounter = 4 and resolution = 3:<br>
 The first activation of output y of block shiftSample1 is shifted in time (4/3*20ms). The parameter values <b>shiftCounter</b> = 4 and <b>resolution</b> = 3 are visible at the bottom of the icon. Also note, that the signal is not simply a shift in time. The output of a ShiftSample block will always be the value from the <i>last</i> tick of the clock of its inputs.
 </p>
 
-<pre></PRE><P></P>
 
-<P><H3>Parameters</H3><P>
-<TABLE BORDER=1 CELLSPACING=0 CELLPADDING=2>
-<TR><TH>Name</TH><TH>Description</TH></TR>
-<TR bgcolor="#e0e0e0"><TD colspan=2>Shift first clock activation for &#39;shiftCounter/resolution*interval(u)&#39; seconds</TD></TR>
-<TR><TD>shiftCounter</TD><TD>Numerator of shifting formula</TD></TR>
-<TR><TD>resolution</TD><TD>Denominator of shifting formula</TD></TR>
-</TABLE>
-<P><H3>Connectors</H3><P>
-<TABLE BORDER=1 CELLSPACING=0 CELLPADDING=2>
-<TR><TH>Name</TH><TH>Description</TH></TR>
-<TR><TD>u</TD><TD>Connector of clocked, Real input signal</TD></TR>
-<TR><TD>y</TD><TD>Connector of clocked, Real output signal</TD></TR>
-</TABLE>
-<!--[if supportFields]><span style='mso-element:field-begin'></span>
-<span style='mso-spacerun:yes'></span>XE BackSample<![endif]-->
-<!--[if supportFields]><span style='mso-element:field-end'></span><![endif]-->
-<H2><IMG SRC="Modelica_Synchronous.Real55a0f27e0df322c8ampleI.png" ALT="Modelica_Synchronous.RealSignals.Sampler.BackSample" ALIGN=RIGHT BORDER=1 WIDTH=80  HEIGHT=80 >
-<A NAME="Modelica_Synchronous.RealSignals.Sampler.BackSample"></A><A HREF="Modelica_Synchronous_RealSignals_Sampler.html#Modelica_Synchronous.RealSignals.Sampler"
->Modelica_Synchronous.RealSignals.Sampler</A>.BackSample</H2>
-<B>Shift the clock of the Real input signal backwards in time (and access the most recent value of the input at this new clock)</B><p></P>
-<P></P><H3>Information</H3>
-<PRE></pre>
+<h3>Parameters</h3>
+<table border="1" cellspacing="0" cellpadding="2" summary="Parameters">
+<tr><th>Name</th><th>Description</th></tr>
+<tr style="background-color: #e0e0e0"><td colspan="2">Shift first clock activation for &#39;shiftCounter/resolution*interval(u)&#39; seconds</td></tr>
+<tr><td>shiftCounter</td><td>Numerator of shifting formula</td></tr>
+<tr><td>resolution</td><td>Denominator of shifting formula</td></tr>
+</table>
+<h3>Connectors</h3>
+<table border="1" cellspacing="0" cellpadding="2" summary="Connectors">
+<tr><th>Name</th><th>Description</th></tr>
+<tr><td>u</td><td>Connector of clocked, Real input signal</td></tr>
+<tr><td>y</td><td>Connector of clocked, Real output signal</td></tr>
+</table>
+<!--[if supportFields]><span style="mso-element:field-begin"></span>
+<span style="mso-spacerun:yes"></span>XE BackSample<![endif]-->
+<!--[if supportFields]><span style="mso-element:field-end"></span><![endif]-->
+<h2><img src="Modelica_Synchronous.Real55a0f27e0df322c8ampleI.png" alt="Modelica_Synchronous.RealSignals.Sampler.BackSample" align="right" style="border: 1px solid" width="80" height="80">
+<a name="Modelica_Synchronous.RealSignals.Sampler.BackSample"></a><a href="Modelica_Synchronous_RealSignals_Sampler.html#Modelica_Synchronous.RealSignals.Sampler"
+>Modelica_Synchronous.RealSignals.Sampler</a>.BackSample</h2>
+<p>
+<b>Shift the clock of the Real input signal backwards in time (and access the most recent value of the input at this new clock)</b>
+</p>
+<h3>Information</h3>
+
 <p>
 This block shifts the first activation of the clock of the output y by
 fraction backCounter/resolution of the period (or for a non-periodic signal by a fraction of the last interval)
@@ -989,7 +1054,7 @@ available value of u.
 
 <p>
 Note, for
-<A HREF="Modelica_Synchronous_ClockSignals_Clocks.html#Modelica_Synchronous.ClockSignals.Clocks.EventClock"
+<a href="Modelica_Synchronous_ClockSignals_Clocks.html#Modelica_Synchronous.ClockSignals.Clocks.EventClock"
 >EventClock</a>s
 there is the restriction that
 block <b>BackSample</b> can only shift the number of ticks of the EventClock clock,
@@ -1010,7 +1075,7 @@ block cannot be used to recover the input signal of ShiftSample
 
 <p>
 The following
-<A HREF="Modelica_Synchronous_Examples_Elementary_RealSignals.html#Modelica_Synchronous.Examples.Elementary.RealSignals.BackSample"
+<a href="Modelica_Synchronous_Examples_Elementary_RealSignals.html#Modelica_Synchronous.Examples.Elementary.RealSignals.BackSample"
 >example</a>
 samples a sine signal with a periodic clock of 20 ms period,
 shift-samples it with shiftCounter = 4 and resolution = 3 and then back-samples it with backCounter=4 and resolution = 3:<br>
@@ -1030,31 +1095,32 @@ shift-samples it with shiftCounter = 4 and resolution = 3 and then back-samples 
 <p>
 The first activation of output y of block backSample1 is shifted (4/3*20ms) before the first activation of output y of block shiftSample1. As a consequence, the activation times of the output y are coincident with the input signal of the shiftSample1 block. However, as described above, the output of block backSample1 <b>does not</b> recover the original sampled sine signal! For the first two ticks the output holds the value of the parameter <b>y_start</b> = 0.5. After that the output at a clock tick of block backSample1 is the <i>last</i> value of the output of the shiftSample1 block. The parameter values <b>y_start</b> = 0.5, <b>shiftCounter</b> = 4 and <b>resolution</b> = 3 are visible at the bottom of the icon.
 </p>
-<pre></PRE><P></P>
 
-<P><H3>Parameters</H3><P>
-<TABLE BORDER=1 CELLSPACING=0 CELLPADDING=2>
-<TR><TH>Name</TH><TH>Description</TH></TR>
-<TR><TD>y_start</TD><TD>Value of output y before the first clock tick of the input u</TD></TR>
-<TR bgcolor="#e0e0e0"><TD colspan=2>Shift first clock activation backwards in time for &#39;shiftCounter/resolution*interval(u)&#39; seconds</TD></TR>
-<TR><TD>backCounter</TD><TD>Numerator of shifting formula</TD></TR>
-<TR><TD>resolution</TD><TD>Denominator of shifting formula</TD></TR>
-</TABLE>
-<P><H3>Connectors</H3><P>
-<TABLE BORDER=1 CELLSPACING=0 CELLPADDING=2>
-<TR><TH>Name</TH><TH>Description</TH></TR>
-<TR><TD>u</TD><TD>Connector of clocked, Real input signal</TD></TR>
-<TR><TD>y</TD><TD>Connector of clocked, Real output signal (clock of y is faster als clock of u)</TD></TR>
-</TABLE>
-<!--[if supportFields]><span style='mso-element:field-begin'></span>
-<span style='mso-spacerun:yes'></span>XE AssignClock<![endif]-->
-<!--[if supportFields]><span style='mso-element:field-end'></span><![endif]-->
-<H2><IMG SRC="Modelica_Synchronous.Realf3cb5e56a28405c7ClockI.png" ALT="Modelica_Synchronous.RealSignals.Sampler.AssignClock" ALIGN=RIGHT BORDER=1 WIDTH=80  HEIGHT=80 >
-<A NAME="Modelica_Synchronous.RealSignals.Sampler.AssignClock"></A><A HREF="Modelica_Synchronous_RealSignals_Sampler.html#Modelica_Synchronous.RealSignals.Sampler"
->Modelica_Synchronous.RealSignals.Sampler</A>.AssignClock</H2>
-<B>Assigns a clock to a clocked Real signal</B><p></P>
-<P></P><H3>Information</H3>
-<PRE></pre>
+<h3>Parameters</h3>
+<table border="1" cellspacing="0" cellpadding="2" summary="Parameters">
+<tr><th>Name</th><th>Description</th></tr>
+<tr><td>y_start</td><td>Value of output y before the first clock tick of the input u</td></tr>
+<tr style="background-color: #e0e0e0"><td colspan="2">Shift first clock activation backwards in time for &#39;shiftCounter/resolution*interval(u)&#39; seconds</td></tr>
+<tr><td>backCounter</td><td>Numerator of shifting formula</td></tr>
+<tr><td>resolution</td><td>Denominator of shifting formula</td></tr>
+</table>
+<h3>Connectors</h3>
+<table border="1" cellspacing="0" cellpadding="2" summary="Connectors">
+<tr><th>Name</th><th>Description</th></tr>
+<tr><td>u</td><td>Connector of clocked, Real input signal</td></tr>
+<tr><td>y</td><td>Connector of clocked, Real output signal (clock of y is faster als clock of u)</td></tr>
+</table>
+<!--[if supportFields]><span style="mso-element:field-begin"></span>
+<span style="mso-spacerun:yes"></span>XE AssignClock<![endif]-->
+<!--[if supportFields]><span style="mso-element:field-end"></span><![endif]-->
+<h2><img src="Modelica_Synchronous.Realf3cb5e56a28405c7ClockI.png" alt="Modelica_Synchronous.RealSignals.Sampler.AssignClock" align="right" style="border: 1px solid" width="80" height="80">
+<a name="Modelica_Synchronous.RealSignals.Sampler.AssignClock"></a><a href="Modelica_Synchronous_RealSignals_Sampler.html#Modelica_Synchronous.RealSignals.Sampler"
+>Modelica_Synchronous.RealSignals.Sampler</a>.AssignClock</h2>
+<p>
+<b>Assigns a clock to a clocked Real signal</b>
+</p>
+<h3>Information</h3>
+
 <p>
 This block assigns a clock to the Real input signal u
 and provides u as output signal y.
@@ -1064,7 +1130,7 @@ and provides u as output signal y.
 
 <p>
 The following
-<A HREF="Modelica_Synchronous_Examples_Elementary_RealSignals.html#Modelica_Synchronous.Examples.Elementary.RealSignals.AssignClock"
+<a href="Modelica_Synchronous_Examples_Elementary_RealSignals.html#Modelica_Synchronous.Examples.Elementary.RealSignals.AssignClock"
 >example</a>
 shows a discrete counter. In order to execute the counter with a sample period of 20ms an AssignClock block is used. Due to clock inference all equations within the blocks are deduced to be active at the clock ticks given by the periodicClock block.
 <br>
@@ -1084,24 +1150,25 @@ shows a discrete counter. In order to execute the counter with a sample period o
 <p>
 At every clock tick (that is at every 20ms) the output of the unitDelay1 block is incremented by one.
 </p>
-<pre></PRE><P></P>
 
-<P><H3>Connectors</H3><P>
-<TABLE BORDER=1 CELLSPACING=0 CELLPADDING=2>
-<TR><TH>Name</TH><TH>Description</TH></TR>
-<TR><TD>u</TD><TD>Connector of clocked, Real input signal</TD></TR>
-<TR><TD>y</TD><TD>Connector of clocked, Real output signal</TD></TR>
-<TR><TD>clock</TD><TD>&nbsp;</TD></TR>
-</TABLE>
-<!--[if supportFields]><span style='mso-element:field-begin'></span>
-<span style='mso-spacerun:yes'></span>XE AssignClockVectorized<![endif]-->
-<!--[if supportFields]><span style='mso-element:field-end'></span><![endif]-->
-<H2><IMG SRC="Modelica_Synchronous.Realbb3dc901cc8148d1rizedI.png" ALT="Modelica_Synchronous.RealSignals.Sampler.AssignClockVectorized" ALIGN=RIGHT BORDER=1 WIDTH=80  HEIGHT=80 >
-<A NAME="Modelica_Synchronous.RealSignals.Sampler.AssignClockVectorized"></A><A HREF="Modelica_Synchronous_RealSignals_Sampler.html#Modelica_Synchronous.RealSignals.Sampler"
->Modelica_Synchronous.RealSignals.Sampler</A>.AssignClockVectorized</H2>
-<B>Assigns a clock to a clocked Real signal vector</B><p></P>
-<P></P><H3>Information</H3>
-<PRE></pre>
+<h3>Connectors</h3>
+<table border="1" cellspacing="0" cellpadding="2" summary="Connectors">
+<tr><th>Name</th><th>Description</th></tr>
+<tr><td>u</td><td>Connector of clocked, Real input signal</td></tr>
+<tr><td>y</td><td>Connector of clocked, Real output signal</td></tr>
+<tr><td>clock</td><td>&nbsp;</td></tr>
+</table>
+<!--[if supportFields]><span style="mso-element:field-begin"></span>
+<span style="mso-spacerun:yes"></span>XE AssignClockVectorized<![endif]-->
+<!--[if supportFields]><span style="mso-element:field-end"></span><![endif]-->
+<h2><img src="Modelica_Synchronous.Realbb3dc901cc8148d1rizedI.png" alt="Modelica_Synchronous.RealSignals.Sampler.AssignClockVectorized" align="right" style="border: 1px solid" width="80" height="80">
+<a name="Modelica_Synchronous.RealSignals.Sampler.AssignClockVectorized"></a><a href="Modelica_Synchronous_RealSignals_Sampler.html#Modelica_Synchronous.RealSignals.Sampler"
+>Modelica_Synchronous.RealSignals.Sampler</a>.AssignClockVectorized</h2>
+<p>
+<b>Assigns a clock to a clocked Real signal vector</b>
+</p>
+<h3>Information</h3>
+
 <p>
 This block assigns a clock to the Real <b>vector</b> input signal u
 and provides u as vector output signal y.
@@ -1112,7 +1179,7 @@ and provides u as vector output signal y.
 
 <p>
 The following
-<A HREF="Modelica_Synchronous_Examples_Elementary_RealSignals.html#Modelica_Synchronous.Examples.Elementary.RealSignals.AssignClockVectorized"
+<a href="Modelica_Synchronous_Examples_Elementary_RealSignals.html#Modelica_Synchronous.Examples.Elementary.RealSignals.AssignClockVectorized"
 >example</a>
 shows two discrete counters. In order to execute the counters with a sample period of 20ms an AssignClockVectorized block is used. Due to clock inference all equations within the blocks are deduced to be active at the clock ticks given by the periodicClock block.
 <br>
@@ -1133,20 +1200,21 @@ shows two discrete counters. In order to execute the counters with a sample peri
 At every clock tick (that is every 20ms) the output of the unitDelay1 block is incremented by one and that of the unitDelay2 block is incremented by two. The vector size of the input and output is provided by parameter <b>n</b>=2 which is also shown in the icon
 of block assignClock1.
 </p>
-<pre></PRE><P></P>
 
-<P><H3>Parameters</H3><P>
-<TABLE BORDER=1 CELLSPACING=0 CELLPADDING=2>
-<TR><TH>Name</TH><TH>Description</TH></TR>
-<TR><TD>n</TD><TD>Size of input signal vector u (= size of output signal vector y)</TD></TR>
-</TABLE>
-<P><H3>Connectors</H3><P>
-<TABLE BORDER=1 CELLSPACING=0 CELLPADDING=2>
-<TR><TH>Name</TH><TH>Description</TH></TR>
-<TR><TD>u[n]</TD><TD>Connector of clocked, Real input signal</TD></TR>
-<TR><TD>y[n]</TD><TD>Connector of clocked, Real output signal</TD></TR>
-<TR><TD>clock</TD><TD>&nbsp;</TD></TR>
-</TABLE>
-<address><a href="http://www.3ds.com/">Automatically generated</a> Mon Oct 28 10:26:06 2013.
-</address></BODY>
-</HTML>
+<h3>Parameters</h3>
+<table border="1" cellspacing="0" cellpadding="2" summary="Parameters">
+<tr><th>Name</th><th>Description</th></tr>
+<tr><td>n</td><td>Size of input signal vector u (= size of output signal vector y)</td></tr>
+</table>
+<h3>Connectors</h3>
+<table border="1" cellspacing="0" cellpadding="2" summary="Connectors">
+<tr><th>Name</th><th>Description</th></tr>
+<tr><td>u[n]</td><td>Connector of clocked, Real input signal</td></tr>
+<tr><td>y[n]</td><td>Connector of clocked, Real output signal</td></tr>
+<tr><td>clock</td><td>&nbsp;</td></tr>
+</table>
+<address>
+<a href="http://www.3ds.com/">Automatically generated</a> Thu Nov 28 13:08:02 2013.
+</address>
+</body>
+</html>

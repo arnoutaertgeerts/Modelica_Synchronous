@@ -1,5 +1,5 @@
 within ;
-package Modelica_Synchronous "Modelica_Synchronous (version 0.91) - Basic synchronous input/output control blocks
+package Modelica_Synchronous "Modelica_Synchronous (version 0.92) - Basic synchronous input/output control blocks
 that are triggered by clocks"
 extends Modelica.Icons.Package;
 
@@ -13,9 +13,9 @@ extends Modelica.Icons.Package;
   annotation (preferredView="info",
   uses(Modelica(version="3.2.1")),
     version="0.92",
-    versionBuild=1,
+    versionBuild=2,
     versionDate="2013-09-19",
-    dateModified = "2013-09-19 18:16:00Z",
+    dateModified = "2013-11-28 13:02:00Z",
     revisionId="$Id::                                       $",
   Documentation(info="<html>
 <p>

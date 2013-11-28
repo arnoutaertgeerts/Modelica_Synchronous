@@ -1,67 +1,89 @@
-<HTML>
-<HEAD>
-<TITLE>Modelica_Synchronous.RealSignals.Periodic</TITLE>
-<META name="HTML-Generator" content="Dymola">
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Modelica_Synchronous.RealSignals.Periodic</title>
+<meta name="HTML-Generator" content="Dymola">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<META name="description" content="&quot;Library of blocks that are designed to operate only on periodically clocked signals (mainly described by z transforms)&quot;">
+<meta name="description" content="&quot;Library of blocks that are designed to operate only on periodically clocked signals (mainly described by z transforms)&quot;">
 <style type="text/css">
-*       { font-size: 10pt; font-family: Arial,sans-serif; }
-pre     { font-size:  9pt; font-family: Courier,monospace;}
+*       { font-size: 10pt; font-family: Arial, sans-serif; }
+.modelica, .modelica * { font-size: 9pt; font-family: Courier, monospace; white-space: pre; }
 h4      { font-size: 10pt; font-weight: bold; color: green; }
 h3      { font-size: 11pt; font-weight: bold; color: green; }
 h2      { font-size: 13pt; font-weight: bold; color: green; }
-address {                  font-weight: normal} 
-td      { solid #000; vertical-align:top; }
-th      { solid #000; vertical-align:top; font-weight: bold; }
-table   { solid #000; border-collapse: collapse;}
+address { font-weight: normal; }
+td      { border: 1px solid #808080; vertical-align: top; }
+th      { border: 1px solid #808080; vertical-align: top; font-weight: bold; }
+table   { border: 1px solid #808080; border-collapse: collapse; }
 </style>
-</HEAD>
-<BODY><P></P>
-<!--[if supportFields]><span style='mso-element:field-begin'></span>
-<span style='mso-spacerun:yes'></span>XE Periodic<![endif]-->
-<!--[if supportFields]><span style='mso-element:field-end'></span><![endif]-->
-<H2><A NAME="Modelica_Synchronous.RealSignals.Periodic"></A><A HREF="Modelica_Synchronous_RealSignals.html#Modelica_Synchronous.RealSignals"
->Modelica_Synchronous.RealSignals</A>.Periodic</H2>
-<B>Library of blocks that are designed to operate only on periodically clocked signals (mainly described by z transforms)</B>
-<P></P>
-<P></P><H3>Information</H3>
-<PRE></pre>
+</head>
+<body>
+<!--[if supportFields]><span style="mso-element:field-begin"></span>
+<span style="mso-spacerun:yes"></span>XE Periodic<![endif]-->
+<!--[if supportFields]><span style="mso-element:field-end"></span><![endif]-->
+<h2><a name="Modelica_Synchronous.RealSignals.Periodic"></a><a href="Modelica_Synchronous_RealSignals.html#Modelica_Synchronous.RealSignals"
+>Modelica_Synchronous.RealSignals</a>.Periodic</h2>
+<p>
+<b>Library of blocks that are designed to operate only on periodically clocked signals (mainly described by z transforms)</b><br>
+</p>
+<h3>Information</h3>
+
 <p>
 This package contains blocks that are designed for periodically clocked
 system. Changing the sample rate (without changing at the same time the
 parameters of the block), or using the blocks on non-periodically
 clocked signals, will usually result in non-expected behavior.
 </p>
-<pre></PRE><P></P>
-Extends from Modelica.Icons.Package (Icon for standard packages).
-<P></P><H3>Package Content</H3>
-<TABLE BORDER=1 CELLSPACING=0 CELLPADDING=2 >
-<TR><TH >Name</TH><TH>Description</TH></TR>
-<TR><TD><IMG SRC="Modelica_Synchronous.Real2f5992c5ee2df24eSpaceS.png" ALT="Modelica_Synchronous.RealSignals.Periodic.StateSpace" WIDTH=20  HEIGHT=20 ALIGN = TOP >&nbsp;<A HREF="Modelica_Synchronous_RealSignals_Periodic.html#Modelica_Synchronous.RealSignals.Periodic.StateSpace"
->StateSpace</A>
-</TD><TD>Discrete-time State Space block</TD></TR>
-<TR><TD><IMG SRC="Modelica_Synchronous.Realaf843d3bca565e88ctionS.png" ALT="Modelica_Synchronous.RealSignals.Periodic.TransferFunction" WIDTH=20  HEIGHT=20 ALIGN = TOP >&nbsp;<A HREF="Modelica_Synchronous_RealSignals_Periodic.html#Modelica_Synchronous.RealSignals.Periodic.TransferFunction"
->TransferFunction</A>
-</TD><TD>Discrete-time Transfer Function block</TD></TR>
-<TR><TD><IMG SRC="Modelica_Synchronous.Real82da4989de212425ic.PIS.png" ALT="Modelica_Synchronous.RealSignals.Periodic.PI" WIDTH=20  HEIGHT=20 ALIGN = TOP >&nbsp;<A HREF="Modelica_Synchronous_RealSignals_Periodic.html#Modelica_Synchronous.RealSignals.Periodic.PI"
->PI</A>
-</TD><TD>Discrete-time PI controller</TD></TR>
-<TR><TD><IMG SRC="Modelica_Synchronous.Reala18d96f77a8ad53eerageS.png" ALT="Modelica_Synchronous.RealSignals.Periodic.MovingAverage" WIDTH=20  HEIGHT=20 ALIGN = TOP >&nbsp;<A HREF="Modelica_Synchronous_RealSignals_Periodic.html#Modelica_Synchronous.RealSignals.Periodic.MovingAverage"
->MovingAverage</A>
-</TD><TD>Moving average filter (= FIR filter with coefficients a = fill(1/n,n), but implemented recursively)</TD></TR>
-<TR><TD><IMG SRC="Modelica_Synchronous.Real3107b94039a4c2ebientsS.png" ALT="Modelica_Synchronous.RealSignals.Periodic.FIRbyCoefficients" WIDTH=20  HEIGHT=20 ALIGN = TOP >&nbsp;<A HREF="Modelica_Synchronous_RealSignals_Periodic.html#Modelica_Synchronous.RealSignals.Periodic.FIRbyCoefficients"
->FIRbyCoefficients</A>
-</TD><TD>FIR filter defined by coefficients</TD></TR>
-</TABLE>
-<!--[if supportFields]><span style='mso-element:field-begin'></span>
-<span style='mso-spacerun:yes'></span>XE StateSpace<![endif]-->
-<!--[if supportFields]><span style='mso-element:field-end'></span><![endif]-->
-<H2><IMG SRC="Modelica_Synchronous.Real2f5992c5ee2df24eSpaceI.png" ALT="Modelica_Synchronous.RealSignals.Periodic.StateSpace" ALIGN=RIGHT BORDER=1 WIDTH=80  HEIGHT=80 >
-<A NAME="Modelica_Synchronous.RealSignals.Periodic.StateSpace"></A><A HREF="Modelica_Synchronous_RealSignals_Periodic.html#Modelica_Synchronous.RealSignals.Periodic"
->Modelica_Synchronous.RealSignals.Periodic</A>.StateSpace</H2>
-<B>Discrete-time State Space block</B><p></P>
-<P></P><H3>Information</H3>
-<PRE></pre>
+
+<p>Extends from Modelica.Icons.Package (Icon for standard packages).</p>
+<h3>Package Content</h3>
+<table border="1" cellspacing="0" cellpadding="2" summary="Package Content">
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+<tr>
+<td><img src="Modelica_Synchronous.Real2f5992c5ee2df24eSpaceS.png" alt="Modelica_Synchronous.RealSignals.Periodic.StateSpace" width="20" height="20" align="top">&nbsp;<a href="Modelica_Synchronous_RealSignals_Periodic.html#Modelica_Synchronous.RealSignals.Periodic.StateSpace"
+>StateSpace</a>
+</td>
+<td>Discrete-time State Space block</td>
+</tr>
+<tr>
+<td><img src="Modelica_Synchronous.Realaf843d3bca565e88ctionS.png" alt="Modelica_Synchronous.RealSignals.Periodic.TransferFunction" width="20" height="20" align="top">&nbsp;<a href="Modelica_Synchronous_RealSignals_Periodic.html#Modelica_Synchronous.RealSignals.Periodic.TransferFunction"
+>TransferFunction</a>
+</td>
+<td>Discrete-time Transfer Function block</td>
+</tr>
+<tr>
+<td><img src="Modelica_Synchronous.Real82da4989de212425ic.PIS.png" alt="Modelica_Synchronous.RealSignals.Periodic.PI" width="20" height="20" align="top">&nbsp;<a href="Modelica_Synchronous_RealSignals_Periodic.html#Modelica_Synchronous.RealSignals.Periodic.PI"
+>PI</a>
+</td>
+<td>Discrete-time PI controller</td>
+</tr>
+<tr>
+<td><img src="Modelica_Synchronous.Reala18d96f77a8ad53eerageS.png" alt="Modelica_Synchronous.RealSignals.Periodic.MovingAverage" width="20" height="20" align="top">&nbsp;<a href="Modelica_Synchronous_RealSignals_Periodic.html#Modelica_Synchronous.RealSignals.Periodic.MovingAverage"
+>MovingAverage</a>
+</td>
+<td>Moving average filter (= FIR filter with coefficients a = fill(1/n,n), but implemented recursively)</td>
+</tr>
+<tr>
+<td><img src="Modelica_Synchronous.Real3107b94039a4c2ebientsS.png" alt="Modelica_Synchronous.RealSignals.Periodic.FIRbyCoefficients" width="20" height="20" align="top">&nbsp;<a href="Modelica_Synchronous_RealSignals_Periodic.html#Modelica_Synchronous.RealSignals.Periodic.FIRbyCoefficients"
+>FIRbyCoefficients</a>
+</td>
+<td>FIR filter defined by coefficients</td>
+</tr>
+</table>
+<!--[if supportFields]><span style="mso-element:field-begin"></span>
+<span style="mso-spacerun:yes"></span>XE StateSpace<![endif]-->
+<!--[if supportFields]><span style="mso-element:field-end"></span><![endif]-->
+<h2><img src="Modelica_Synchronous.Real2f5992c5ee2df24eSpaceI.png" alt="Modelica_Synchronous.RealSignals.Periodic.StateSpace" align="right" style="border: 1px solid" width="80" height="80">
+<a name="Modelica_Synchronous.RealSignals.Periodic.StateSpace"></a><a href="Modelica_Synchronous_RealSignals_Periodic.html#Modelica_Synchronous.RealSignals.Periodic"
+>Modelica_Synchronous.RealSignals.Periodic</a>.StateSpace</h2>
+<p>
+<b>Discrete-time State Space block</b>
+</p>
+<h3>Information</h3>
+
 <p>
 This block defines the state space representation of a discrete-time block
 with input vector u, output vector y and state vector x:
@@ -101,34 +123,36 @@ results in the following equations:
                         [previous(x[2])]            [u[2]]
 </pre>
 <pre>
-</PRE><P></P>
-Extends from <A HREF="Modelica_Synchronous_RealSignals_Interfaces.html#Modelica_Synchronous.RealSignals.Interfaces.PartialClockedMIMO"
->Modelica_Synchronous.RealSignals.Interfaces.PartialClockedMIMO</A> (Block with multiple clocked input and multiple clocked output Real signals).
-<P><H3>Parameters</H3><P>
-<TABLE BORDER=1 CELLSPACING=0 CELLPADDING=2>
-<TR><TH>Name</TH><TH>Description</TH></TR>
-<TR><TD>A[:, size(A, 1)]</TD><TD>Matrix A of state space model</TD></TR>
-<TR><TD>B[size(A, 1), :]</TD><TD>Matrix B of state space model</TD></TR>
-<TR><TD>C[:, size(A, 1)]</TD><TD>Matrix C of state space model</TD></TR>
-<TR><TD>D[size(C, 1), size(B, 2)]</TD><TD>Matrix D of state space model</TD></TR>
-<TR><TD>nin</TD><TD>Number of inputs</TD></TR>
-<TR><TD>nout</TD><TD>Number of outputs</TD></TR>
-</TABLE>
-<P><H3>Connectors</H3><P>
-<TABLE BORDER=1 CELLSPACING=0 CELLPADDING=2>
-<TR><TH>Name</TH><TH>Description</TH></TR>
-<TR><TD>u[nin]</TD><TD>Connector of clocked, Real input signals</TD></TR>
-<TR><TD>y[nout]</TD><TD>Connector of clocked, Real output signals</TD></TR>
-</TABLE>
-<!--[if supportFields]><span style='mso-element:field-begin'></span>
-<span style='mso-spacerun:yes'></span>XE TransferFunction<![endif]-->
-<!--[if supportFields]><span style='mso-element:field-end'></span><![endif]-->
-<H2><IMG SRC="Modelica_Synchronous.Realaf843d3bca565e88ctionI.png" ALT="Modelica_Synchronous.RealSignals.Periodic.TransferFunction" ALIGN=RIGHT BORDER=1 WIDTH=80  HEIGHT=80 >
-<A NAME="Modelica_Synchronous.RealSignals.Periodic.TransferFunction"></A><A HREF="Modelica_Synchronous_RealSignals_Periodic.html#Modelica_Synchronous.RealSignals.Periodic"
->Modelica_Synchronous.RealSignals.Periodic</A>.TransferFunction</H2>
-<B>Discrete-time Transfer Function block</B><p></P>
-<P></P><H3>Information</H3>
-<PRE></pre>
+</pre>
+<p>Extends from <a href="Modelica_Synchronous_RealSignals_Interfaces.html#Modelica_Synchronous.RealSignals.Interfaces.PartialClockedMIMO"
+>Modelica_Synchronous.RealSignals.Interfaces.PartialClockedMIMO</a> (Block with multiple clocked input and multiple clocked output Real signals).</p>
+<h3>Parameters</h3>
+<table border="1" cellspacing="0" cellpadding="2" summary="Parameters">
+<tr><th>Name</th><th>Description</th></tr>
+<tr><td>A[:, size(A, 1)]</td><td>Matrix A of state space model</td></tr>
+<tr><td>B[size(A, 1), :]</td><td>Matrix B of state space model</td></tr>
+<tr><td>C[:, size(A, 1)]</td><td>Matrix C of state space model</td></tr>
+<tr><td>D[size(C, 1), size(B, 2)]</td><td>Matrix D of state space model</td></tr>
+<tr><td>nin</td><td>Number of inputs</td></tr>
+<tr><td>nout</td><td>Number of outputs</td></tr>
+</table>
+<h3>Connectors</h3>
+<table border="1" cellspacing="0" cellpadding="2" summary="Connectors">
+<tr><th>Name</th><th>Description</th></tr>
+<tr><td>u[nin]</td><td>Connector of clocked, Real input signals</td></tr>
+<tr><td>y[nout]</td><td>Connector of clocked, Real output signals</td></tr>
+</table>
+<!--[if supportFields]><span style="mso-element:field-begin"></span>
+<span style="mso-spacerun:yes"></span>XE TransferFunction<![endif]-->
+<!--[if supportFields]><span style="mso-element:field-end"></span><![endif]-->
+<h2><img src="Modelica_Synchronous.Realaf843d3bca565e88ctionI.png" alt="Modelica_Synchronous.RealSignals.Periodic.TransferFunction" align="right" style="border: 1px solid" width="80" height="80">
+<a name="Modelica_Synchronous.RealSignals.Periodic.TransferFunction"></a><a href="Modelica_Synchronous_RealSignals_Periodic.html#Modelica_Synchronous.RealSignals.Periodic"
+>Modelica_Synchronous.RealSignals.Periodic</a>.TransferFunction</h2>
+<p>
+<b>Discrete-time Transfer Function block</b>
+</p>
+<h3>Information</h3>
+
 <p>The <b>discrete transfer function</b> block defines the
 transfer function between the input signal u and the output
 signal y. The numerator has the order nb-1, the denominator
@@ -150,30 +174,32 @@ states can be set as start values of <b>x</b>.<p>
 </pre>
 
 <pre>
-</PRE><P></P>
-Extends from <A HREF="Modelica_Synchronous_RealSignals_Interfaces.html#Modelica_Synchronous.RealSignals.Interfaces.PartialClockedSISO"
->Modelica_Synchronous.RealSignals.Interfaces.PartialClockedSISO</A> (Block with clocked single input and clocked single output Real signals).
-<P><H3>Parameters</H3><P>
-<TABLE BORDER=1 CELLSPACING=0 CELLPADDING=2>
-<TR><TH>Name</TH><TH>Description</TH></TR>
-<TR><TD>b[:]</TD><TD>Numerator coefficients of transfer function.</TD></TR>
-<TR><TD>a[:]</TD><TD>Denominator coefficients of transfer function.</TD></TR>
-</TABLE>
-<P><H3>Connectors</H3><P>
-<TABLE BORDER=1 CELLSPACING=0 CELLPADDING=2>
-<TR><TH>Name</TH><TH>Description</TH></TR>
-<TR><TD>u</TD><TD>Connector of clocked, Real input signal</TD></TR>
-<TR><TD>y</TD><TD>Connector of clocked, Real output signal</TD></TR>
-</TABLE>
-<!--[if supportFields]><span style='mso-element:field-begin'></span>
-<span style='mso-spacerun:yes'></span>XE PI<![endif]-->
-<!--[if supportFields]><span style='mso-element:field-end'></span><![endif]-->
-<H2><IMG SRC="Modelica_Synchronous.Real82da4989de212425ic.PII.png" ALT="Modelica_Synchronous.RealSignals.Periodic.PI" ALIGN=RIGHT BORDER=1 WIDTH=80  HEIGHT=80 >
-<A NAME="Modelica_Synchronous.RealSignals.Periodic.PI"></A><A HREF="Modelica_Synchronous_RealSignals_Periodic.html#Modelica_Synchronous.RealSignals.Periodic"
->Modelica_Synchronous.RealSignals.Periodic</A>.PI</H2>
-<B>Discrete-time PI controller</B><p></P>
-<P></P><H3>Information</H3>
-<PRE></pre>
+</pre>
+<p>Extends from <a href="Modelica_Synchronous_RealSignals_Interfaces.html#Modelica_Synchronous.RealSignals.Interfaces.PartialClockedSISO"
+>Modelica_Synchronous.RealSignals.Interfaces.PartialClockedSISO</a> (Block with clocked single input and clocked single output Real signals).</p>
+<h3>Parameters</h3>
+<table border="1" cellspacing="0" cellpadding="2" summary="Parameters">
+<tr><th>Name</th><th>Description</th></tr>
+<tr><td>b[:]</td><td>Numerator coefficients of transfer function.</td></tr>
+<tr><td>a[:]</td><td>Denominator coefficients of transfer function.</td></tr>
+</table>
+<h3>Connectors</h3>
+<table border="1" cellspacing="0" cellpadding="2" summary="Connectors">
+<tr><th>Name</th><th>Description</th></tr>
+<tr><td>u</td><td>Connector of clocked, Real input signal</td></tr>
+<tr><td>y</td><td>Connector of clocked, Real output signal</td></tr>
+</table>
+<!--[if supportFields]><span style="mso-element:field-begin"></span>
+<span style="mso-spacerun:yes"></span>XE PI<![endif]-->
+<!--[if supportFields]><span style="mso-element:field-end"></span><![endif]-->
+<h2><img src="Modelica_Synchronous.Real82da4989de212425ic.PII.png" alt="Modelica_Synchronous.RealSignals.Periodic.PI" align="right" style="border: 1px solid" width="80" height="80">
+<a name="Modelica_Synchronous.RealSignals.Periodic.PI"></a><a href="Modelica_Synchronous_RealSignals_Periodic.html#Modelica_Synchronous.RealSignals.Periodic"
+>Modelica_Synchronous.RealSignals.Periodic</a>.PI</h2>
+<p>
+<b>Discrete-time PI controller</b>
+</p>
+<h3>Information</h3>
+
 <p>
 This block defines a discrete-time PI controller by the formula:
 </p>
@@ -195,30 +221,32 @@ of the i-th clock tick and z is the inverse shift operator.
 This discrete-time form has been derived from the continuous-time
 form of a PI controller by using the implicit Euler discretization formula.
 </p>
-<pre></PRE><P></P>
-Extends from <A HREF="Modelica_Synchronous_RealSignals_Interfaces.html#Modelica_Synchronous.RealSignals.Interfaces.PartialClockedSISO"
->Modelica_Synchronous.RealSignals.Interfaces.PartialClockedSISO</A> (Block with clocked single input and clocked single output Real signals).
-<P><H3>Parameters</H3><P>
-<TABLE BORDER=1 CELLSPACING=0 CELLPADDING=2>
-<TR><TH>Name</TH><TH>Description</TH></TR>
-<TR><TD>kd</TD><TD>Gain of discrete PI controller</TD></TR>
-<TR><TD>Td</TD><TD>Time constant of discrete PI controller</TD></TR>
-</TABLE>
-<P><H3>Connectors</H3><P>
-<TABLE BORDER=1 CELLSPACING=0 CELLPADDING=2>
-<TR><TH>Name</TH><TH>Description</TH></TR>
-<TR><TD>u</TD><TD>Connector of clocked, Real input signal</TD></TR>
-<TR><TD>y</TD><TD>Connector of clocked, Real output signal</TD></TR>
-</TABLE>
-<!--[if supportFields]><span style='mso-element:field-begin'></span>
-<span style='mso-spacerun:yes'></span>XE MovingAverage<![endif]-->
-<!--[if supportFields]><span style='mso-element:field-end'></span><![endif]-->
-<H2><IMG SRC="Modelica_Synchronous.Reala18d96f77a8ad53eerageI.png" ALT="Modelica_Synchronous.RealSignals.Periodic.MovingAverage" ALIGN=RIGHT BORDER=1 WIDTH=80  HEIGHT=80 >
-<A NAME="Modelica_Synchronous.RealSignals.Periodic.MovingAverage"></A><A HREF="Modelica_Synchronous_RealSignals_Periodic.html#Modelica_Synchronous.RealSignals.Periodic"
->Modelica_Synchronous.RealSignals.Periodic</A>.MovingAverage</H2>
-<B>Moving average filter (= FIR filter with coefficients a = fill(1/n,n), but implemented recursively)</B><p></P>
-<P></P><H3>Information</H3>
-<PRE></pre>
+
+<p>Extends from <a href="Modelica_Synchronous_RealSignals_Interfaces.html#Modelica_Synchronous.RealSignals.Interfaces.PartialClockedSISO"
+>Modelica_Synchronous.RealSignals.Interfaces.PartialClockedSISO</a> (Block with clocked single input and clocked single output Real signals).</p>
+<h3>Parameters</h3>
+<table border="1" cellspacing="0" cellpadding="2" summary="Parameters">
+<tr><th>Name</th><th>Description</th></tr>
+<tr><td>kd</td><td>Gain of discrete PI controller</td></tr>
+<tr><td>Td</td><td>Time constant of discrete PI controller</td></tr>
+</table>
+<h3>Connectors</h3>
+<table border="1" cellspacing="0" cellpadding="2" summary="Connectors">
+<tr><th>Name</th><th>Description</th></tr>
+<tr><td>u</td><td>Connector of clocked, Real input signal</td></tr>
+<tr><td>y</td><td>Connector of clocked, Real output signal</td></tr>
+</table>
+<!--[if supportFields]><span style="mso-element:field-begin"></span>
+<span style="mso-spacerun:yes"></span>XE MovingAverage<![endif]-->
+<!--[if supportFields]><span style="mso-element:field-end"></span><![endif]-->
+<h2><img src="Modelica_Synchronous.Reala18d96f77a8ad53eerageI.png" alt="Modelica_Synchronous.RealSignals.Periodic.MovingAverage" align="right" style="border: 1px solid" width="80" height="80">
+<a name="Modelica_Synchronous.RealSignals.Periodic.MovingAverage"></a><a href="Modelica_Synchronous_RealSignals_Periodic.html#Modelica_Synchronous.RealSignals.Periodic"
+>Modelica_Synchronous.RealSignals.Periodic</a>.MovingAverage</h2>
+<p>
+<b>Moving average filter (= FIR filter with coefficients a = fill(1/n,n), but implemented recursively)</b>
+</p>
+<h3>Information</h3>
+
 <p>
 This block computes the output y as the average of the input u and of
 its past values (= moving average filter):
@@ -240,29 +268,31 @@ contrary to a general FIR filter.
 </p>
 
 <pre>
-</PRE><P></P>
-Extends from <A HREF="Modelica_Synchronous_RealSignals_Interfaces.html#Modelica_Synchronous.RealSignals.Interfaces.PartialClockedSISO"
->Modelica_Synchronous.RealSignals.Interfaces.PartialClockedSISO</A> (Block with clocked single input and clocked single output Real signals).
-<P><H3>Parameters</H3><P>
-<TABLE BORDER=1 CELLSPACING=0 CELLPADDING=2>
-<TR><TH>Name</TH><TH>Description</TH></TR>
-<TR><TD>n</TD><TD>Number of points that are averaged (= number of coefficients of corresponding FIR filter)</TD></TR>
-</TABLE>
-<P><H3>Connectors</H3><P>
-<TABLE BORDER=1 CELLSPACING=0 CELLPADDING=2>
-<TR><TH>Name</TH><TH>Description</TH></TR>
-<TR><TD>u</TD><TD>Connector of clocked, Real input signal</TD></TR>
-<TR><TD>y</TD><TD>Connector of clocked, Real output signal</TD></TR>
-</TABLE>
-<!--[if supportFields]><span style='mso-element:field-begin'></span>
-<span style='mso-spacerun:yes'></span>XE FIRbyCoefficients<![endif]-->
-<!--[if supportFields]><span style='mso-element:field-end'></span><![endif]-->
-<H2><IMG SRC="Modelica_Synchronous.Real3107b94039a4c2ebientsI.png" ALT="Modelica_Synchronous.RealSignals.Periodic.FIRbyCoefficients" ALIGN=RIGHT BORDER=1 WIDTH=80  HEIGHT=80 >
-<A NAME="Modelica_Synchronous.RealSignals.Periodic.FIRbyCoefficients"></A><A HREF="Modelica_Synchronous_RealSignals_Periodic.html#Modelica_Synchronous.RealSignals.Periodic"
->Modelica_Synchronous.RealSignals.Periodic</A>.FIRbyCoefficients</H2>
-<B>FIR filter defined by coefficients</B><p></P>
-<P></P><H3>Information</H3>
-<PRE></pre>
+</pre>
+<p>Extends from <a href="Modelica_Synchronous_RealSignals_Interfaces.html#Modelica_Synchronous.RealSignals.Interfaces.PartialClockedSISO"
+>Modelica_Synchronous.RealSignals.Interfaces.PartialClockedSISO</a> (Block with clocked single input and clocked single output Real signals).</p>
+<h3>Parameters</h3>
+<table border="1" cellspacing="0" cellpadding="2" summary="Parameters">
+<tr><th>Name</th><th>Description</th></tr>
+<tr><td>n</td><td>Number of points that are averaged (= number of coefficients of corresponding FIR filter)</td></tr>
+</table>
+<h3>Connectors</h3>
+<table border="1" cellspacing="0" cellpadding="2" summary="Connectors">
+<tr><th>Name</th><th>Description</th></tr>
+<tr><td>u</td><td>Connector of clocked, Real input signal</td></tr>
+<tr><td>y</td><td>Connector of clocked, Real output signal</td></tr>
+</table>
+<!--[if supportFields]><span style="mso-element:field-begin"></span>
+<span style="mso-spacerun:yes"></span>XE FIRbyCoefficients<![endif]-->
+<!--[if supportFields]><span style="mso-element:field-end"></span><![endif]-->
+<h2><img src="Modelica_Synchronous.Real3107b94039a4c2ebientsI.png" alt="Modelica_Synchronous.RealSignals.Periodic.FIRbyCoefficients" align="right" style="border: 1px solid" width="80" height="80">
+<a name="Modelica_Synchronous.RealSignals.Periodic.FIRbyCoefficients"></a><a href="Modelica_Synchronous_RealSignals_Periodic.html#Modelica_Synchronous.RealSignals.Periodic"
+>Modelica_Synchronous.RealSignals.Periodic</a>.FIRbyCoefficients</h2>
+<p>
+<b>FIR filter defined by coefficients</b>
+</p>
+<h3>Information</h3>
+
 <p>
 This block computes the output y as a linear combination of the input u
 and of its past values (= FIR filter):
@@ -274,22 +304,24 @@ and of its past values (= FIR filter):
 where y(i) and u(i) are the values of y and u at clock tick i and
 a[:] are the filter coefficients.
 </p>
-<pre></PRE><P></P>
-Extends from <A HREF="Modelica_Synchronous_RealSignals_Interfaces.html#Modelica_Synchronous.RealSignals.Interfaces.PartialClockedSISO"
->Modelica_Synchronous.RealSignals.Interfaces.PartialClockedSISO</A> (Block with clocked single input and clocked single output Real signals).
-<P><H3>Parameters</H3><P>
-<TABLE BORDER=1 CELLSPACING=0 CELLPADDING=2>
-<TR><TH>Name</TH><TH>Description</TH></TR>
-<TR><TD>a[:]</TD><TD>Coefficients of FIR filter</TD></TR>
-<TR bgcolor="#c0c0c0"><TD colspan=2><B>Advanced</B></TD></TR>
-<TR><TD>cBufStart[size(a, 1) - 1]</TD><TD>The u-buffer [u(i-1), u(i-2), ..., u(size(a,1)-1)] is initialized with u(i=1)*cBufStart</TD></TR>
-</TABLE>
-<P><H3>Connectors</H3><P>
-<TABLE BORDER=1 CELLSPACING=0 CELLPADDING=2>
-<TR><TH>Name</TH><TH>Description</TH></TR>
-<TR><TD>u</TD><TD>Connector of clocked, Real input signal</TD></TR>
-<TR><TD>y</TD><TD>Connector of clocked, Real output signal</TD></TR>
-</TABLE>
-<address><a href="http://www.3ds.com/">Automatically generated</a> Mon Oct 28 10:26:06 2013.
-</address></BODY>
-</HTML>
+
+<p>Extends from <a href="Modelica_Synchronous_RealSignals_Interfaces.html#Modelica_Synchronous.RealSignals.Interfaces.PartialClockedSISO"
+>Modelica_Synchronous.RealSignals.Interfaces.PartialClockedSISO</a> (Block with clocked single input and clocked single output Real signals).</p>
+<h3>Parameters</h3>
+<table border="1" cellspacing="0" cellpadding="2" summary="Parameters">
+<tr><th>Name</th><th>Description</th></tr>
+<tr><td>a[:]</td><td>Coefficients of FIR filter</td></tr>
+<tr style="background-color: #c0c0c0"><td colspan="2"><b>Advanced</b></td></tr>
+<tr><td>cBufStart[size(a, 1) - 1]</td><td>The u-buffer [u(i-1), u(i-2), ..., u(size(a,1)-1)] is initialized with u(i=1)*cBufStart</td></tr>
+</table>
+<h3>Connectors</h3>
+<table border="1" cellspacing="0" cellpadding="2" summary="Connectors">
+<tr><th>Name</th><th>Description</th></tr>
+<tr><td>u</td><td>Connector of clocked, Real input signal</td></tr>
+<tr><td>y</td><td>Connector of clocked, Real output signal</td></tr>
+</table>
+<address>
+<a href="http://www.3ds.com/">Automatically generated</a> Thu Nov 28 13:08:02 2013.
+</address>
+</body>
+</html>
